@@ -1,0 +1,462 @@
+<!DOCTYPE html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><meta name='robots' content='noindex, nofollow, noarchive'><title>STEP3 LINE配信 30日カレンダー Gem ── わど式 AIマネタイズ 特典｜面談予約特典</title><style>
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:'Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif;font-size:16px;line-height:1.8;letter-spacing:.04em;color:var(--text);background:var(--bg)}
+a{color:var(--link)}img{max-width:100%;height:auto;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+header.site{padding:40px 0 28px;color:#fff;background:var(--hero)}
+header.site h1{margin:0 0 6px;font-size:28px;line-height:1.3}
+header.site p{margin:0;opacity:.9;font-size:15px}
+.stamp{display:inline-block;font-size:12px;letter-spacing:.2em;padding:3px 10px;border:1px solid rgba(255,255,255,.6);border-radius:999px;margin-bottom:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;padding:28px 0 40px}
+.card{background:var(--card);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;border:1px solid var(--border)}
+.card .ph{aspect-ratio:16/9;background:var(--ph);display:flex;align-items:center;justify-content:center;color:#fff;font-size:34px;font-weight:800;letter-spacing:.06em}
+.card .bd{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:11px;padding:2px 8px;border-radius:999px;background:var(--tagbg);color:var(--tagfg);white-space:nowrap}
+.tag.k{background:var(--accent);color:#fff}
+.card h2{font-size:17px;margin:0;line-height:1.45}
+.card p{margin:0;font-size:13.5px;color:var(--muted);flex:1}
+.btn{display:inline-block;text-align:center;padding:10px 16px;border-radius:10px;font-weight:700;text-decoration:none;color:#fff;background:var(--btn)}
+.btn.dis{background:var(--muted);pointer-events:none}
+.btn.ghost{background:transparent;color:var(--link);border:1px solid var(--border)}
+article{padding:28px 0 48px}
+article .hero{display:grid;grid-template-columns:1fr;gap:18px;margin-bottom:24px}
+@media(min-width:760px){article .hero{grid-template-columns:1.1fr 1fr;align-items:center}}
+article h1{font-size:26px;line-height:1.35;margin:8px 0}
+article .lead{color:var(--muted);margin:0 0 12px}
+.toc{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 18px;margin:0 0 24px}
+.toc b{display:block;margin-bottom:6px}.toc ul{margin:0;padding-left:18px}.toc li{margin:2px 0;font-size:14px}
+.body h2{font-size:20px;margin:36px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--accent)}
+.body h3{font-size:17px;margin:24px 0 8px}
+.body table{width:100%;border-collapse:collapse;font-size:14px;margin:12px 0}
+.body th{background:var(--accent);color:#fff;text-align:left;padding:6px 8px}
+.body td{padding:6px 8px;border-bottom:1px solid var(--border);vertical-align:top}
+.body pre{background:var(--pre);padding:12px;border-radius:8px;overflow-x:auto;font-size:13.5px;white-space:pre-wrap}
+.body code{background:var(--pre);padding:1px 5px;border-radius:4px;font-size:.92em}
+.body blockquote{margin:12px 0;padding:8px 14px;border-left:4px solid var(--accent);background:var(--card)}
+.tbl{overflow-x:auto}
+.pending{background:var(--card);border:1px dashed var(--border);border-radius:12px;padding:24px;text-align:center;color:var(--muted)}
+nav.pn{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:18px;border-top:1px solid var(--border);font-size:14px}
+nav.pn a{max-width:48%}nav.pn span{color:var(--muted)}
+footer.site{padding:24px 0 40px;font-size:12.5px;color:var(--muted);border-top:1px solid var(--border)}
+footer.site p{margin:4px 0}
+.crumb{font-size:13px;margin:16px 0 0}.crumb a{text-decoration:none}
+.sec{padding:26px 0 6px;border-top:1px solid var(--border)}
+.sec:first-of-type{border-top:0;padding-top:20px}
+.sec>h2{font-size:20px;margin:0 0 4px;padding-left:12px;border-left:5px solid var(--accent);line-height:1.4}
+.sec>p{margin:0;font-size:13.5px;color:var(--muted)}
+.sec .grid{padding:16px 0 12px}
+.linkcard{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px 22px;margin:18px 0 30px;box-shadow:var(--shadow)}
+.linkcard p{margin:0 0 12px;font-size:14px;color:var(--muted)}
+.lib{padding:8px 0 30px}
+.lib h3{font-size:16px;margin:22px 0 6px;padding-left:10px;border-left:4px solid var(--accent)}
+.lib .grid{padding:8px 0 16px}
+.lib .card h2{font-size:15px}.lib .card p{display:none}
+.lib .note{font-size:13px;color:var(--muted);margin:4px 0 0}
+
+:root{--bg:#f5f3ff;--card:#fff;--text:#374151;--muted:#6b7280;--link:#4f46e5;--border:#e5e7eb;--accent:#6366f1;--btn:linear-gradient(90deg,#6366f1,#a855f7);--hero:linear-gradient(120deg,#1e1b4b,#6366f1 60%,#a855f7);--ph:linear-gradient(135deg,#1e1b4b,#6366f1);--tagbg:#eef2ff;--tagfg:#4338ca;--shadow:0 8px 24px rgba(30,27,75,.08);--pre:#f3f4f6}
+</style></head><body>
+<header class='site'><div class='wrap'><span class='stamp'>WADO BONUS 2026 · LIBRARY</span><h1 style=font-size:20px>わど式 AIマネタイズ 特典｜面談予約特典</h1></div></header>
+<main class='wrap'><p class='crumb'><a href='../'>← 一覧へ戻る</a></p><article>
+<div class='hero'><div><img src='../img/N46.png' alt='STEP3 LINE配信 30日カレンダー Gem' style='border-radius:12px'></div><div><div class='tags'><span class='tag k'>新規</span><span class='tag'>STEP穴埋め</span><span class='tag'>Gem</span><span class='tag'>面談予約特典</span></div><h1>STEP3 LINE配信 30日カレンダー Gem</h1><p class='lead'>登録から成約まで、30通の順番と各通の骨</p><span class='tag' style='font-size:13px;padding:6px 12px'>このページが特典の本体です。下へスクロールして使ってください</span></div></div>
+<div class='toc'><b>目次</b><div class="toc">
+<ul>
+<li><a href="#_1">はじめに</a></li>
+<li><a href="#_2">この特典の進め方</a></li>
+<li><a href="#1">最初のゴール(今日やる1つ)</a></li>
+<li><a href="#_3">この工程で決めること</a></li>
+<li><a href="#1_1">手順(1つずつ)</a></li>
+<li><a href="#_4">テンプレ・シート全文</a><ul>
+<li><a href="#30-1">30通表: 日/狙い/骨(1行)</a></li>
+<li><a href="#gem">カレンダーGemのシステム指示 全文</a></li>
+</ul>
+</li>
+<li><a href="#3">判断に迷ったときの3問</a></li>
+<li><a href="#ai20269">最新AI(2026年9月時点)での変わり目(取得日つき)</a></li>
+<li><a href="#_5">次の一手</a></li>
+<li><a href="#_6">最初に投げるプロンプト</a></li>
+<li><a href="#7">よくある失敗 7つと直し方</a></li>
+<li><a href="#_7">安全に使うための注意</a></li>
+<li><a href="#_8">つまずいたときに聞くプロンプト</a></li>
+<li><a href="#_9">用語集</a></li>
+<li><a href="#10">出す前の品質チェック(10項目)</a></li>
+<li><a href="#_10">最終チェックリスト</a></li>
+</ul>
+</div>
+</div>
+<div class='body'><h1 id="step3-line-30-gem">STEP3 LINE配信 30日カレンダー Gem</h1>
+<blockquote>
+<p>公式LINEに登録してくれた人が、面談の予約に至るまでの30日間。何を・どの順番で・どんな狙いで送るかを1枚のカレンダーにして、そのまま使えるGemを一緒に手に入れます。</p>
+</blockquote>
+<h2 id="_1">はじめに</h2>
+<p>公式LINEを持っていても、配信の「中身」より先に、配信の「順番」で迷う人がほとんどです。</p>
+<p>1通1通の文面は上手に書けても、今日送る配信が全体のどこに位置しているかが分からないと、教育がまだ足りない段階でオファーを出してしまったり、逆に信頼が十分できているのにいつまでも様子見の配信を続けてしまったりします。どちらも、登録してくれた人の熱量が下がっていく原因です。</p>
+<p>この特典は「1通の書き方」ではなく「30通の設計図」です。登録直後から面談の予約に至るまでの30日間を5つの段階に分け、各日が何の役割を担うかを表にしました。あわせて、この表を自分の商品・自分のターゲットに合わせて作り直せるGemのシステム指示も入っています。</p>
+<p>1通ごとの実際の文面(予告配信・開始配信・締切配信の書き方)は、別の特典「STEP3 ローンチ手順チェックシート＋LINE配信文 AI」で作れます。この特典はその手前、「そもそも何日目に何を送るべきか」を決めるためのものです。</p>
+<h2 id="_2">この特典の進め方</h2>
+<ol>
+<li>「30日カレンダーの全体設計」を読んで、5つの段階の役割をつかみます(10分ほどです)</li>
+<li>「30通表」に目を通し、自分の状況に近い行を探します</li>
+<li>「カレンダーGemのシステム指示」をコピーして、Geminiで新しいGemを作ります</li>
+<li>カレンダーGemに、自分の商品とターゲット、今のLINE友だち数を伝えて、自分専用のカレンダーを作ってもらいます</li>
+<li>できたカレンダーの各日を、実際の配信文に落とし込みます(このときは配信文専用のGemに切り替えます)</li>
+</ol>
+<h2 id="1">最初のゴール(今日やる1つ)</h2>
+<p>今日やることは1つだけです。</p>
+<ul>
+<li>「30通表」の中から、今の自分が公式LINEでいる段階(A〜Eのどれか)を1つ選んでください</li>
+<li>迷ったら、直近の配信で「何を伝えたか」を思い出し、一番近い段階を選べば十分です</li>
+</ul>
+<p>段階さえ分かれば、次に送るべき配信の狙いが決まります。</p>
+<h2 id="_3">この工程で決めること</h2>
+<p>30日カレンダーを作る前に、次の3つを先に決めておきます。決めずに配信を組み立てると、途中で狙いがぶれます。</p>
+<ul>
+<li><strong>ゴールの形</strong>: 今回の30日間で目指すのは、商品の購入ではなく「面談(個別相談)の予約」です。ゴールの形が変わると、最後の6日間(段階E)の作り方が変わります</li>
+<li><strong>スタート地点</strong>: 登録直後の人に送るのか、すでに何度かやり取りしている人に送るのかで、段階Aの内容が変わります</li>
+<li><strong>配信の頻度</strong>: 毎日1通を基本形にしていますが、忙しければ隣の日と合体させて2日に1通に落としても構いません。日にちがずれても、段階の順番さえ守れば設計は崩れません</li>
+</ul>
+<h2 id="1_1">手順(1つずつ)</h2>
+<p>30日カレンダーは、次の順番で組み立てます。1度に複数の段階を同時に考えないでください。</p>
+<ol>
+<li><strong>段階Aを決める(Day1〜6)</strong>: 登録直後の警戒を解き、「読む理由」を作る6通</li>
+<li><strong>段階Bを決める(Day7〜12)</strong>: 自分の考え方・やり方を教え、信頼を積む6通</li>
+<li><strong>段階Cを決める(Day13〜18)</strong>: 理想と現状のギャップに気づいてもらい、企画の存在をほのめかす6通</li>
+<li><strong>段階Dを決める(Day19〜24)</strong>: 面談(個別相談)の存在を明かし、対象・内容・枠の限りを伝える6通</li>
+<li><strong>段階Eを決める(Day25〜30)</strong>: 予約を後押しし、締切当日まで一押しし続ける6通</li>
+<li><strong>表を見返す</strong>: 5段階が終わったら、隣り合う日で同じフック(読ませ方の型)を2回使っていないか確認する</li>
+</ol>
+<p>各段階を作るときは、前の段階の役割を混ぜないでください。段階Aの途中で企画をほのめかしたり、段階Cでいきなり面談の案内を出したりすると、受け取る側は「結局何が言いたいのか」を見失います。</p>
+<h2 id="_4">テンプレ・シート全文</h2>
+<h3 id="30-1">30通表: 日/狙い/骨(1行)</h3>
+<div class='tbl'><table>
+<thead>
+<tr>
+<th>日</th>
+<th>段階</th>
+<th>狙い</th>
+<th>骨(1行)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Day1</td>
+<td>A</td>
+<td>登録直後の警戒を解く</td>
+<td>お礼+これから何が届くかを短く伝える</td>
+</tr>
+<tr>
+<td>Day2</td>
+<td>A</td>
+<td>「誰から届くか」を知ってもらう</td>
+<td>自己紹介を1つのエピソードに絞って伝える</td>
+</tr>
+<tr>
+<td>Day3</td>
+<td>A</td>
+<td>小さな価値を先に渡す</td>
+<td>今日から使えるミニtipsを1つだけ配信する</td>
+</tr>
+<tr>
+<td>Day4</td>
+<td>A</td>
+<td>相手の悩みを言語化する</td>
+<td>アンケート形式で今の困りごとを聞く</td>
+</tr>
+<tr>
+<td>Day5</td>
+<td>A</td>
+<td>聞いた悩みに応える</td>
+<td>寄せられた声の傾向に軽く触れて答える</td>
+</tr>
+<tr>
+<td>Day6</td>
+<td>A</td>
+<td>週の締めくくり</td>
+<td>今週の振り返り+来週も届くことを伝える</td>
+</tr>
+<tr>
+<td>Day7</td>
+<td>B</td>
+<td>考え方の土台を教える</td>
+<td>AI×SNS×コンテンツ販売の基本の型を1つ教える</td>
+</tr>
+<tr>
+<td>Day8</td>
+<td>B</td>
+<td>人としての距離を縮める</td>
+<td>自分が遠回りした失敗談を短く話す</td>
+</tr>
+<tr>
+<td>Day9</td>
+<td>B</td>
+<td>作る過程を見せる</td>
+<td>制作の裏側(準備の様子)を発信する</td>
+</tr>
+<tr>
+<td>Day10</td>
+<td>B</td>
+<td>よくある誤解を正す</td>
+<td>「これをやれば終わり」ではないことを伝える</td>
+</tr>
+<tr>
+<td>Day11</td>
+<td>B</td>
+<td>証拠を見せる</td>
+<td>自分の取り組み方(プロセス)を実例で示す</td>
+</tr>
+<tr>
+<td>Day12</td>
+<td>B</td>
+<td>週のまとめ+次への布石</td>
+<td>今週のまとめ+「近々ある動き」を軽くほのめかす</td>
+</tr>
+<tr>
+<td>Day13</td>
+<td>C</td>
+<td>ギャップに気づかせる</td>
+<td>理想の状態と今の状態の差を言葉にする</td>
+</tr>
+<tr>
+<td>Day14</td>
+<td>C</td>
+<td>自己流の限界を説明する</td>
+<td>なぜ自己流だと遠回りになりやすいかを話す</td>
+</tr>
+<tr>
+<td>Day15</td>
+<td>C</td>
+<td>日程だけ先に伝える</td>
+<td>「そろそろ動きます」と日程だけ触れる</td>
+</tr>
+<tr>
+<td>Day16</td>
+<td>C</td>
+<td>常識をあえて否定する</td>
+<td>業界でよく言われることに疑問を投げる長文</td>
+</tr>
+<tr>
+<td>Day17</td>
+<td>C</td>
+<td>証拠を積み増す</td>
+<td>実績・プロセス・データのどれかを1つ出す</td>
+</tr>
+<tr>
+<td>Day18</td>
+<td>C</td>
+<td>企画の存在をほのめかす</td>
+<td>予定を空けてもらうよう軽く案内する</td>
+</tr>
+<tr>
+<td>Day19</td>
+<td>D</td>
+<td>面談の存在を明かす</td>
+<td>個別相談(面談)を用意したことを初めて伝える</td>
+</tr>
+<tr>
+<td>Day20</td>
+<td>D</td>
+<td>面談で得られるものを説明</td>
+<td>面談で一緒に何を作るかを具体的に話す</td>
+</tr>
+<tr>
+<td>Day21</td>
+<td>D</td>
+<td>対象を明確にする</td>
+<td>どんな人向けか/向かないかをはっきり書く</td>
+</tr>
+<tr>
+<td>Day22</td>
+<td>D</td>
+<td>よくある迷いに答える</td>
+<td>「自分にはまだ早いかも」への回答を出す</td>
+</tr>
+<tr>
+<td>Day23</td>
+<td>D</td>
+<td>枠の限りを事実として伝える</td>
+<td>対応できる人数・時間に限りがあることを伝える</td>
+</tr>
+<tr>
+<td>Day24</td>
+<td>D</td>
+<td>空気を伝える</td>
+<td>すでに予約している人がいる雰囲気を伝える</td>
+</tr>
+<tr>
+<td>Day25</td>
+<td>E</td>
+<td>受付開始を案内する</td>
+<td>全体像+申込方法+締切を1通で案内する</td>
+</tr>
+<tr>
+<td>Day26</td>
+<td>E</td>
+<td>中間のリマインド</td>
+<td>声の紹介、または途中経過を1通挟む</td>
+</tr>
+<tr>
+<td>Day27</td>
+<td>E</td>
+<td>残りの状況を伝える</td>
+<td>枠・時間の残り状況を事実として伝える</td>
+</tr>
+<tr>
+<td>Day28</td>
+<td>E</td>
+<td>締切前日の最終案内</td>
+<td>「明日で終わること」+最後の一押し</td>
+</tr>
+<tr>
+<td>Day29</td>
+<td>E</td>
+<td>締切当日の後押し</td>
+<td>今日で終わること+締切時刻を明示する</td>
+</tr>
+<tr>
+<td>Day30</td>
+<td>E</td>
+<td>締切後のお礼とフォロー</td>
+<td>予約してくれた人へのお礼+次に届くものを伝える</td>
+</tr>
+</tbody>
+</table></div>
+<p>各行の「骨(1行)」は、そのまま配信文になるわけではありません。ここに書かれた狙いをもとに、実際の文面は配信文専用のGemで組み立てます。</p>
+<h3 id="gem">カレンダーGemのシステム指示 全文</h3>
+<p>以下をそのままコピーして、Geminiの「Gem を作る」画面の指示欄に貼ってください。</p>
+<pre><code>あなたは「LINE配信30日カレンダー設計AI」です。ユーザーの商品・ターゲット・今回のゴール(面談予約)をもとに、登録直後から面談予約に至るまでの30日間のLINE配信カレンダーを作ります。
+
+## 役割
+- 30日間を5つの段階(A:警戒を解く/B:信頼を積む/C:自覚を促す/D:面談を案内する/E:予約を後押しする)に分ける
+- 各段階は6通、合計30通のカレンダーを作る
+- 1通につき「日/狙い/骨(1行)」の3項目だけを出す(実際の配信文までは書かない)
+
+## 手順
+1. まだ聞いていなければ、次を確認する
+   - 何の商品・サービスに向けた面談予約か
+   - 今のLINE友だち数と、登録直後の人が多いか/長く付き合いのある人が多いか
+   - 配信できる頻度(毎日か、2日に1回か)
+2. 段階Aから順に、1段階ずつ6通の狙いと骨を作る
+3. 1段階作るごとに、前の段階と役割が重なっていないかを確認してから次に進む
+4. 段階Dに入る前に、「本当に面談予約がゴールか」をユーザーに確認する(違う場合は段階D・Eの内容を作り直す)
+5. 30通が完成したら、表形式で一覧を出す
+
+## 出力形式
+- 表(列: 日/段階/狙い/骨)
+- 表の後に「隣り合う日で同じ伝え方をしていないか」の確認結果を短く添える
+
+## 禁止事項
+- 実績や数字をユーザーに代わって作らない(ユーザーが持っている情報だけを使う)
+- 「絶対」「誰でも」といった断定的な成果表現を作らない
+- 1通に複数の狙いを詰め込まない(狙いは1通1つ)
+- 頻度をユーザーの申告より上げない(毎日と言われていないのに毎日分を作らない)
+</code></pre>
+<h2 id="3">判断に迷ったときの3問</h2>
+<p>カレンダーの1行を作るたびに、次の3つを自分に聞いてください。</p>
+<ol>
+<li>この配信は「今の段階」の役割を1つだけ果たしているか(他の段階の話を混ぜていないか)</li>
+<li>前の日と同じ伝え方(同じ切り口・同じ書き出し)を繰り返していないか</li>
+<li>この配信を抜いても、次の配信の話がそのまま成立してしまわないか(この日にしかない情報が入っているか)</li>
+</ol>
+<p>3つとも「はい」と言えたら、その行は完成です。1つでも「いいえ」なら、狙いを絞り直すか、隣の日と入れ替えてください。</p>
+<h2 id="ai20269">最新AI(2026年9月時点)での変わり目(取得日つき)</h2>
+<p>2026年9月に発表されたOpenAIの新モデル(通称GPT-6 Astra)は、画面の情報を読み取って操作すること(コンピュータ操作)を主な特徴として打ち出しています(取得日: 2026-09-06)。段階的な提供中で、契約プランに含まれていても手元の画面にまだ出ていないことがあります(同日取得)。</p>
+<p>この特典のカレンダーGem自体は文章を組み立てるだけの仕組みなので、コンピュータ操作の有無に影響されず、今お使いのAI(ChatGPT・Gemini・Claudeのどれでも)でそのまま動きます。</p>
+<p>一方で、今後LINE公式アカウントの管理画面を直接AIに操作してもらう(配信の登録やセグメント設定を任せる)場面が増えていくと考えられます。その場合は、画面に映っている情報がそのままAIへの指示として読み込まれてしまう可能性がある、という注意点が提供元から示されています(取得日: 2026-09-06)。個人情報や顧客の実データが映った画面をAIに見せるときは、映すものを選ぶ意識を持ってください。</p>
+<p>Claude Codeを普段から使っている方は、この30日カレンダーの管理を手元の環境でも行えます。導入の手順は、別の特典「Claude Code 最初の30分」を先に済ませてください。日々の運用を1人の担当者に任せたい場合は、特典「AI社員1人目」で仕組み化の考え方を扱っています。</p>
+<h2 id="_5">次の一手</h2>
+<p>この特典は、「稼ぎ方より、稼ぐ順番」で言うSTEP3(発信・ローンチ)の中の、LINEという1つのチャネルの設計図です。</p>
+<p>30日カレンダーができたら、次にやることは2つです。1つは、段階Dで案内する面談(個別相談)の準備。もう1つは、各日の「骨」を実際の配信文に育てることです。</p>
+<p>面談では、あなた専用の1枚(特注のロードマップ)を一緒に作ります。今回作ったカレンダーも、そのときに一緒に見直しましょう。</p>
+<h2 id="_6">最初に投げるプロンプト</h2>
+<p>カレンダーGemを作ったら、最初にこう話しかけてください。</p>
+<pre><code>公式LINEに登録してくれた人向けに、30日間のカレンダーを作りたいです。
+ゴールは面談(個別相談)の予約です。
+まだ何も決めていないので、段階Aから一緒に組み立ててください。
+</code></pre>
+<h2 id="7">よくある失敗 7つと直し方</h2>
+<ol>
+<li>
+<p><strong>最初から企画を匂わせてしまう</strong>
+   直し方: 段階A(Day1〜6)は警戒を解くことだけに使ってください。企画の存在は段階Cまで出しません。</p>
+</li>
+<li>
+<p><strong>信頼を積む前に面談を案内する</strong>
+   直し方: 段階B(信頼)を飛ばして段階D(面談案内)に進まないでください。順番を守るだけで反応が変わります。</p>
+</li>
+<li>
+<p><strong>毎日同じ切り口で送ってしまう</strong>
+   直し方: 「判断に迷ったときの3問」の2番目を使い、隣の日と伝え方が被っていないか確認してください。</p>
+</li>
+<li>
+<p><strong>段階Dでいきなり枠の限りを強調しすぎる</strong>
+   直し方: 限定性は段階Eで最大にする設計です。段階Dでは「対象を明確にする」ことを優先してください。</p>
+</li>
+<li>
+<p><strong>1通に複数の狙いを詰め込む</strong>
+   直し方: 1通1狙いが基本です。伝えたいことが2つ以上あるときは、日を分けてください。</p>
+</li>
+<li>
+<p><strong>頻度を急に上げてしまう</strong>
+   直し方: 毎日配信が難しければ、隣の日と合体させて2日に1通にしてください。段階の順番さえ守れば問題ありません。</p>
+</li>
+<li>
+<p><strong>段階Eの後にフォローがない</strong>
+   直し方: Day30(締切後のお礼)は省略しないでください。予約してくれた人への最初の対応が、その後の関係を決めます。</p>
+</li>
+</ol>
+<h2 id="_7">安全に使うための注意</h2>
+<ul>
+<li>実績・数字は自分が確認できるものだけを使ってください。AIに数字を作らせないでください</li>
+<li>「絶対」「誰でも」のような、成果を断定する表現は避けてください</li>
+<li>配信は1日1通までが基本です。段階Eの締切間際に限り、1日2通までにとどめてください</li>
+<li>送信前に必ずテスト配信をして、文字化けや改行崩れを確認してください</li>
+<li>記載の成果は特定の実績であり、同様の成果を保証するものではありません</li>
+<li>面談の日程・料金・申込方法など、確定していない情報は配信に書かないでください</li>
+</ul>
+<h2 id="_8">つまずいたときに聞くプロンプト</h2>
+<p>カレンダーGemに、こう聞いてみてください。</p>
+<pre><code>Day◯の狙いが、前後の日と被っている気がします。
+この日だけの役割に絞るとしたら、何を伝えるのが良いか、3案出してください。
+</code></pre>
+<p>段階の切り替えで迷ったときは、こう聞いてください。</p>
+<pre><code>段階◯から段階◯に切り替えるタイミングが早すぎる/遅すぎる気がします。
+今の私の状況(友だち数・配信できる頻度)を伝えるので、切り替え日を見直してください。
+</code></pre>
+<h2 id="_9">用語集</h2>
+<ul>
+<li><strong>段階(フェーズ)</strong>: 30日間を役割ごとに区切った単位。この特典ではA〜Eの5段階</li>
+<li><strong>警戒を解く</strong>: 登録直後の相手が身構えている状態を、価値提供とお礼で和らげること</li>
+<li><strong>教育配信</strong>: 商品の必要性や考え方を伝え、理解を深めてもらう配信</li>
+<li><strong>ギャップ</strong>: 相手の理想の状態と、今の状態との差</li>
+<li><strong>面談(個別相談)</strong>: 1対1で相手専用の進め方を一緒に考える場</li>
+<li><strong>限定性</strong>: 期間や人数を区切ることで、今すぐ決めてもらう後押しにする要素</li>
+<li><strong>フック</strong>: 配信の冒頭で読む理由を作る仕掛け</li>
+</ul>
+<h2 id="10">出す前の品質チェック(10項目)</h2>
+<p>配信を予約・送信する前に、この10項目を確認してください。</p>
+<ol>
+<li>今日の配信は、どの段階に属するか言えるか</li>
+<li>1通の狙いが1つに絞れているか</li>
+<li>隣の日と同じ切り口を繰り返していないか</li>
+<li>段階D以降でなければ、面談・限定性の話をしていないか</li>
+<li>リンクが1通1つになっているか</li>
+<li>実績・数字が自分で確認できるものだけか</li>
+<li>断定的な成果表現を使っていないか</li>
+<li>スマホ2画面以内におさまっているか</li>
+<li>締切・限定性を出す段階では、時刻まで明示されているか</li>
+<li>送信後のフォロー(段階E最終日)が用意されているか</li>
+</ol>
+<h2 id="_10">最終チェックリスト</h2>
+<ul>
+<li>[ ] 自分が今どの段階にいるか、30通表から選んだ</li>
+<li>[ ] カレンダーGemを作成し、自分専用の30日カレンダーを一度作ってもらった</li>
+<li>[ ] 段階A〜Eの役割を混ぜていないか、隣り合う日を見比べて確認した</li>
+<li>[ ] 段階Dに入る前に、ゴールが本当に面談予約かを確認した</li>
+<li>[ ] 出す前の品質チェック10項目をすべて確認した</li>
+<li>[ ] 実際の配信文は、配信文専用のGemで別途仕上げる予定を立てた</li>
+</ul></div>
+<nav class='pn'>
+<a href='../bonus-N40/'>← Claude Code コンテキスト衛生 10ルール</a>
+<a href='../bonus-N47/'>STEP3 オープンチャット運営ルール＋告知文テンプレ →</a>
+</nav></article></main>
+<footer class='site'><div class='wrap'><p>この特典は受け取り条件を満たした方向けに配布しています。再配布・転載はご遠慮ください。</p><p>記載の売上・成果は特定の実績であり、同様の成果を保証するものではありません。</p></div></footer></body></html>
