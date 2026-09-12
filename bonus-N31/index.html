@@ -1,0 +1,415 @@
+<!DOCTYPE html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><meta name='robots' content='noindex, nofollow, noarchive'><title>図解・マインドマップ生成 Skill 2本 ── わど式 AIマネタイズ 特典｜面談予約特典</title><style>
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:'Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif;font-size:16px;line-height:1.8;letter-spacing:.04em;color:var(--text);background:var(--bg)}
+a{color:var(--link)}img{max-width:100%;height:auto;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+header.site{padding:40px 0 28px;color:#fff;background:var(--hero)}
+header.site h1{margin:0 0 6px;font-size:28px;line-height:1.3}
+header.site p{margin:0;opacity:.9;font-size:15px}
+.stamp{display:inline-block;font-size:12px;letter-spacing:.2em;padding:3px 10px;border:1px solid rgba(255,255,255,.6);border-radius:999px;margin-bottom:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;padding:28px 0 40px}
+.card{background:var(--card);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;border:1px solid var(--border)}
+.card .ph{aspect-ratio:16/9;background:var(--ph);display:flex;align-items:center;justify-content:center;color:#fff;font-size:34px;font-weight:800;letter-spacing:.06em}
+.card .bd{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:11px;padding:2px 8px;border-radius:999px;background:var(--tagbg);color:var(--tagfg);white-space:nowrap}
+.tag.k{background:var(--accent);color:#fff}
+.card h2{font-size:17px;margin:0;line-height:1.45}
+.card p{margin:0;font-size:13.5px;color:var(--muted);flex:1}
+.btn{display:inline-block;text-align:center;padding:10px 16px;border-radius:10px;font-weight:700;text-decoration:none;color:#fff;background:var(--btn)}
+.btn.dis{background:var(--muted);pointer-events:none}
+.btn.ghost{background:transparent;color:var(--link);border:1px solid var(--border)}
+article{padding:28px 0 48px}
+article .hero{display:grid;grid-template-columns:1fr;gap:18px;margin-bottom:24px}
+@media(min-width:760px){article .hero{grid-template-columns:1.1fr 1fr;align-items:center}}
+article h1{font-size:26px;line-height:1.35;margin:8px 0}
+article .lead{color:var(--muted);margin:0 0 12px}
+.toc{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 18px;margin:0 0 24px}
+.toc b{display:block;margin-bottom:6px}.toc ul{margin:0;padding-left:18px}.toc li{margin:2px 0;font-size:14px}
+.body h2{font-size:20px;margin:36px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--accent)}
+.body h3{font-size:17px;margin:24px 0 8px}
+.body table{width:100%;border-collapse:collapse;font-size:14px;margin:12px 0}
+.body th{background:var(--accent);color:#fff;text-align:left;padding:6px 8px}
+.body td{padding:6px 8px;border-bottom:1px solid var(--border);vertical-align:top}
+.body pre{background:var(--pre);padding:12px;border-radius:8px;overflow-x:auto;font-size:13.5px;white-space:pre-wrap}
+.body code{background:var(--pre);padding:1px 5px;border-radius:4px;font-size:.92em}
+.body blockquote{margin:12px 0;padding:8px 14px;border-left:4px solid var(--accent);background:var(--card)}
+.tbl{overflow-x:auto}
+.pending{background:var(--card);border:1px dashed var(--border);border-radius:12px;padding:24px;text-align:center;color:var(--muted)}
+nav.pn{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:18px;border-top:1px solid var(--border);font-size:14px}
+nav.pn a{max-width:48%}nav.pn span{color:var(--muted)}
+footer.site{padding:24px 0 40px;font-size:12.5px;color:var(--muted);border-top:1px solid var(--border)}
+footer.site p{margin:4px 0}
+.crumb{font-size:13px;margin:16px 0 0}.crumb a{text-decoration:none}
+.sec{padding:26px 0 6px;border-top:1px solid var(--border)}
+.sec:first-of-type{border-top:0;padding-top:20px}
+.sec>h2{font-size:20px;margin:0 0 4px;padding-left:12px;border-left:5px solid var(--accent);line-height:1.4}
+.sec>p{margin:0;font-size:13.5px;color:var(--muted)}
+.sec .grid{padding:16px 0 12px}
+.linkcard{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px 22px;margin:18px 0 30px;box-shadow:var(--shadow)}
+.linkcard p{margin:0 0 12px;font-size:14px;color:var(--muted)}
+.lib{padding:8px 0 30px}
+.lib h3{font-size:16px;margin:22px 0 6px;padding-left:10px;border-left:4px solid var(--accent)}
+.lib .grid{padding:8px 0 16px}
+.lib .card h2{font-size:15px}.lib .card p{display:none}
+.lib .note{font-size:13px;color:var(--muted);margin:4px 0 0}
+
+:root{--bg:#f5f3ff;--card:#fff;--text:#374151;--muted:#6b7280;--link:#4f46e5;--border:#e5e7eb;--accent:#6366f1;--btn:linear-gradient(90deg,#6366f1,#a855f7);--hero:linear-gradient(120deg,#1e1b4b,#6366f1 60%,#a855f7);--ph:linear-gradient(135deg,#1e1b4b,#6366f1);--tagbg:#eef2ff;--tagfg:#4338ca;--shadow:0 8px 24px rgba(30,27,75,.08);--pre:#f3f4f6}
+</style></head><body>
+<header class='site'><div class='wrap'><span class='stamp'>WADO BONUS 2026 · LIBRARY</span><h1 style=font-size:20px>わど式 AIマネタイズ 特典｜面談予約特典</h1></div></header>
+<main class='wrap'><p class='crumb'><a href='../'>← 一覧へ戻る</a></p><article>
+<div class='hero'><div><div class='card'><div class='ph'>N31</div></div></div><div><div class='tags'><span class='tag k'>新規</span><span class='tag'>プロンプト講座</span><span class='tag'>Skill</span><span class='tag'>面談予約特典</span></div><h1>図解・マインドマップ生成 Skill 2本</h1><p class='lead'>文章を図にする。どの型で描くかの決定表つき</p><span class='tag' style='font-size:13px;padding:6px 12px'>このページが特典の本体です。下へスクロールして使ってください</span></div></div>
+<div class='toc'><b>目次</b><div class="toc">
+<ul>
+<li><a href="#_1">はじめに</a></li>
+<li><a href="#_2">この特典の進め方</a></li>
+<li><a href="#1">最初のゴール(今日やる1つ)</a></li>
+<li><a href="#_3">考え方(なぜ型を先に決めると手戻りがなくなるのか)</a></li>
+<li><a href="#_4">プロンプト全文(型ごと・コピーして使える形)</a><ul>
+<li><a href="#skill-1">Skill 1: 図の型を決める</a></li>
+<li><a href="#skill-2_1">Skill 2: マインドマップにする</a></li>
+</ul>
+</li>
+<li><a href="#_5">使い分けの判断</a></li>
+<li><a href="#_6">うまくいかないときの直し方</a></li>
+<li><a href="#ai20269-2026-09-06">最新AI(2026年9月時点)での書き方の変化(取得日: 2026-09-06)</a></li>
+<li><a href="#_7">最初に投げるプロンプト</a></li>
+<li><a href="#7">よくある失敗 7つと直し方</a></li>
+<li><a href="#_8">安全に使うための注意</a></li>
+<li><a href="#_9">つまずいたときに聞くプロンプト</a></li>
+<li><a href="#_10">用語集</a></li>
+<li><a href="#10">出す前の品質チェック(10項目)</a></li>
+<li><a href="#_11">次の一手</a></li>
+<li><a href="#_12">最終チェックリスト</a></li>
+</ul>
+</div>
+</div>
+<div class='body'><h1 id="skill-2">図解・マインドマップ生成 Skill 2本</h1>
+<blockquote>
+<p>文章のまま渡すより、図にした方が伝わる場面は多いです。ですが「どの型で描くか」を自己流で決めていると、途中でMermaidが崩れて表に作り直す、という往復が起きます。この特典は、図の型を1つに決める判断のSkillと、文章を1枚のマインドマップに変えるSkillの2本です。</p>
+</blockquote>
+<h2 id="_1">はじめに</h2>
+<p>「この内容、図にしたら伝わりやすいのに」と思う場面は、AIで収益を上げていく過程で何度も出てきます。</p>
+<ul>
+<li>noteやBrainの記事で、比較や手順を文章だけで説明していて長くなる</li>
+<li>Instagramのストーリーズで、選択肢を並べて見せたい</li>
+<li>Xのスレッドで、自分の考えを整理して見せたい</li>
+<li>商品の使い方を、手順として1枚で見せたい</li>
+<li>自分の頭の中の考えを、書き出して整理したい</li>
+</ul>
+<p>こういうとき、多くの人はいきなり「図を描いて」とAIに頼みます。その結果、比較したいだけなのにフローチャートが返ってきたり、簡単な話なのに複雑な図になったり、途中で崩れて作り直す、ということが起こります。</p>
+<p>原因は「何の型で描くか」を最初に決めていないことです。この特典は2つのSkillでこの問題を解決します。</p>
+<ol>
+<li><strong>図の型を決めるSkill</strong> — 絵は描きません。「比較表か、フローチャートか、タイムラインか、マインドマップか」を先に1つに決めるための判断だけを担当します</li>
+<li><strong>マインドマップにするSkill</strong> — 文章や資料の内容を、見出しの階層構造に変換し、そのまま1枚のマインドマップとして表示できる形にします</li>
+</ol>
+<p>2本セットで使うと、「型を決める→実際に作る」までを迷わず一直線に進められます。</p>
+<h2 id="_2">この特典の進め方</h2>
+<ol>
+<li>まず「考え方」の章を読み、なぜ型を先に決めると手戻りがなくなるのかを掴む(5分)</li>
+<li>使っているAIに合わせて設置する
+   - Claude Codeをお使いの方 → 「プロンプト全文」の2つのSkillファイルをそのまま保存する
+   - ChatGPTやGeminiをお使いの方 → 同じ節にある代替プロンプトをコピーして使う</li>
+<li>今、実際に説明したい・整理したい内容を1つ選び、「最初に投げるプロンプト」で動かしてみる</li>
+<li>出てきた型で、実際に1枚図・1枚マインドマップを完成させる</li>
+</ol>
+<p>型は暗記するものではなく、<strong>渡すたびにAIに判断させるもの</strong>です。まずは手元にある文章を1つ、実際に流し込んでみてください。</p>
+<h2 id="1">最初のゴール(今日やる1つ)</h2>
+<p>今、人に説明するのに苦労している内容を1つ選んでください(比較・手順・自分の考えの整理、どれでも構いません)。それを「最初に投げるプロンプト」でAIに渡し、型を1つ決めてもらい、実際にコードまたはマインドマップの見出し構造を1つ受け取ってください。読むだけで終わらせず、1回動かすことがこの特典の価値のほぼ全部です。</p>
+<h2 id="_3">考え方(なぜ型を先に決めると手戻りがなくなるのか)</h2>
+<p>図を作るときに一番時間を溶かすのは、「これは何の図か」を決めずに描き始めることです。よくある失敗パターンは次のとおりです。</p>
+<ul>
+<li>とりあえずMermaid(フローチャートを描くための書き方)で描き始める → 実は比較したいだけだった → 表に作り直す</li>
+<li>情報を全部1つの図に詰め込もうとする → ノードが増えすぎて読めなくなる → 分割して作り直す</li>
+<li>色や飾りを先に決める → 情報量が変わるたびにレイアウトが崩れる</li>
+</ul>
+<p>これを避けるには、<strong>「何が主役か」を1問で判定してから描き始める</strong>ことです。</p>
+<div class='tbl'><table>
+<thead>
+<tr>
+<th>何が主役か</th>
+<th>選ぶ型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>いくつかの案・商品・選択肢を横に並べて比べたい</td>
+<td>比較表</td>
+</tr>
+<tr>
+<td>手順や工程が順番に流れる。誰が誰に何を渡すかが大事</td>
+<td>フローチャート</td>
+</tr>
+<tr>
+<td>出来事や締切が時間の順番で並ぶ</td>
+<td>タイムライン</td>
+</tr>
+<tr>
+<td>1つの考えから枝分かれして整理したい</td>
+<td>マインドマップ</td>
+</tr>
+</tbody>
+</table></div>
+<p>判定に迷ったら、「つながり(誰が誰に何を渡すか)が主役か、説明文の量が主役か」の1問で割ります。それでも決まらないときは、作り直しのコストが一番低いフローチャートを選んでおけば、あとから比較表に組み替えるのも簡単です。</p>
+<p>マインドマップは別扱いです。他の3つが「関係性」を描くのに対し、マインドマップは「1つの起点からの枝分かれ」を描きます。見出しの階層(大見出し→中見出し→小見出し)というシンプルな構造に落とし込めるので、AIに一発で作らせやすいのが特徴です。</p>
+<h2 id="_4">プロンプト全文(型ごと・コピーして使える形)</h2>
+<p>以下は、AIに渡すためのプロンプト・Skill全文です。ChatGPT・Gemini・Claude Codeのどれでも使えるように、2パターンずつ用意しています。</p>
+<h3 id="skill-1">Skill 1: 図の型を決める</h3>
+<p>Claude Codeをお使いの方は、以下を <code>~/.claude/skills/diagram-type-picker/SKILL.md</code> として保存してください。保存後は「これ、図にできる？」「図解して」と話しかけるだけで動きます。</p>
+<pre><code class="language-markdown">---
+name: diagram-type-picker
+description: 説明したい内容を渡すと、比較表・フローチャート・タイムライン・マインドマップのどれで描くべきかを1つに決め、そのまま使えるコードを返すSkill。
+version: &quot;1.0.0&quot;
+---
+
+# 図の型を決める
+
+## 使う場面
+- 「これ、図にしたいけどどう描けばいいか分からない」
+- 発動語: 「図解して」「表にして」「図にできる？」
+
+## Step 1: 何が主役かを判定する
+| 質問 | 該当する型 |
+|---|---|
+| いくつかの案・商品・選択肢を横に並べて比べたい | 比較表 |
+| 手順や工程が順番に流れる。誰が誰に何を渡すかが大事 | フローチャート |
+| 出来事や締切が時系列に並ぶ | タイムライン |
+| 1つの考えを枝分かれさせて整理したい | マインドマップ(別Skillに渡す) |
+不明なら、上の4択を提示して選んでもらう。
+
+## Step 2: 型ごとの出力
+- 比較表 → Markdownのテーブル記法で出す。3列以上・4行以上あるときだけ表にする。それ以下は箇条書きで十分
+- フローチャート → Mermaidの `flowchart TD`(上から下)で出す。ノードが10個を超えたら、上位概念でまとめて分割する
+- タイムライン → 「日付 → 出来事」を縦の箇条書きで並べる
+- マインドマップ → マインドマップ用Skillに渡す
+
+## Mermaid使用時の注意(描く前に確認する)
+1. 既定は `TD`(上から下)。`LR`(左から右)は3〜4ノードの単純な流れだけに使う
+2. ノードが10個を超えると文字が小さくて読めなくなる。テーマの文字サイズ設定を大きくするよう指示する
+3. 状態遷移を描く書き方(`stateDiagram-v2`)は、ラベルにコロン・括弧・改行を入れると無言でエラーになる。特殊文字が必要なら `flowchart TD` に切り替え、エッジラベルを引用符で囲む(`|&quot;ラベル&quot;|`)
+4. 配色は紫系のグラデーション(`#8b5cf6` 等)を避ける。落ち着いた1〜2色に絞る
+
+## 判断基準(OK条件)
+- 選んだ型を1つ言い切れているか(「どちらでも」で終わっていないか)
+- ノード・行の数が、読み手が一目で追える範囲(目安10〜15以下)に収まっているか
+
+## 出力
+決めた型の名前と、その場でコピーして使えるコード(Mermaidまたは Markdown)を返す。型を決めるだけで終わらせない。
+</code></pre>
+<p><strong>Claude Codeをお使いでない場合</strong>は、以下をそのままChatGPT・Geminiに貼ってください。</p>
+<pre><code>これから図にしたい内容を渡します。
+まず、次の4つのうちどれに近いか判定してください。
+1. 比較表(いくつかの案・商品を横に並べて比べたい)
+2. フローチャート(手順や工程が順番に流れる)
+3. タイムライン(出来事や締切が時系列に並ぶ)
+4. マインドマップ(1つの考えを枝分かれさせたい)
+
+判定した型で、そのままコピーして使える形(表ならMarkdownの表、フローチャートならMermaidのflowchart TD、タイムラインなら箇条書き)で出してください。
+ノードや行が10個を超える場合は、上位概念でまとめてから枝分かれさせてください。色は紫系のグラデーションを避け、落ち着いた1〜2色にしてください。
+
+[ここに説明したい内容を貼る]
+</code></pre>
+<h3 id="skill-2_1">Skill 2: マインドマップにする</h3>
+<p>Claude Codeをお使いの方は、以下を <code>~/.claude/skills/mindmap-outline-maker/SKILL.md</code> として保存してください。</p>
+<pre><code class="language-markdown">---
+name: mindmap-outline-maker
+description: テキストや資料の内容を、見出しの階層構造に変換し、そのままマインドマップとして表示・共有できる形にするSkill。
+version: &quot;1.0.0&quot;
+---
+
+# マインドマップにする
+
+## 使う場面
+- 資料・自分の考えを、1枚のマインドマップにしたい
+- 発動語: 「マインドマップにして」「構造を整理して」
+
+## Step 1: 入力を確認する
+- ファイル・テキストがそのまま渡された → そのまま使う
+- 自然言語で「こういう内容をまとめたい」と言われた → 内容を整理してから見出し構造に変換する
+
+## Step 2: 見出し構造に変換する
+大見出し→中見出し→小見出しの階層(最大6階層)で組む。
+1. 各見出しは短く(15字以内が目安)。説明は見出しの下の箇条書きに逃がす
+2. 1つの見出しの下に枝が1本しかない場合、その見出し自体が不要な可能性がある。統合を検討する
+3. 同じ階層の見出し同士は粒度を揃える(片方は単語、片方は一文、という不揃いを避ける)
+4. 7階層以上必要になっても、無理に階層を増やさず箇条書きで下にぶら下げる
+
+## Step 3: 確認する(OK条件)
+- トップレベルの枝が3〜7個に収まっているか(多すぎる場合は上位概念でまとめ直す)
+- 見出しの深さが、実際の情報構造と一致しているか(浅すぎず、深すぎない)
+- 日本語が文字化けしていないか
+
+## Step 4: 表示する
+できた見出し構造は、次のどちらかで表示する。
+- チャット上でMermaidの `mindmap` というマインドマップ用の書き方でそのまま貼り、描画させる
+- 見出し構造のMarkdownを、マインドマップ表示用の無料オンラインツールにそのまま貼る
+
+## 出力フォーマット
+1. 完成した見出し構造(Markdown)
+2. トップレベルの枝の数と主要項目の要約(1〜2行)
+3. 表示方法の案内
+</code></pre>
+<p><strong>Claude Codeをお使いでない場合</strong>は、以下をそのままChatGPT・Geminiに貼ってください。</p>
+<pre><code>以下の内容を、大見出し→中見出し→小見出しの階層構造(最大6階層)に変換してください。
+各見出しは15字以内に短くし、説明はその下の箇条書きに逃がしてください。
+トップレベルの枝は3〜7個に収めてください。多すぎる場合は上位概念でまとめ直してください。
+最後に、マインドマップとして表示するための書き方(Mermaidのmindmap形式)でも出力してください。
+
+[ここに整理したい内容を貼る]
+</code></pre>
+<p>Mermaidのmindmap形式で出てきたコードは、そのままAIのチャット画面上でも読めますが、ズームや折りたたみをしながら見たい場合は、公式の無料オンラインビューア(https://markmap.js.org/)に見出し構造のMarkdownをそのまま貼ると、その場でマインドマップとして表示できます。</p>
+<h2 id="_5">使い分けの判断</h2>
+<div class='tbl'><table>
+<thead>
+<tr>
+<th>こんなとき</th>
+<th>使うSkill・型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>noteやBrainの記事に、他社との違いを見せたい</td>
+<td>Skill1 → 比較表</td>
+</tr>
+<tr>
+<td>商品の使い方・申込みの流れを見せたい</td>
+<td>Skill1 → フローチャート</td>
+</tr>
+<tr>
+<td>ローンチや発信のスケジュールを見せたい</td>
+<td>Skill1 → タイムライン</td>
+</tr>
+<tr>
+<td>自分の考え・企画のアイデアを整理したい</td>
+<td>Skill2 → マインドマップ</td>
+</tr>
+<tr>
+<td>会議やセミナーの内容を後から見返せる形にしたい</td>
+<td>Skill2 → マインドマップ</td>
+</tr>
+<tr>
+<td>2つのものを1行で比べれば済む</td>
+<td>どちらも使わない。箇条書き1〜2行で十分</td>
+</tr>
+</tbody>
+</table></div>
+<p>図は「情報量が多く、文章だけだと読み手が迷う」ときにだけ使います。要素が2〜3個で済む話を無理に図にすると、かえって読みにくくなります。</p>
+<h2 id="_6">うまくいかないときの直し方</h2>
+<ol>
+<li>型を決めずに「とりあえず描いて」と頼む → 先に4つの型(比較表・フローチャート・タイムライン・マインドマップ)から1つ選んでもらう</li>
+<li>何でもフローチャートで済まそうとする → 比較は表に、時系列は箇条書きに、それぞれ割り振る</li>
+<li>ノードや枝を詰め込みすぎる(15個以上になる) → 上位概念でグループ化してから枝分かれさせる</li>
+<li>色をその場の思いつきで指定する → 紫系のグラデーションなど「AIが作ったとすぐ分かる配色」を避け、落ち着いた1〜2色を指定し直す</li>
+<li>マインドマップの階層を無理に7段以上にする → 箇条書きに逃がす。階層を増やしすぎない</li>
+<li>できた図をそのまま貼り付ける → 一度実際に表示させて、崩れていないか確認してから使う</li>
+<li>一度崩れても同じ型のまま粘る → 型選びからやり直す(比較表がうまくいかないならフローチャートに変える、等)</li>
+</ol>
+<h2 id="ai20269-2026-09-06">最新AI(2026年9月時点)での書き方の変化(取得日: 2026-09-06)</h2>
+<p>2026年9月3日、OpenAIが新しい大規模モデルを発表しました。目立つ特徴は「画面の情報を読み取り、承認された範囲でアプリを操作できる」機能です。この機能は数日かけて順に使えるようになる案内になっており、プランに含まれていても、自分のアカウントにまだ表示されていないことがあります。使えるかどうかはご自身の画面で確かめてください。</p>
+<p>図解・マインドマップづくりの現場での意味は次のとおりです。</p>
+<ul>
+<li>既存の資料やスプレッドシートを、画面越しにAIへ読み取らせて図にする、という使い方の余地が広がってきています。ただし画面に映っているものを、AIがそのまま指示として受け取ってしまう可能性が指摘されています。図の元ネタにする画面は、信頼できるもの・見せてよいものに絞ってください</li>
+<li>「型を決めてから描く」という考え方自体は、どのAIを使っても変わらず有効です。新しいモデルが出るたびに、この特典の判断基準を変える必要はありません</li>
+<li>Mermaidの書き方(<code>flowchart TD</code>等)や見出し構造への変換は、汎用的なテキストの書き方であり、特定のAIに依存しません。使うAIが変わっても、同じSkill・プロンプトがそのまま使えます</li>
+</ul>
+<h2 id="_7">最初に投げるプロンプト</h2>
+<pre><code>これから図・マインドマップにしたい内容を渡します。
+まず、比較表・フローチャート・タイムライン・マインドマップのどれで描くべきかを判定してください。
+判定した型で、そのままコピーして使えるコード(MermaidまたはMarkdown)を出してください。
+ノードや行が10個を超える場合は、上位概念でまとめてから枝分かれさせてください。
+
+[ここに説明したい・整理したい内容を貼る]
+</code></pre>
+<h2 id="7">よくある失敗 7つと直し方</h2>
+<ol>
+<li>図を作ること自体が目的になってしまう → 「何を伝えたいか(結論)」を先に1行書いてから型を選ぶ</li>
+<li>持っている情報を全部1枚に詰め込もうとする → 伝えたい結論に関係ない情報は思い切って削る</li>
+<li>作った図を見返さずにそのまま公開する → 一晩置くか、読み手の立場に立って見直してから出す</li>
+<li>Skillを設置しただけで満足してしまう → 実際に自分の資料で1回動かし、コピーできる状態を確認するまでが設置</li>
+<li>マインドマップを作って終わり、行動に落とさない → 出てきた枝の中から「今日やる1つ」を1個決める</li>
+<li>毎回ゼロから型を考え直す → 一度うまくいった型は「使い分けの判断」表を見返して使い回す</li>
+<li>AIが出した図をそのまま人に見せて、説明を省いてしまう → 図はあくまで補助。口頭・文章での説明を図に丸投げしない</li>
+</ol>
+<h2 id="_8">安全に使うための注意</h2>
+<ul>
+<li>図に入れる数字・実績は、自分で裏取りしたものだけを使ってください。AIが仮に置いた数字をそのまま図にしないでください</li>
+<li>社内・顧客の非公開情報を図に含める場合、共有先(誰が見るページか)を先に確認してください</li>
+<li>画面を読み取って操作するタイプのAI機能を使う場合、見せる画面に機密情報が映っていないか確認してください。画面に映った内容をそのまま指示として読み取ってしまう可能性が指摘されています</li>
+<li>公開・共有する前に、誤字や数字の間違いがないか必ず目視で確認してください</li>
+</ul>
+<h2 id="_9">つまずいたときに聞くプロンプト</h2>
+<pre><code>さっき作ってもらった[比較表/フローチャート/タイムライン/マインドマップ]について、[具体的に気になる点]が気になります。
+同じ内容のまま、[直したい点]を直してもう一度出してください。
+</code></pre>
+<h2 id="_10">用語集</h2>
+<div class='tbl'><table>
+<thead>
+<tr>
+<th>用語</th>
+<th>意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>フローチャート</td>
+<td>手順や工程の流れを、箱と矢印で表した図</td>
+</tr>
+<tr>
+<td>ノード</td>
+<td>図の中の1つの箱(要素)のこと</td>
+</tr>
+<tr>
+<td>エッジ</td>
+<td>ノードとノードをつなぐ線・矢印のこと</td>
+</tr>
+<tr>
+<td>Mermaid</td>
+<td>文章の書き方だけで図を自動生成できる、AIとの相性が良い記法</td>
+</tr>
+<tr>
+<td>マインドマップ</td>
+<td>1つの考えを中心に、関連する項目を枝分かれさせて広げていく図</td>
+</tr>
+<tr>
+<td>見出し構造</td>
+<td>大見出し・中見出し・小見出しのように、情報を階層で整理した状態</td>
+</tr>
+<tr>
+<td>テーマ変数</td>
+<td>図の色・文字サイズなど、見た目を調整するための設定項目</td>
+</tr>
+<tr>
+<td>Skill</td>
+<td>AIに手順や判断基準を覚えさせるための指示書ファイル</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="10">出す前の品質チェック(10項目)</h2>
+<ol>
+<li>その図が「比較表・フローチャート・タイムライン・マインドマップ」のどれか、1つに言い切れているか</li>
+<li>要素が2〜3個で済む話を、無理に図にしていないか</li>
+<li>ノードや枝の数が、読み手が一目で追える範囲(目安10〜15以下)に収まっているか</li>
+<li>同じ階層の見出し・ノードの粒度が揃っているか</li>
+<li>色が紫系グラデーションなど「AIが作ったとすぐ分かる配色」になっていないか</li>
+<li>実際に表示・レンダリングして、崩れていないか確認したか</li>
+<li>図の中の数字・実績を、自分で裏取りしたか</li>
+<li>誤字・変換ミスがないか</li>
+<li>見る人にとって、図なしの文章より分かりやすくなっているか</li>
+<li>公開・共有する媒体に合った形式(画像・コードブロック・PDF等)になっているか</li>
+</ol>
+<h2 id="_11">次の一手</h2>
+<p>この特典は、稼ぎ方より稼ぐ順番のどのSTEPでも使える、説明を「伝わる形」に変えるための道具です。STEP1の提案資料、STEP2の商品説明、STEP3の告知やスケジュール、どこでも同じ2つのSkillが使えます。面談では、あなた専用の1枚(特注のロードマップ)を一緒に作ります。</p>
+<h2 id="_12">最終チェックリスト</h2>
+<ul>
+<li>[ ] 2つのSkill、または代替プロンプトを、自分が使っているAIに設置した</li>
+<li>[ ] 実際に手元の内容を1つ選び、型を決めてもらった</li>
+<li>[ ] 決まった型で、実際にコードまたは見出し構造を1つ受け取った</li>
+<li>[ ] 表示・レンダリングして崩れていないか確認した</li>
+<li>[ ] 「安全に使うための注意」の4項目を確認した</li>
+<li>[ ] 「出す前の品質チェック」10項目を通してから公開・共有した</li>
+</ul></div>
+<nav class='pn'>
+<a href='../bonus-N26/'>← デザインプロンプト設計フレームワーク</a>
+<a href='../bonus-N34/'>AI社員 30の役割リスト＋5点セット量産プロンプト →</a>
+</nav></article></main>
+<footer class='site'><div class='wrap'><p>この特典は受け取り条件を満たした方向けに配布しています。再配布・転載はご遠慮ください。</p><p>記載の売上・成果は特定の実績であり、同様の成果を保証するものではありません。</p></div></footer></body></html>

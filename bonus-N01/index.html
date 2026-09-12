@@ -1,0 +1,563 @@
+<!DOCTYPE html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><meta name='robots' content='noindex, nofollow, noarchive'><title>Claude Code 最初の30分 ── わど式 AIマネタイズ 特典｜面談予約特典</title><style>
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:'Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif;font-size:16px;line-height:1.8;letter-spacing:.04em;color:var(--text);background:var(--bg)}
+a{color:var(--link)}img{max-width:100%;height:auto;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+header.site{padding:40px 0 28px;color:#fff;background:var(--hero)}
+header.site h1{margin:0 0 6px;font-size:28px;line-height:1.3}
+header.site p{margin:0;opacity:.9;font-size:15px}
+.stamp{display:inline-block;font-size:12px;letter-spacing:.2em;padding:3px 10px;border:1px solid rgba(255,255,255,.6);border-radius:999px;margin-bottom:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;padding:28px 0 40px}
+.card{background:var(--card);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;border:1px solid var(--border)}
+.card .ph{aspect-ratio:16/9;background:var(--ph);display:flex;align-items:center;justify-content:center;color:#fff;font-size:34px;font-weight:800;letter-spacing:.06em}
+.card .bd{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:11px;padding:2px 8px;border-radius:999px;background:var(--tagbg);color:var(--tagfg);white-space:nowrap}
+.tag.k{background:var(--accent);color:#fff}
+.card h2{font-size:17px;margin:0;line-height:1.45}
+.card p{margin:0;font-size:13.5px;color:var(--muted);flex:1}
+.btn{display:inline-block;text-align:center;padding:10px 16px;border-radius:10px;font-weight:700;text-decoration:none;color:#fff;background:var(--btn)}
+.btn.dis{background:var(--muted);pointer-events:none}
+.btn.ghost{background:transparent;color:var(--link);border:1px solid var(--border)}
+article{padding:28px 0 48px}
+article .hero{display:grid;grid-template-columns:1fr;gap:18px;margin-bottom:24px}
+@media(min-width:760px){article .hero{grid-template-columns:1.1fr 1fr;align-items:center}}
+article h1{font-size:26px;line-height:1.35;margin:8px 0}
+article .lead{color:var(--muted);margin:0 0 12px}
+.toc{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 18px;margin:0 0 24px}
+.toc b{display:block;margin-bottom:6px}.toc ul{margin:0;padding-left:18px}.toc li{margin:2px 0;font-size:14px}
+.body h2{font-size:20px;margin:36px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--accent)}
+.body h3{font-size:17px;margin:24px 0 8px}
+.body table{width:100%;border-collapse:collapse;font-size:14px;margin:12px 0}
+.body th{background:var(--accent);color:#fff;text-align:left;padding:6px 8px}
+.body td{padding:6px 8px;border-bottom:1px solid var(--border);vertical-align:top}
+.body pre{background:var(--pre);padding:12px;border-radius:8px;overflow-x:auto;font-size:13.5px;white-space:pre-wrap}
+.body code{background:var(--pre);padding:1px 5px;border-radius:4px;font-size:.92em}
+.body blockquote{margin:12px 0;padding:8px 14px;border-left:4px solid var(--accent);background:var(--card)}
+.tbl{overflow-x:auto}
+.pending{background:var(--card);border:1px dashed var(--border);border-radius:12px;padding:24px;text-align:center;color:var(--muted)}
+nav.pn{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:18px;border-top:1px solid var(--border);font-size:14px}
+nav.pn a{max-width:48%}nav.pn span{color:var(--muted)}
+footer.site{padding:24px 0 40px;font-size:12.5px;color:var(--muted);border-top:1px solid var(--border)}
+footer.site p{margin:4px 0}
+.crumb{font-size:13px;margin:16px 0 0}.crumb a{text-decoration:none}
+.sec{padding:26px 0 6px;border-top:1px solid var(--border)}
+.sec:first-of-type{border-top:0;padding-top:20px}
+.sec>h2{font-size:20px;margin:0 0 4px;padding-left:12px;border-left:5px solid var(--accent);line-height:1.4}
+.sec>p{margin:0;font-size:13.5px;color:var(--muted)}
+.sec .grid{padding:16px 0 12px}
+.linkcard{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px 22px;margin:18px 0 30px;box-shadow:var(--shadow)}
+.linkcard p{margin:0 0 12px;font-size:14px;color:var(--muted)}
+.lib{padding:8px 0 30px}
+.lib h3{font-size:16px;margin:22px 0 6px;padding-left:10px;border-left:4px solid var(--accent)}
+.lib .grid{padding:8px 0 16px}
+.lib .card h2{font-size:15px}.lib .card p{display:none}
+.lib .note{font-size:13px;color:var(--muted);margin:4px 0 0}
+
+:root{--bg:#f5f3ff;--card:#fff;--text:#374151;--muted:#6b7280;--link:#4f46e5;--border:#e5e7eb;--accent:#6366f1;--btn:linear-gradient(90deg,#6366f1,#a855f7);--hero:linear-gradient(120deg,#1e1b4b,#6366f1 60%,#a855f7);--ph:linear-gradient(135deg,#1e1b4b,#6366f1);--tagbg:#eef2ff;--tagfg:#4338ca;--shadow:0 8px 24px rgba(30,27,75,.08);--pre:#f3f4f6}
+</style></head><body>
+<header class='site'><div class='wrap'><span class='stamp'>WADO BONUS 2026 · LIBRARY</span><h1 style=font-size:20px>わど式 AIマネタイズ 特典｜面談予約特典</h1></div></header>
+<main class='wrap'><p class='crumb'><a href='../'>← 一覧へ戻る</a></p><article>
+<div class='hero'><div><img src='../img/N01.png' alt='Claude Code 最初の30分' style='border-radius:12px'></div><div><div class='tags'><span class='tag k'>新規</span><span class='tag'>Setup</span><span class='tag'>Skill</span><span class='tag'>Notion</span><span class='tag'>面談予約特典</span></div><h1>Claude Code 最初の30分</h1><p class='lead'>Mac／Windows の導入手順と、最初に投げる7つのプロンプト</p><span class='tag' style='font-size:13px;padding:6px 12px'>このページが特典の本体です。下へスクロールして使ってください</span></div></div>
+<div class='toc'><b>目次</b><div class="toc">
+<ul>
+<li><a href="#_1">はじめに</a></li>
+<li><a href="#_2">この特典の進め方</a></li>
+<li><a href="#1">最初のゴール(今日やる1つ)</a></li>
+<li><a href="#1-mac">1. 導入手順(Mac)</a><ul>
+<li><a href="#1-1">1-1 ターミナルを開く</a></li>
+<li><a href="#1-2-nodejs">1-2 Node.jsを入れる</a></li>
+<li><a href="#1-3-claude-code">1-3 Claude Codeを入れる</a></li>
+<li><a href="#1-4">1-4 最初のフォルダを作る</a></li>
+<li><a href="#1-5">1-5 起動してログインする</a></li>
+<li><a href="#1-6">1-6 動作確認</a></li>
+</ul>
+</li>
+<li><a href="#2-windows">2. 導入手順(Windows)</a><ul>
+<li><a href="#2-0-zip">2-0 zipファイルの文字化けに注意</a></li>
+<li><a href="#2-1-powershell">2-1 PowerShellを開く</a></li>
+<li><a href="#2-2-nodejs">2-2 Node.jsを入れる</a></li>
+<li><a href="#2-3-claude-code">2-3 Claude Codeを入れる</a></li>
+<li><a href="#2-4">2-4 最初のフォルダを作る</a></li>
+<li><a href="#2-5">2-5 起動してログインする</a></li>
+<li><a href="#2-6">2-6 動作確認</a></li>
+</ul>
+</li>
+<li><a href="#3-7">3. 最初に投げる7つのプロンプト</a><ul>
+<li><a href="#step0">STEP0 接続確認プロンプト</a></li>
+<li><a href="#step1">STEP1 商品設計・特典プロンプト</a></li>
+<li><a href="#step2-1-lp">STEP2-1 LP骨子プロンプト</a></li>
+<li><a href="#step2-2-x">STEP2-2 告知(X)プロンプト</a></li>
+<li><a href="#step2-3-line">STEP2-3 配信(公式LINE)プロンプト</a></li>
+<li><a href="#step2-4">STEP2-4 メルマガプロンプト</a></li>
+<li><a href="#step3">STEP3 逆算カレンダープロンプト</a></li>
+</ul>
+</li>
+<li><a href="#4">4. 「ナレッジの器」の作り方</a></li>
+<li><a href="#5-30">5. 30分で終わらせる時間配分</a></li>
+<li><a href="#7">7つのプロンプトを使うときのコツ</a></li>
+<li><a href="#7_1">よくある失敗 7つと直し方</a></li>
+<li><a href="#_3">安全に使うための注意</a></li>
+<li><a href="#_4">つまずいたときに聞くプロンプト</a></li>
+<li><a href="#_5">用語集</a></li>
+<li><a href="#10">出す前の品質チェック(10項目)</a></li>
+<li><a href="#ai20269">最新AI（2026年9月時点）でこの特典はどう変わるか</a></li>
+<li><a href="#_6">最終チェックリスト</a></li>
+</ul>
+</div>
+</div>
+<div class='body'><h1 id="claude-code-30">Claude Code 最初の30分</h1>
+<blockquote>
+<p>Claude Codeというツールをパソコンに入れて、あなたの情報を読ませながら「売るための文章」を作れる状態にします。今日やることは、インストールと、最初の7つのプロンプトを打つことだけです。</p>
+</blockquote>
+<h2 id="_1">はじめに</h2>
+<p>わどです。この特典は、AIで収益を上げるときのいちばん最初のハードル「AIツールを入れるところ」をゼロから通すためのものです。</p>
+<p>Claude Codeは、パソコンのフォルダに置いたファイルを直接読み書きできるAIです。チャット画面にコピペするタイプのAIと違い、あなたの資料・過去の投稿・実績メモを丸ごと読んだうえで、文章や資料をファイルとして作ってくれます。この「読ませる場所」を持っているかどうかで、成果物の質がまったく変わります。</p>
+<p>このページは、Mac・Windowsの導入手順、入れた直後に投げる7つのプロンプト、成果物の質を決める「ナレッジの器」の作り方の3つで構成されています。ここから、あなたの商品の「売る流れ」の設計図が1つ手元にある状態まで進みます。</p>
+<h2 id="_2">この特典の進め方</h2>
+<p>上から順番に進めてください。飛ばすと、あとの章が前提にしている手順が抜けます。前提は、パソコン(Mac・Windowsどちらでも可)とネット接続、AI(ChatGPT・Gemini・Claudeのいずれか)のアカウントだけです。ターミナル(黒い画面)を触ったことがなくても大丈夫です。コマンドは全てコピペで動く形にしてあります。</p>
+<h2 id="1">最初のゴール(今日やる1つ)</h2>
+<p>今日のゴールは1つだけです。</p>
+<p><strong>Claude Codeを起動して、「このフォルダに何がありますか」と聞き、日本語で答えが返ってくる状態にする。</strong></p>
+<p>これができれば、AIがあなたのパソコンのフォルダを読める状態になった証拠です。あとの7つのプロンプトはコピペするだけで進みます。今日は「設計図を完成させる」まで欲張らなくて構いません。</p>
+<h2 id="1-mac">1. 導入手順(Mac)</h2>
+<p>Macでの所要時間はおよそ15分です。</p>
+<h3 id="1-1">1-1 ターミナルを開く</h3>
+<p>画面右上の虫眼鏡アイコン(Spotlight検索)をクリックし、「ターミナル」と入力してEnterキーを押します。黒い(または白い)ウィンドウが開けば成功です。以降のコマンドはこのウィンドウに打ち込みます。</p>
+<h3 id="1-2-nodejs">1-2 Node.jsを入れる</h3>
+<p>Claude Codeを動かすには、土台になる「Node.js」という無料のソフトが必要です。</p>
+<ul>
+<li><strong>公式サイトから</strong>: ブラウザで公式サイトを開き、Mac用インストーラーをダウンロードして実行する(最新版を選ぶ。バージョン番号にはこだわらなくて良い)</li>
+<li><strong>Homebrewが入っている人</strong>: <code>brew install node</code></li>
+</ul>
+<p>入れ終わったら確認します。</p>
+<pre><code class="language-bash">node -v
+</code></pre>
+<p><code>v</code> から始まる数字が表示されれば成功です。表示されない場合はインストーラーを実行し直してください。</p>
+<h3 id="1-3-claude-code">1-3 Claude Codeを入れる</h3>
+<pre><code class="language-bash">npm install -g @anthropic-ai/claude-code
+</code></pre>
+<p>数十秒〜数分で完了します。確認は <code>claude --version</code>。数字が表示されれば成功です。</p>
+<h3 id="1-4">1-4 最初のフォルダを作る</h3>
+<p>AIに読ませる作業用フォルダを1つ作ります。「デスクトップ」の中に作るのがおすすめです。</p>
+<pre><code class="language-bash">mkdir ~/Desktop/my-launch
+cd ~/Desktop/my-launch
+</code></pre>
+<p>このフォルダに、あとで作る <code>私のナレッジ.md</code> を入れていきます。</p>
+<h3 id="1-5">1-5 起動してログインする</h3>
+<p>作ったフォルダの中で、次を打ちます。</p>
+<pre><code class="language-bash">claude
+</code></pre>
+<p>初回はブラウザが自動で開き、AIのアカウント(サブスクリプション)でログインを求められます。ログインするとターミナルに戻り、チャットが開始できます。</p>
+<h3 id="1-6">1-6 動作確認</h3>
+<p>チャット欄に次のように打ってEnterを押します。</p>
+<pre><code>このフォルダに何がありますか
+</code></pre>
+<p>日本語で答えが返ってくれば成功です。これで今日のゴールは達成です。</p>
+<h2 id="2-windows">2. 導入手順(Windows)</h2>
+<p>Windowsでの所要時間はおよそ15〜20分です。文字化けが起きやすい点だけMacと違います。</p>
+<h3 id="2-0-zip">2-0 zipファイルの文字化けに注意</h3>
+<p>この特典に付属するzipファイルをWindows標準の機能で解凍すると、ファイル名が記号の羅列(文字化け)になることがあります。<strong>中身の文章は壊れていません。壊れているのはファイル名の表示だけです。</strong></p>
+<ul>
+<li>「7-Zip」または「Explzh」という無料の解凍ソフトで解凍し直す</li>
+<li>または文字化けしたまま進め、あとの手順でAIに「このフォルダの中身を全部読んで、それぞれ何のファイルか一覧にして」と頼む(中身を読んで日本語で教えてくれます)</li>
+</ul>
+<h3 id="2-1-powershell">2-1 PowerShellを開く</h3>
+<p>スタートメニューを開き、「PowerShell」と入力してEnterキーを押します。青いウィンドウが開けば成功です。以降のコマンドはこのウィンドウに打ち込みます。</p>
+<h3 id="2-2-nodejs">2-2 Node.jsを入れる</h3>
+<ul>
+<li><strong>公式サイトから</strong>: ブラウザで公式サイトを開き、Windows用インストーラー(.msi)をダウンロードして実行する(最新版を選ぶ)</li>
+<li><strong>wingetが使える人</strong>: <code>winget install OpenJS.NodeJS.LTS</code></li>
+</ul>
+<p>インストール後、PowerShellを開き直してから確認します。</p>
+<pre><code class="language-powershell">node -v
+</code></pre>
+<p><code>v</code> から始まる数字が表示されれば成功です。</p>
+<h3 id="2-3-claude-code">2-3 Claude Codeを入れる</h3>
+<pre><code class="language-powershell">npm install -g @anthropic-ai/claude-code
+</code></pre>
+<p>確認は <code>claude --version</code>。うまく入らない場合は、PowerShellを「管理者として実行」で開き直して同じコマンドを試してください。</p>
+<h3 id="2-4">2-4 最初のフォルダを作る</h3>
+<pre><code class="language-powershell">mkdir $HOME\Desktop\my-launch
+cd $HOME\Desktop\my-launch
+</code></pre>
+<h3 id="2-5">2-5 起動してログインする</h3>
+<pre><code class="language-powershell">claude
+</code></pre>
+<p>初回はブラウザが自動で開き、ログインを求められます。ログイン後、PowerShellの画面に戻ればチャットが開始できます。</p>
+<h3 id="2-6">2-6 動作確認</h3>
+<p>Macと同じく、チャット欄に次を打ちます。</p>
+<pre><code>このフォルダに何がありますか
+</code></pre>
+<p>日本語で答えが返ってくれば成功です。</p>
+<h2 id="3-7">3. 最初に投げる7つのプロンプト</h2>
+<p>ここからが本番です。7つのプロンプトを「同じ会話の中で、順番に」貼っていきます。前のプロンプトで出てきた成果物が次の材料になる作りです。別々の会話で使うと精度が落ちます。</p>
+<p>全体は3つのSTEPです。STEP0=接続確認、STEP1=商品と特典を設計する、STEP2=売る文章を4種類作る(STEP2-1〜2-4)、STEP3=日程を固定する。</p>
+<h3 id="step0">STEP0 接続確認プロンプト</h3>
+<p>導入手順の最後で使ったものと同じです。作業を再開するときは、まずこれから始めてください。</p>
+<pre><code>このフォルダに何がありますか。
+私のナレッジ.md があれば、その内容を読んでから待機してください。
+</code></pre>
+<h3 id="step1">STEP1 商品設計・特典プロンプト</h3>
+<p>【 】の中を自分の言葉で埋めてから貼ってください。埋められない欄は「未定」でも構いません。AIが質問しながら一緒に決めてくれます。</p>
+<pre><code>あなたは私専属のローンチ設計者です。
+私の商品を「売る流れ」に載せるための設計図を、一緒に作ってください。
+
+## 私の情報
+- 商品(または商品のタネ):【例: AI画像作成を教える講座】
+- 想定するお客さん:【例: SNS発信をしている個人事業主】
+- お客さんが困っていること:【 】
+- 価格のイメージ:【例: 未定】
+- 販売形式:【例: 動画講座/ライブ講座/個別サポート/未定】
+- 販売したい時期:【例: 未定】
+- 私の実績・経験(実在するものだけ):【 】
+
+## やってほしいこと
+1. 足りない情報があれば、先に質問してください(最大5問・1問ずつ)。
+2. そのあと、次の6項目を「ローンチ設計図」として1枚にまとめてください。
+   - 1. 商品設計: 誰に・何を・いくらで・どんな形式で
+   - 2. 特典: 申込の後押しになる特典を3案(私が今の手持ちで作れるものだけ)
+   - 3. LP: 載せるべき要素の一覧
+   - 4. 告知: どの媒体で・何回・何を言うか
+   - 5. 配信: 販売開始から締切までの配信スケジュール
+   - 6. 販売: 申込方法と締切の設計(締切理由も)
+3. 最後に「この設計図の弱点」を3つ、正直に指摘してください。
+
+## ルール
+- 私が書いていない実績・数字を作らないでください。
+- 専門用語を使うときは、1行で意味を添えてください。
+- 派手な誇張より、私が今週から実行できる現実的な設計にしてください。
+</code></pre>
+<p>出てきたら、ファイルに保存してください(<code>設計図.md</code> など)。以降のプロンプトはこの設計図が前提になります。</p>
+<h3 id="step2-1-lp">STEP2-1 LP骨子プロンプト</h3>
+<pre><code>上のローンチ設計図をもとに、販売ページ(LP)の骨子を作ってください。
+
+## 出力の形
+上から順に、次のセクション構成で。各セクションは「見出し案+入れる内容の箇条書き」まで書いてください(完成文章はまだ不要)。
+
+1. ファーストビュー: 誰向けの何か+一番強い約束(1行)
+2. 共感: お客さんが今困っている場面を具体的に
+3. 原因: なぜ今のやり方では解決しないか
+4. 解決策: 商品の紹介(何が・どう届くか)
+5. 中身: カリキュラム・内容の全リスト
+6. 実績・声: 私の実績とお客様の声(実在するものだけ。無ければ「準備中」と書く)
+7. 特典: 設計図の特典3案から
+8. 価格: 価格と、その価格の理由
+9. 締切: いつまで・なぜその締切か
+10. よくある質問: 5問
+11. 最後のひと押し: 迷っている人への一言
+
+## ルール
+- 私が伝えていない実績・声・数字を作らない。
+- 「誰でも」「絶対」「簡単に稼げる」系の誇張表現を使わない。
+- 各セクションに「ここに入れる画像・スクショの案」も1行添える。
+</code></pre>
+<h3 id="step2-2-x">STEP2-2 告知(X)プロンプト</h3>
+<pre><code>上のローンチ設計図をもとに、X(Twitter)の告知投稿を作ってください。
+
+## 作るもの(3種×各2案)
+1. ティザー投稿(販売開始の3〜5日前): 商品名は出さず、「困りごと+もうすぐ発表」で期待を作る
+2. 募集開始投稿(販売開始日): 何が・誰向けで・いつまでか+申込への一言
+3. 締切前投稿(締切24時間前): 残り時間+迷っている人の背中を押す一言
+
+## ルール
+- 各投稿は140字以内を基本。長くても200字まで。
+- 1投稿1メッセージ。全部盛りにしない。
+- 私の口調に合わせる(普段の投稿を3つ貼るので参考にして →【ここに貼る/無ければ「丁寧めで」等と指定】)。
+- ハッシュタグは付けない(必要なら私が後で足す)。
+- 実績・数字は設計図にあるものだけ。
+- 絵文字は各投稿2個まで。
+
+## 出力の形
+「1-a/1-b/2-a/2-b/3-a/3-b」のラベル付きで、コピペできる形に。
+最後に、それぞれの投稿に合う画像の案を1行ずつ。
+</code></pre>
+<h3 id="step2-3-line">STEP2-3 配信(公式LINE)プロンプト</h3>
+<pre><code>上のローンチ設計図をもとに、公式LINEの配信文を3通作ってください。
+
+## 作るもの
+1. 予告配信(販売開始の前日): 明日何が始まるか+読む理由を1つ
+2. 開始配信(販売開始日): 商品の案内+申込リンクへの導線+締切の明示
+3. 締切配信(締切当日): 今日で終わること+最後の一押し+締切時刻
+
+## LINEのルール
+- 1通は「スマホ2画面以内」。長文にしない。
+- 冒頭1行目で用件が分かるように(そこで開封が決まる)。
+- 1通につきリンクは1つだけ。【申込リンク】と書いておいて(私が差し込む)。
+- 絵文字は各通3個まで。改行を多めに、ブロックごとに空行。
+- 実績・数字は設計図にあるものだけ。「絶対」「誰でも稼げる」系の表現は使わない。
+
+## 出力の形
+1通ずつ、そのままコピペで配信できる完成形で。
+各通の下に「配信するおすすめ時刻と理由」を1行。
+</code></pre>
+<h3 id="step2-4">STEP2-4 メルマガプロンプト</h3>
+<pre><code>上のローンチ設計図をもとに、メルマガを3通作ってください。
+
+## 作るもの
+1. 予告メール(販売開始の前日)
+2. 開始メール(販売開始日)
+3. 締切メール(締切当日)
+
+## メールのルール
+- 件名は各通5案。開封したくなるが、釣りにならないもの。
+- 本文は800字以内。1通1メッセージ。
+- 書き出しの2行で「自分ごと」にさせる(読者の困りごとの場面から入る)。
+- 申込導線は【申込リンク】と書く(1通に1回、多くても2回)。
+- 実績・数字は設計図にあるものだけ。誇張表現を使わない。
+- 追伸(P.S.)を1つ付ける。本文と違う角度の一言。
+
+## 出力の形
+「件名5案 → 本文 → おすすめ配信時刻」の順で、1通ずつ。
+</code></pre>
+<h3 id="step3">STEP3 逆算カレンダープロンプト</h3>
+<pre><code>上のローンチ設計図をもとに、実行カレンダーを作ってください。
+
+## 前提
+- 販売の締切日:【例: 未定なら「2週間後」と書く】
+- 私が1日に使える作業時間:【例: 平日1時間】
+
+## やってほしいこと
+締切日から逆算して、次を1つの表にまとめてください。
+列: 日付/曜日/やること/使うプロンプト(STEP番号)/所要時間の目安
+
+含める工程:
+- LP骨子づくり → LP完成
+- ティザー投稿(開始3〜5日前)
+- 販売開始(X・LINE・メルマガ同日)
+- 中間の追い配信(開始と締切の中間に1回)
+- 締切24時間前の投稿・配信
+- 締切当日の最終配信
+- 締切翌日: 結果の記録(申込数・反応をナレッジの器に書く)
+
+## ルール
+- 1日の作業が、私の使える時間を超えないように配分する。
+- 無理な日程なら、正直に「締切を延ばすべき」と言ってください。
+</code></pre>
+<h2 id="4">4. 「ナレッジの器」の作り方</h2>
+<p>7つのプロンプトは、誰が使っても「それなり」の物が出ます。そこから先の差は、AIに渡す<strong>あなたの一次情報の量</strong>で決まります。</p>
+<p>下のテンプレートをコピーして <code>私のナレッジ.md</code> という名前で保存し、作業フォルダに入れてください。3割埋まれば使い始めて大丈夫です。迷ったら、商品 → お客さん → 文体 → 実績の順で埋めてください。</p>
+<pre><code class="language-markdown"># 私のナレッジ
+
+## 商品
+- 商品名:
+- 一言でいうと(誰の・何を・どう解決する):
+- 価格と形式:
+- 含まれるもの/含まれないもの:
+
+## お客さん
+- どんな人か(職業・状況):
+- 来る前に困っていること(お客さんの言葉のまま):
+- 買ったあと、どうなってほしいか:
+
+## 実績(実在するものだけ。日付つきで)
+- 例: 講座受講者◯名/お客様の声「……」(◯◯さん)
+-
+
+## お客様の声(原文のまま。もらった日付と誰からかも)
+-
+
+## 私の文体・口調
+- 一人称:
+- よく使う言い回し:
+- 使わない言葉・NG表現:
+- 参考: 自分らしい投稿・文章を3つ、ここに貼る
+
+## 過去にうまくいったこと/失敗したこと
+- うまくいった: (何を・なぜうまくいったと思うか)
+- 失敗した: (何を・なぜ)
+
+## 数字の記録(ローンチのたびに追記)
+| 日付 | 施策 | 数字 | メモ |
+|---|---|---|---|
+| 例 | 1回目のローンチ | 申込◯件 | 締切前日が一番動いた |
+</code></pre>
+<p>育て方は3つだけです。</p>
+<ol>
+<li>最初は3割埋まっていれば十分。使いながら足す。</li>
+<li>ローンチが1本終わるたびに「数字の記録」へ1行。次回の最強の武器になります。</li>
+<li>AIの成果物に「なんか違う」と思ったら、直しをここに書き足す。次からは直った状態で出てきます。</li>
+</ol>
+<p>実績・数字・お客様の声は、必ず実在するものだけを書いてください。ここに嘘が入ると、以降の成果物すべてに嘘が乗ります。</p>
+<h2 id="5-30">5. 30分で終わらせる時間配分</h2>
+<p>急いでいる人向けの目安です。この順番だけ守れば30分前後で今日のゴールに届きます。</p>
+<div class='tbl'><table>
+<thead>
+<tr>
+<th>時間</th>
+<th>やること</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0〜5分</td>
+<td>ターミナルを開く/Node.jsのインストールを開始する</td>
+</tr>
+<tr>
+<td>5〜15分</td>
+<td>Node.jsの完了を確認/Claude Codeを入れる</td>
+</tr>
+<tr>
+<td>15〜20分</td>
+<td>作業フォルダを作る/<code>claude</code> を起動してログインする</td>
+</tr>
+<tr>
+<td>20〜25分</td>
+<td>STEP0の接続確認プロンプトを打つ(今日のゴール達成)</td>
+</tr>
+<tr>
+<td>25〜30分</td>
+<td><code>私のナレッジ.md</code> を作業フォルダに置き、3割だけ埋める</td>
+</tr>
+</tbody>
+</table></div>
+<p>30分を超えても構いません。焦って雑に進めるより、STEP0の接続確認まで確実に着地させることを優先してください。設計図づくり(STEP1)は残り時間か、別の日でも大丈夫です。</p>
+<h2 id="7">7つのプロンプトを使うときのコツ</h2>
+<ul>
+<li>必ず「同じ会話の中で、順番に」貼ってください。会話を新しく始めると前の成果物を覚えていません。</li>
+<li>出てきた成果物は、その都度ファイルに保存してください。見返すときも再生成させるときも早く進みます。</li>
+<li>全部を一気に完成させなくて大丈夫です。STEP1だけ今日終わらせ、STEP2以降は同じ会話(またはファイルを貼り直す形)で再開できます。</li>
+<li>違和感があれば「もっと私らしい言い方にして」のように遠慮せず直しを頼んでください。1回で完成形が出ることは稀です。</li>
+</ul>
+<h2 id="7_1">よくある失敗 7つと直し方</h2>
+<div class='tbl'><table>
+<thead>
+<tr>
+<th>#</th>
+<th>失敗</th>
+<th>直し方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>node -v</code> で何も表示されない</td>
+<td>インストーラーを再実行し、ターミナルを開き直して再確認する</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>npm install</code> でエラーが出る</td>
+<td>ネット接続を確認。Windowsは「管理者として実行」で開き直す</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>claude</code> と打っても何も起きない</td>
+<td><code>claude --version</code> で完了を確認。未完了なら手順をやり直す</td>
+</tr>
+<tr>
+<td>4</td>
+<td>ログイン画面がブラウザで開かない</td>
+<td>表示されたURLを手動でコピーしてブラウザに貼る</td>
+</tr>
+<tr>
+<td>5</td>
+<td>フォルダの中身をAIが読んでくれない</td>
+<td>作業フォルダの中で <code>claude</code> を起動しているか確認する</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Windowsでファイル名が文字化けする</td>
+<td>2-0章の対処(解凍ソフトを使う、または化けたまま進める)を行う</td>
+</tr>
+<tr>
+<td>7</td>
+<td>出てきた文章が一般論すぎる</td>
+<td><code>私のナレッジ.md</code> の情報量不足。商品とお客さんの欄を厚くして打ち直す</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="_3">安全に使うための注意</h2>
+<ul>
+<li>実績・数字・お客様の声は、実在するものだけを書いてください。AIに作らせないこと。</li>
+<li>出てきた文章は必ず自分の目で確認してから公開・配信してください。AIの出力をそのまま送らない。</li>
+<li>「誰でも」「絶対」「これで確実に稼げる」といった言い切り表現は、自分で削ってください。</li>
+<li>作業フォルダにパスワードやログイン情報を置かないでください。AIが読める場所には公開されても困らない情報だけを置くのが原則です。</li>
+<li>複数の端末で同時に開いて編集すると内容が競合します。片方を閉じてから作業してください。</li>
+<li>他人の文章・画像をそのまま流用しない。参考にする場合は自分の言葉で書き直してください。</li>
+</ul>
+<h2 id="_4">つまずいたときに聞くプロンプト</h2>
+<p>そのままコピペしてAIに聞いてください。</p>
+<pre><code>今出ているエラーメッセージの意味を、専門用語を使わずに日本語で説明してください。
+そのうえで、次に私が実行すべきコマンドを1つだけ教えてください。
+</code></pre>
+<pre><code>ここまでの手順のうち、どこまで完了していて、どこからやり直せば良いか整理してください。
+</code></pre>
+<h2 id="_5">用語集</h2>
+<div class='tbl'><table>
+<thead>
+<tr>
+<th>用語</th>
+<th>意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Claude Code</td>
+<td>パソコンのフォルダを直接読み書きできるAI。ターミナルから使う</td>
+</tr>
+<tr>
+<td>ターミナル/PowerShell</td>
+<td>コマンドを打ってパソコンを操作する画面</td>
+</tr>
+<tr>
+<td>Node.js</td>
+<td>Claude Codeを動かすために必要な土台のソフト</td>
+</tr>
+<tr>
+<td>npm</td>
+<td>Node.jsに付属する、ソフトを入れるための道具</td>
+</tr>
+<tr>
+<td>作業フォルダ</td>
+<td>AIに読ませるファイルをまとめて置く場所</td>
+</tr>
+<tr>
+<td>ローンチ</td>
+<td>商品を企画から販売・締切まで一連の流れに載せて売ること</td>
+</tr>
+<tr>
+<td>ナレッジの器</td>
+<td>自分の商品・お客さん・実績などをまとめておく情報の置き場所</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="10">出す前の品質チェック(10項目)</h2>
+<ol>
+<li>実績・数字・お客様の声は、すべて実在するものか</li>
+<li>「誰でも」「絶対」「これで確実に稼げる」といった言い切り表現が残っていないか</li>
+<li>価格や締切の情報が最新か(前のローンチのまま残っていないか)</li>
+<li>申込リンクが正しいURLに差し替わっているか</li>
+<li>誤字脱字・文字化けがないか</li>
+<li>LINE・メール・Xそれぞれの文字数制限を守っているか</li>
+<li>自分の口調・言葉遣いに合っているか(AIっぽい言い回しが残っていないか)</li>
+<li>個人情報や機微な情報が混ざっていないか</li>
+<li>画像・スクショの案が実際に用意できるものか</li>
+<li>一度、時間を置いてから読み返したか(勢いだけで送っていないか)</li>
+</ol>
+<h2 id="ai20269">最新AI（2026年9月時点）でこの特典はどう変わるか</h2>
+<p><strong>この特典では</strong>: 2026年9月時点の Claude Code は Opus が既定です。この特典の30分は、最上位モデルを使わなくても同じ手順で通ります。</p>
+<p>2026年9月の第1週に、主要な AI が続けて更新されました。この特典の手順は変わりませんが、次の3点を知っておくと手数が減ります（2026年9月6日時点の公開情報です。提供状況は変わるので、使う前に各社の公式サイトで確かめてください）。</p>
+<ul>
+<li><strong>GPT-6 Astra（OpenAI・2026年9月3日発表）</strong>: 画面の情報を読み取り、アプリを人間と同じ画面経由で動かす「コンピュータ操作」が主機能になりました。フォーム入力・表計算・資料づくりのような「手順が決まっている作業」を任せやすくなります。ただし段階的な提供の途中で、自分のアカウントにまだ出ていないことがあります。画面に映った文章をそのまま指示として読むことがあるので、AI に画面を触らせるときは「映すものを選ぶ」を守ってください。</li>
+<li><strong>Claude Fable 5.1（Anthropic・2026年9月1日発表）</strong>: 数時間から数日にわたる、複数アプリをまたぐ作業を最小限の監督で回すための最上位モデルです。この特典の作業は Sonnet／Opus で足ります。「何日もかかる仕事を丸ごと任せる」段階になってから検討してください。Claude Code の導入は特典「Claude Code 最初の30分」で扱っています。</li>
+<li><strong>AI社員</strong>: 上の2つが向いている先は同じです。「毎回同じ指示を書かなくていい担当」を1人ずつ増やす形が、個人でも現実になりました。この特典のプロンプトやシステム指示は、そのまま AI社員の「指示書」の1枚になります。つくり方は特典「AI社員1人目のつくり方」で扱っています。</li>
+</ul>
+<p>モデルの差で成果は決まりません。何に使うかで決まります。この特典の手順を1周してから、新しいモデルを試してください。</p>
+<h2 id="_6">最終チェックリスト</h2>
+<ul>
+<li>[ ] Node.jsのインストールを完了した</li>
+<li>[ ] Claude Codeのインストールを完了した</li>
+<li>[ ] 作業フォルダを作り、<code>claude</code> の起動とログインを完了した</li>
+<li>[ ] STEP0の接続確認で、日本語の返答を確認した</li>
+<li>[ ] <code>私のナレッジ.md</code> を作業フォルダに置き、3割以上埋めた</li>
+<li>[ ] STEP1(ローンチ設計図)を実行し、ファイルに保存した</li>
+<li>[ ] STEP2(LP骨子・告知・配信2種)のうち、少なくとも1つを実行した</li>
+<li>[ ] STEP3(逆算カレンダー)を実行し、スマホのカレンダーに転記した</li>
+<li>[ ] 出す前の品質チェック(10項目)を通した</li>
+<li>[ ] 締切翌日に「数字の記録」を書く予定を、自分のカレンダーに入れた</li>
+</ul></div>
+<nav class='pn'>
+<a href='../bonus-T5/'>← 最初の1件 診断シート（事前版）＋事前FB</a>
+<a href='../bonus-N05/'>Skills のすゝめ わど版 →</a>
+</nav></article></main>
+<footer class='site'><div class='wrap'><p>この特典は受け取り条件を満たした方向けに配布しています。再配布・転載はご遠慮ください。</p><p>記載の売上・成果は特定の実績であり、同様の成果を保証するものではありません。</p></div></footer></body></html>

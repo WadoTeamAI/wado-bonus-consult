@@ -1,0 +1,534 @@
+<!DOCTYPE html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><meta name='robots' content='noindex, nofollow, noarchive'><title>AI社員 30の役割リスト＋5点セット量産プロンプト ── わど式 AIマネタイズ 特典｜面談予約特典</title><style>
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:'Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif;font-size:16px;line-height:1.8;letter-spacing:.04em;color:var(--text);background:var(--bg)}
+a{color:var(--link)}img{max-width:100%;height:auto;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+header.site{padding:40px 0 28px;color:#fff;background:var(--hero)}
+header.site h1{margin:0 0 6px;font-size:28px;line-height:1.3}
+header.site p{margin:0;opacity:.9;font-size:15px}
+.stamp{display:inline-block;font-size:12px;letter-spacing:.2em;padding:3px 10px;border:1px solid rgba(255,255,255,.6);border-radius:999px;margin-bottom:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;padding:28px 0 40px}
+.card{background:var(--card);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;border:1px solid var(--border)}
+.card .ph{aspect-ratio:16/9;background:var(--ph);display:flex;align-items:center;justify-content:center;color:#fff;font-size:34px;font-weight:800;letter-spacing:.06em}
+.card .bd{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:11px;padding:2px 8px;border-radius:999px;background:var(--tagbg);color:var(--tagfg);white-space:nowrap}
+.tag.k{background:var(--accent);color:#fff}
+.card h2{font-size:17px;margin:0;line-height:1.45}
+.card p{margin:0;font-size:13.5px;color:var(--muted);flex:1}
+.btn{display:inline-block;text-align:center;padding:10px 16px;border-radius:10px;font-weight:700;text-decoration:none;color:#fff;background:var(--btn)}
+.btn.dis{background:var(--muted);pointer-events:none}
+.btn.ghost{background:transparent;color:var(--link);border:1px solid var(--border)}
+article{padding:28px 0 48px}
+article .hero{display:grid;grid-template-columns:1fr;gap:18px;margin-bottom:24px}
+@media(min-width:760px){article .hero{grid-template-columns:1.1fr 1fr;align-items:center}}
+article h1{font-size:26px;line-height:1.35;margin:8px 0}
+article .lead{color:var(--muted);margin:0 0 12px}
+.toc{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 18px;margin:0 0 24px}
+.toc b{display:block;margin-bottom:6px}.toc ul{margin:0;padding-left:18px}.toc li{margin:2px 0;font-size:14px}
+.body h2{font-size:20px;margin:36px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--accent)}
+.body h3{font-size:17px;margin:24px 0 8px}
+.body table{width:100%;border-collapse:collapse;font-size:14px;margin:12px 0}
+.body th{background:var(--accent);color:#fff;text-align:left;padding:6px 8px}
+.body td{padding:6px 8px;border-bottom:1px solid var(--border);vertical-align:top}
+.body pre{background:var(--pre);padding:12px;border-radius:8px;overflow-x:auto;font-size:13.5px;white-space:pre-wrap}
+.body code{background:var(--pre);padding:1px 5px;border-radius:4px;font-size:.92em}
+.body blockquote{margin:12px 0;padding:8px 14px;border-left:4px solid var(--accent);background:var(--card)}
+.tbl{overflow-x:auto}
+.pending{background:var(--card);border:1px dashed var(--border);border-radius:12px;padding:24px;text-align:center;color:var(--muted)}
+nav.pn{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:18px;border-top:1px solid var(--border);font-size:14px}
+nav.pn a{max-width:48%}nav.pn span{color:var(--muted)}
+footer.site{padding:24px 0 40px;font-size:12.5px;color:var(--muted);border-top:1px solid var(--border)}
+footer.site p{margin:4px 0}
+.crumb{font-size:13px;margin:16px 0 0}.crumb a{text-decoration:none}
+.sec{padding:26px 0 6px;border-top:1px solid var(--border)}
+.sec:first-of-type{border-top:0;padding-top:20px}
+.sec>h2{font-size:20px;margin:0 0 4px;padding-left:12px;border-left:5px solid var(--accent);line-height:1.4}
+.sec>p{margin:0;font-size:13.5px;color:var(--muted)}
+.sec .grid{padding:16px 0 12px}
+.linkcard{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px 22px;margin:18px 0 30px;box-shadow:var(--shadow)}
+.linkcard p{margin:0 0 12px;font-size:14px;color:var(--muted)}
+.lib{padding:8px 0 30px}
+.lib h3{font-size:16px;margin:22px 0 6px;padding-left:10px;border-left:4px solid var(--accent)}
+.lib .grid{padding:8px 0 16px}
+.lib .card h2{font-size:15px}.lib .card p{display:none}
+.lib .note{font-size:13px;color:var(--muted);margin:4px 0 0}
+
+:root{--bg:#f5f3ff;--card:#fff;--text:#374151;--muted:#6b7280;--link:#4f46e5;--border:#e5e7eb;--accent:#6366f1;--btn:linear-gradient(90deg,#6366f1,#a855f7);--hero:linear-gradient(120deg,#1e1b4b,#6366f1 60%,#a855f7);--ph:linear-gradient(135deg,#1e1b4b,#6366f1);--tagbg:#eef2ff;--tagfg:#4338ca;--shadow:0 8px 24px rgba(30,27,75,.08);--pre:#f3f4f6}
+</style></head><body>
+<header class='site'><div class='wrap'><span class='stamp'>WADO BONUS 2026 · LIBRARY</span><h1 style=font-size:20px>わど式 AIマネタイズ 特典｜面談予約特典</h1></div></header>
+<main class='wrap'><p class='crumb'><a href='../'>← 一覧へ戻る</a></p><article>
+<div class='hero'><div><div class='card'><div class='ph'>N34</div></div></div><div><div class='tags'><span class='tag k'>新規</span><span class='tag'>体制</span><span class='tag'>Notion</span><span class='tag'>面談予約特典</span></div><h1>AI社員 30の役割リスト＋5点セット量産プロンプト</h1><p class='lead'>何を任せられるかの一覧と、指示書を量産する雛形</p><span class='tag' style='font-size:13px;padding:6px 12px'>このページが特典の本体です。下へスクロールして使ってください</span></div></div>
+<div class='toc'><b>目次</b><div class="toc">
+<ul>
+<li><a href="#_1">はじめに</a></li>
+<li><a href="#_2">この特典の進め方</a></li>
+<li><a href="#1">最初のゴール(今日やる1つ)</a></li>
+<li><a href="#1-ai">1. 何を任せるか(人とAIの線引き)</a><ul>
+<li><a href="#30">30の役割リスト</a></li>
+</ul>
+</li>
+<li><a href="#2">2. つくり方の手順</a><ul>
+<li><a href="#5">5点セットとは</a></li>
+</ul>
+</li>
+<li><a href="#3">3. 指示書・シートの全文</a></li>
+<li><a href="#4">4. 運用の型(週次の見直し)</a></li>
+<li><a href="#5-ai20269">5. 最新AI(2026年9月時点)での変わり目</a></li>
+<li><a href="#6">6. 次の一手</a></li>
+<li><a href="#_3">最初に投げるプロンプト</a></li>
+<li><a href="#7">よくある失敗 7つと直し方</a></li>
+<li><a href="#_4">安全に使うための注意</a></li>
+<li><a href="#_5">つまずいたときに聞くプロンプト</a></li>
+<li><a href="#_6">用語集</a></li>
+<li><a href="#10">出す前の品質チェック(10項目)</a></li>
+<li><a href="#_7">最終チェックリスト</a></li>
+</ul>
+</div>
+</div>
+<div class='body'><h1 id="ai-305">AI社員 30の役割リスト＋5点セット量産プロンプト</h1>
+<blockquote>
+<p>最初の1人ができたら、次は「誰に何を任せるか」を一気に決めます。30の役割から選び、量産プロンプトに投げれば、指示書一式が同時に何人分もできあがります。</p>
+</blockquote>
+<h2 id="_1">はじめに</h2>
+<p>わどです。「AI社員1人目のつくり方」で、あなたはすでに1人分の指示書を作れる状態になっています。この特典は、その先の話です。2人目、3人目と増やしていくときに、いちばん詰まるのは「次は誰を作ればいいか分からない」ということと、「1人分作るのに毎回同じ手間がかかって面倒」ということの2つです。</p>
+<p>この特典には、AIマネタイズを1人で回している人が任せられそうな役割を30個、表にして並べてあります。時間を食っているのに判断が要らない役割から選べば迷いません。そして選んだ役割を、1つずつ手で埋めるのではなく、複数まとめて量産するプロンプトも入れてあります。役割定義シート・指示書・チェックリストの3枚に、引き継ぎメモと週次振り返りシートを足した「5点セット」を、役割ごとに一気に作ります。</p>
+<p>対象にしているのは、note や Brain での記事づくり、Instagram のストーリーズ、X の投稿といった、AIマネタイズの現場でよく発生する作業です。抽象的な「発信」「集客」ではなく、この3つのどれかに当てはまる具体的な作業として役割を並べています。</p>
+<h2 id="_2">この特典の進め方</h2>
+<p>上から順に読んでください。まず「1. 何を任せるか」で線引きの考え方と30の役割リストを確認し、「2. つくり方の手順」で選び方を決め、「3. 指示書・シートの全文」でテンプレートの中身を確認してから、末尾の「最初に投げるプロンプト」を実際に使います。所要は、役割を2つ選んで5点セットを作り終えるまでで、目安60分です。</p>
+<h2 id="1">最初のゴール(今日やる1つ)</h2>
+<p>今日のゴールは1つです。</p>
+<p><strong>30の役割リストから、次に任せたい役割を2つだけ選び、「最初に投げるプロンプト」に役割名を入れて投げる。</strong></p>
+<p>3つ以上を一度に選ばないでください。理由は「2. つくり方の手順」で説明します。</p>
+<h2 id="1-ai">1. 何を任せるか(人とAIの線引き)</h2>
+<p>役割を増やすときも、線引きは変わりません。方向性そのものを決めること、価格やオファーの最終判断、実績・数字をどこまで書くかの判断、クレームへの最終的な回答、契約に関わる判断。この5つは、役割がいくつに増えても自分の手元に残します。逆に、型が決まっていて「こういう場合はこうする」を先に決めておける作業は、渡せます。</p>
+<h3 id="30">30の役割リスト</h3>
+<p>自分の仕事に当てはめて、「渡しやすさ」が高いものから選んでください。渡しやすさは「時間を食っているか」と「判断が要らないか」の掛け算です。低いものは、判断そのものを渡すことになるので後回しにします。</p>
+<div class='tbl'><table>
+<thead>
+<tr>
+<th>No</th>
+<th>役割名</th>
+<th>やること</th>
+<th>渡しやすさ</th>
+<th>判断が必要になる場面の例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>競合リサーチ係</td>
+<td>同ジャンルの発信者・商品の動きを毎週まとめる</td>
+<td>高</td>
+<td>新しい競合をどう位置づけるか</td>
+</tr>
+<tr>
+<td>2</td>
+<td>トレンド収集係</td>
+<td>SNSで伸びているテーマ・言い回しを拾う</td>
+<td>高</td>
+<td>自分のテーマに合うかの取捨選択</td>
+</tr>
+<tr>
+<td>3</td>
+<td>お客様の声 掘り起こし係</td>
+<td>レビュー・コメント・DMから使える言葉を拾う</td>
+<td>中</td>
+<td>個人が特定できる書き方になっていないかの確認</td>
+</tr>
+<tr>
+<td>4</td>
+<td>最新情報アップデート係</td>
+<td>ツールや業界の変化を定点観測して報告する</td>
+<td>高</td>
+<td>自分の運用に反映するかどうか</td>
+</tr>
+<tr>
+<td>5</td>
+<td>資料下読み係</td>
+<td>長い記事・マニュアルを要点にまとめる</td>
+<td>高</td>
+<td>要約に自分の解釈を混ぜてよいかの見極め</td>
+</tr>
+<tr>
+<td>6</td>
+<td>note/Brain記事 下書き係</td>
+<td>構成案と本文の下書きを書く</td>
+<td>中</td>
+<td>実績・数字に触れる箇所</td>
+</tr>
+<tr>
+<td>7</td>
+<td>X投稿 下書き係</td>
+<td>型に沿った投稿文をいくつか下書きする</td>
+<td>高</td>
+<td>意見の強い投稿の最終判断</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Instagramストーリーズ 下書き係</td>
+<td>スライド構成と文言を下書きする</td>
+<td>中</td>
+<td>画像に載せる数字の確認</td>
+</tr>
+<tr>
+<td>9</td>
+<td>スライド構成 下書き係</td>
+<td>章立てと1枚ごとの要素を割る</td>
+<td>中</td>
+<td>どの粒度で説明するかの調整</td>
+</tr>
+<tr>
+<td>10</td>
+<td>図解構成係</td>
+<td>伝えたい関係を図の型に落とす</td>
+<td>高</td>
+<td>どの型を選ぶか迷う場面</td>
+</tr>
+<tr>
+<td>11</td>
+<td>サムネイル文言 下書き係</td>
+<td>目を引く一言の候補を複数出す</td>
+<td>高</td>
+<td>誇大表現になっていないかの確認</td>
+</tr>
+<tr>
+<td>12</td>
+<td>公式LINE配信文 下書き係</td>
+<td>400字前後の配信文を下書きする</td>
+<td>高</td>
+<td>価格・キャンペーンに触れる回</td>
+</tr>
+<tr>
+<td>13</td>
+<td>オープンチャット告知 下書き係</td>
+<td>参加を促す告知文を下書きする</td>
+<td>高</td>
+<td>参加条件の記載</td>
+</tr>
+<tr>
+<td>14</td>
+<td>メルマガ 下書き係</td>
+<td>定期配信の本文を下書きする</td>
+<td>中</td>
+<td>前号との整合性の確認</td>
+</tr>
+<tr>
+<td>15</td>
+<td>セミナー告知文 下書き係</td>
+<td>日時・内容を伝える告知の下書き</td>
+<td>低</td>
+<td>日時・定員は必ず自分で確定してから渡す</td>
+</tr>
+<tr>
+<td>16</td>
+<td>商品構成案 壁打ち係</td>
+<td>商品の構成案をいくつか出す</td>
+<td>低</td>
+<td>商品化するかどうかの最終判断</td>
+</tr>
+<tr>
+<td>17</td>
+<td>オファー設計 壁打ち係</td>
+<td>見せ方・組み方の案を出す</td>
+<td>低</td>
+<td>金額に関わる最終決定</td>
+</tr>
+<tr>
+<td>18</td>
+<td>企画書 下書き係</td>
+<td>企画書のたたき台を作る</td>
+<td>中</td>
+<td>数字の裏付けの確認</td>
+</tr>
+<tr>
+<td>19</td>
+<td>カリキュラム構成 下書き係</td>
+<td>学ぶ順番と各回の要点を組む</td>
+<td>中</td>
+<td>難易度の最終調整</td>
+</tr>
+<tr>
+<td>20</td>
+<td>見出し案 出し係</td>
+<td>見出し・タイトルの候補を複数出す</td>
+<td>高</td>
+<td>誇張表現になっていないかの確認</td>
+</tr>
+<tr>
+<td>21</td>
+<td>問い合わせ返信 下書き係</td>
+<td>よくある質問への返信を下書きする</td>
+<td>中</td>
+<td>返金・解約に関わる内容</td>
+</tr>
+<tr>
+<td>22</td>
+<td>アンケート集計係</td>
+<td>回答を分類して傾向をまとめる</td>
+<td>高</td>
+<td>個人が特定される回答の扱い</td>
+</tr>
+<tr>
+<td>23</td>
+<td>一次ドラフト係(反論・指摘対応)</td>
+<td>最初の返信文の下書きを作る</td>
+<td>低</td>
+<td>送信前に必ず自分で読む</td>
+</tr>
+<tr>
+<td>24</td>
+<td>やり取り整理係</td>
+<td>経緯を時系列で整理する</td>
+<td>高</td>
+<td>特に注意点なし(事実整理のみ)</td>
+</tr>
+<tr>
+<td>25</td>
+<td>週次レポート作成係</td>
+<td>進捗と数字を1枚にまとめる</td>
+<td>高</td>
+<td>数字の出典確認</td>
+</tr>
+<tr>
+<td>26</td>
+<td>数字集計係</td>
+<td>売上・進捗の数字を集めて表にする</td>
+<td>高</td>
+<td>集計方法を変えるときの判断</td>
+</tr>
+<tr>
+<td>27</td>
+<td>請求書・領収書 下書き係</td>
+<td>型に沿って下書きを作る</td>
+<td>中</td>
+<td>金額・宛名の最終確認は自分</td>
+</tr>
+<tr>
+<td>28</td>
+<td>優先順位提案係</td>
+<td>やることを整理し優先順位の案を出す</td>
+<td>高</td>
+<td>締切が重なったときの最終判断</td>
+</tr>
+<tr>
+<td>29</td>
+<td>校正係</td>
+<td>誤字脱字・表記ゆれを直す</td>
+<td>高</td>
+<td>特に注意点なし</td>
+</tr>
+<tr>
+<td>30</td>
+<td>言い回しチェック係</td>
+<td>断定表現・AIっぽい言い回しを検出する</td>
+<td>高</td>
+<td>修正案を採用するかの判断</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2">2. つくり方の手順</h2>
+<p>1人目のときと同じ2条件(時間を食っている・判断が要らない)で選びますが、役割が30もあると、上から順に見ているだけでは決まりません。次の手順で絞ります。</p>
+<ol>
+<li>自分の1週間を振り返り、上の表から「実際にやっている作業」に丸をつける</li>
+<li>丸をつけた中から、渡しやすさが「高」のものだけを残す</li>
+<li>残った中で、いちばん時間を食っているものを2つ選ぶ</li>
+<li>選んだ2つを、末尾の「最初に投げるプロンプト」に入れて投げる</li>
+</ol>
+<p>一度に選ぶのは2つまでにしてください。3つ以上を同時に量産すると、質問への回答が浅くなり、指示書の判断基準が薄まります。2つ分の5点セットができて、1週間使ってみてから次の2つに進む、という速さがちょうどよいです。</p>
+<h3 id="5">5点セットとは</h3>
+<p>1人目で使った3枚(役割定義シート・指示書・チェックリスト)に、役割が増えたときに必要になる2枚を足したものです。</p>
+<ul>
+<li><strong>役割定義シート</strong>: 何を渡せば動けるかを決める1枚(1人目と同じ)</li>
+<li><strong>指示書(システム指示)</strong>: 判断基準・手順・禁止事項をまとめた1枚(1人目と同じ)</li>
+<li><strong>チェックリスト</strong>: 出力の合否を確認する1枚(1人目と同じ)</li>
+<li><strong>引き継ぎメモ</strong>: 隣接する役割との境界を決める1枚(新規)</li>
+<li><strong>週次振り返りシート</strong>: 1週間使ってみて、直した箇所を記録する1枚(新規)</li>
+</ul>
+<h2 id="3">3. 指示書・シートの全文</h2>
+<p>役割定義シート・指示書・チェックリストの書式は「AI社員1人目のつくり方」と同じものを使います。ここでは、役割が増えたときに要る2枚のひな形を載せます。</p>
+<p><strong>引き継ぎメモ</strong></p>
+<pre><code>【引き継ぎメモ】
+■ 役割の名前：
+■ 隣接する役割(境界が近い役割)：
+■ ここから先はこの役割の担当(渡す境界)：
+■ ここから先は相手の担当(受け取る境界)：
+■ 判断がぶつかったときの優先順位：
+</code></pre>
+<p><strong>週次振り返りシート</strong></p>
+<pre><code>【週次振り返りシート】
+■ 役割の名前：
+■ 今週呼んだ回数：　　回
+■ 出てきたものをそのまま使えた回数：　　回
+■ 直した箇所(具体的に)：
+■ 指示書に追記すべき1行：
+■ 浮いた時間の見込み：　　時間
+</code></pre>
+<p>引き継ぎメモは、担当が2人を超えたあたりから効いてきます。前工程の担当が後工程の判断領域に踏み込む、あるいは逆に、2つの担当のどちらも手を出さない領域ができる、という2つの事故を防ぐためのものです。週次振り返りシートは、担当ごとに1枚ずつ増えていきます。溜まったシートは、次の章の「運用の型」で使います。</p>
+<h2 id="4">4. 運用の型(週次の見直し)</h2>
+<p>担当が2人、3人と増えると、月1回の棚卸しでは間に合いません。週1回、15分だけ時間を取って、全員分の週次振り返りシートに目を通す時間を作ってください。</p>
+<ol>
+<li>「今週呼んだ回数」が0の役割を確認する。2週続けて0なら、その役割はいったん止める</li>
+<li>「直した箇所」が同じ内容で2回以上出ていたら、指示書の判断基準に1行足す</li>
+<li>引き継ぎメモの境界に沿っていない出力がなかったか確認する</li>
+<li>「浮いた時間の見込み」を全部足して、その週の合計を出す</li>
+</ol>
+<p>役割が増えてくると、この見直しそのものも渡せます。溜まった週次振り返りシートをまとめて渡す、全体点検用のプロンプトです。</p>
+<pre><code>これまで1週間分の週次振り返りシートをすべて渡します。
+
+以下を報告してください。
+
+・今週1回も呼ばなかった役割
+・同じ内容の直しが2回以上出ている役割と、指示書に足すべき1行
+・2つの役割の間で、担当範囲が重なっていそうな組み合わせ
+・来週、新しく任せてよさそうな役割を1つだけ提案する(理由つき)
+
+条件：
+・提案には、根拠になったシートの記述を引用すること
+・根拠のない推測だけの提案はしないこと
+・「特にありません」で終わらせず、改善点を必ず1つ以上挙げること
+</code></pre>
+<h2 id="5-ai20269">5. 最新AI(2026年9月時点)での変わり目</h2>
+<p>2026年9月に発表されたAIの新しいモデルでは、画面の情報を読み取って、承認された操作を自分で進める機能が搭載され始めています(取得日: 2026-09-06)。ここまでの30の役割のうち、集計・資料整理・下読みのような「画面を見て決まった操作を繰り返す」性質の役割は、今後こうした機能に一部置き換わっていく可能性があります。</p>
+<p>ただし、提供は段階的で、対応プランに入っていても自分の画面にまだ機能が出ていない、ということが起きます。「使えるはずなのに使えない」と焦って設定を変える前に、まず自分の画面で実際に出ているかを確認してください。</p>
+<p>もう1つ、画面を読み取って操作する機能には、画面に表示された内容をそのまま指示として読み取ってしまう危険があると、提供元が注意喚起しています(取得日: 2026-09-06)。役割を渡すときの「自分に確認を取るべきケース」は、この種の機能を使う役割ほど厚めに設定してください。任せる範囲が広がるほど、確認する場所を先に決めておく重要性も上がります。</p>
+<h2 id="6">6. 次の一手</h2>
+<p>この特典は、1人分の作業を渡せるようになったあと、続けて作業量が増えていく段階=STEP2(コンテンツ商品を続けて作る)とSTEP3(SNS運用・ローンチを回す)を後押しする仕組みです。面談では、あなた専用の1枚(特注のロードマップ)を一緒に作ります。</p>
+<h2 id="_3">最初に投げるプロンプト</h2>
+<p>「最初のゴール」で選んだ2つの役割名を、【役割リスト】に入れて投げてください。ChatGPT・Gemini・Claudeのどれに投げても構いません。</p>
+<pre><code>あなたは複数の役割の指示書を並行して設計する担当です。
+
+これから、次の役割について、それぞれ「5点セット」を作ります。
+
+【役割リスト】
+1. 【ここに役割名を入れる】
+2. 【ここに役割名を入れる】
+
+5点セットとは、次の5枚です。
+・役割定義シート(何を渡せば動けるかを決める)
+・指示書(システム指示。判断基準・手順・禁止事項)
+・チェックリスト(出力の合否を確認する)
+・引き継ぎメモ(他の役割とぶつからないための境界)
+・週次振り返りシート(1週間使ってみて直す欄)
+
+【進め方のルール】
+・役割を1つずつ順番に進めること。前の役割の5点セットが終わってから次へ進むこと
+・各役割につき、まず私に質問を5個すること
+・質問の条件：
+　- 私が無意識に使っている判断基準を引き出す質問にすること
+　- 過去にやり直しになったのはどんなときかを必ず1問聞くこと
+　- 人に頼んだとして、いちばん心配なのは何かを必ず1問聞くこと
+・質問が終わったら5点セットを埋めること
+・全役割が出そろった時点で、担当範囲が重なっていないかを指摘すること
+・重なりが見つかったら、引き継ぎメモにどちらが引くべきかの提案を添えること
+
+【各シートの条件】(役割ごとに共通)
+・判断基準は5つちょうどにすること
+・「迷ったときのルール」には、必ず「情報が足りないときは想像で埋めずに、不明と書いて止める」を含めること
+・合格ラインは、数字か「あるかないか」で判定できる形だけにすること
+・引き継ぎメモには、隣接する役割との境界を1つ以上具体的に書くこと
+・週次振り返りシートには「今週呼んだ回数」「直した箇所」「浮いた時間の見込み」の3項目を必ず含めること
+
+【出力の順番】
+役割1の5点セット → 役割2の5点セット → 全体の重なりチェック
+
+禁止事項：
+・複数の役割の指示書を1つにまとめないこと(担当ごとに独立させること)
+・質問を飛ばして5点セットを書き始めないこと
+・重なりチェックを省略しないこと
+・私が入力していない実績や数字を作らないこと
+</code></pre>
+<h2 id="7">よくある失敗 7つと直し方</h2>
+<p><strong>1. 一度に5人以上増やす</strong></p>
+<p>管理が追いつかず、どの担当も中途半端になります。量産は1回に2〜3人までにしてください。</p>
+<p><strong>2. 30個全部を最初から作ろうとする</strong></p>
+<p>使う予定のない指示書は資産になりません。更新もされないまま古びます。実際に使う順番で、必要になったときに作ってください。</p>
+<p><strong>3. 引き継ぎメモを省略する</strong></p>
+<p>担当同士が同じ作業を取り合い、同じ内容の出力が二重に出てくることがあります。境界は先に決めておきます。</p>
+<p><strong>4. 週次振り返りをやらない</strong></p>
+<p>ズレが直らないまま使い続け、精度が落ちたことにも気づけません。15分の見直しは飛ばさないでください。</p>
+<p><strong>5. 判断が要る役割まで自動運転にする</strong></p>
+<p>価格・オファー設計・クレーム対応の最終判断まで任せてしまうと、事故が起きたときに気づくのが遅れます。これらは渡さないでください。</p>
+<p><strong>6. 共通のルールを役割ごとに貼り直す</strong></p>
+<p>トーンや禁止事項を毎回貼っていると、手間が減りません。共通の基準を1枚にまとめ、各指示書の冒頭から参照する形にします。</p>
+<p><strong>7. 呼ばなかった担当を放置する</strong></p>
+<p>「作った実感」だけが残り、実際の時間は減っていません。週次の見直しで、2週続けて呼ばなかった役割は止めてください。</p>
+<h2 id="_4">安全に使うための注意</h2>
+<ul>
+<li>実績・お客様の声・数字は、実在するものだけを渡してください。根拠のない数字は「[ここに自分の数字を入れる]」のように残す指示を必ず入れます</li>
+<li>役割が増えるほど、確認が必要な場面の見落としも増えます。特にお客様の個人情報を扱う役割(問い合わせ返信・アンケート集計)は、「自分に確認を取るべきケース」を厚めに設定してください</li>
+<li>画面を操作する機能を使う場合は、画面に映すものを自分で選んでから渡してください。表示されている内容をそのまま指示として読み取ってしまう可能性があります</li>
+<li>どの役割の出力も、最終的に人が読み返す工程を必ず残してください。複数の役割の出力を、確認なしにそのままつなげないでください</li>
+<li>指示書・シートに、実在の第三者の名前や連絡先を書き込まないでください</li>
+</ul>
+<h2 id="_5">つまずいたときに聞くプロンプト</h2>
+<pre><code>この30の役割のうち、いま最も時間を奪っている3つを選ぶとしたら、
+私がこれまで書いた振り返りシートの内容から推測して教えてください。
+根拠になった記述を引用してください。
+</code></pre>
+<pre><code>今の指示書一式を見て、担当同士の境界があいまいな組み合わせを2つ挙げてください。
+それぞれ、引き継ぎメモにどう1行足せば防げるかも書いてください。
+</code></pre>
+<h2 id="_6">用語集</h2>
+<div class='tbl'><table>
+<thead>
+<tr>
+<th>用語</th>
+<th>意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5点セット</td>
+<td>役割定義シート・指示書・チェックリスト・引き継ぎメモ・週次振り返りシートの5枚</td>
+</tr>
+<tr>
+<td>引き継ぎメモ</td>
+<td>隣接する役割との担当範囲の境界を決める1枚</td>
+</tr>
+<tr>
+<td>週次振り返りシート</td>
+<td>1週間使ってみて、直した箇所と浮いた時間を記録する1枚</td>
+</tr>
+<tr>
+<td>渡しやすさ</td>
+<td>判断が少なく、型が決まっている度合い</td>
+</tr>
+<tr>
+<td>量産プロンプト</td>
+<td>複数の役割分の5点セットを、順番に一気に作らせるプロンプト</td>
+</tr>
+<tr>
+<td>画面操作機能</td>
+<td>AIが画面の情報を読み取り、承認された操作を進める機能</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="10">出す前の品質チェック(10項目)</h2>
+<ol>
+<li>実績・数字・お客様の声は、すべて実在するものか</li>
+<li>「誰でも」「絶対」「これで確実に」といった言い切り表現が残っていないか</li>
+<li>合格ラインが数字か「あるかないか」で判定できる形になっているか</li>
+<li>引き継ぎメモの境界が、両方の役割の指示書と矛盾していないか</li>
+<li>週次振り返りシートの3項目(呼んだ回数・直した箇所・浮いた時間)が揃っているか</li>
+<li>判断が要る領域(価格・オファー・クレームの最終回答)を渡していないか</li>
+<li>一度に量産した役割が3つを超えていないか</li>
+<li>誤字脱字・文字化けがないか</li>
+<li>出てきたものを、自分で最後まで読み返したか</li>
+<li>週次の見直しをカレンダーに入れたか</li>
+</ol>
+<h2 id="_7">最終チェックリスト</h2>
+<ul>
+<li>[ ] 30の役割リストから、実際にやっている作業に丸をつけた</li>
+<li>[ ] 渡しやすさ「高」の中から、次に任せたい役割を2つ選んだ</li>
+<li>[ ] 「最初に投げるプロンプト」に役割名を入れて投げ、5点セットを2人分作った</li>
+<li>[ ] できた指示書を、いつもの仕事・想定外の2段階でテストした</li>
+<li>[ ] 引き継ぎメモで、隣接する役割との境界を確認した</li>
+<li>[ ] 1週間使ってみて、週次振り返りシートに直した箇所を記録した</li>
+<li>[ ] 週1回15分、全体点検用のプロンプトで見直す時間をカレンダーに入れた</li>
+</ul></div>
+<nav class='pn'>
+<a href='../bonus-N31/'>← 図解・マインドマップ生成 Skill 2本</a>
+<a href='../bonus-N36/'>自分の憲法の型（USER／SOUL 2層テンプレ） →</a>
+</nav></article></main>
+<footer class='site'><div class='wrap'><p>この特典は受け取り条件を満たした方向けに配布しています。再配布・転載はご遠慮ください。</p><p>記載の売上・成果は特定の実績であり、同様の成果を保証するものではありません。</p></div></footer></body></html>

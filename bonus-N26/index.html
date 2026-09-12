@@ -1,0 +1,372 @@
+<!DOCTYPE html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><meta name='robots' content='noindex, nofollow, noarchive'><title>デザインプロンプト設計フレームワーク ── わど式 AIマネタイズ 特典｜面談予約特典</title><style>
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:'Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif;font-size:16px;line-height:1.8;letter-spacing:.04em;color:var(--text);background:var(--bg)}
+a{color:var(--link)}img{max-width:100%;height:auto;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+header.site{padding:40px 0 28px;color:#fff;background:var(--hero)}
+header.site h1{margin:0 0 6px;font-size:28px;line-height:1.3}
+header.site p{margin:0;opacity:.9;font-size:15px}
+.stamp{display:inline-block;font-size:12px;letter-spacing:.2em;padding:3px 10px;border:1px solid rgba(255,255,255,.6);border-radius:999px;margin-bottom:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;padding:28px 0 40px}
+.card{background:var(--card);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;border:1px solid var(--border)}
+.card .ph{aspect-ratio:16/9;background:var(--ph);display:flex;align-items:center;justify-content:center;color:#fff;font-size:34px;font-weight:800;letter-spacing:.06em}
+.card .bd{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:11px;padding:2px 8px;border-radius:999px;background:var(--tagbg);color:var(--tagfg);white-space:nowrap}
+.tag.k{background:var(--accent);color:#fff}
+.card h2{font-size:17px;margin:0;line-height:1.45}
+.card p{margin:0;font-size:13.5px;color:var(--muted);flex:1}
+.btn{display:inline-block;text-align:center;padding:10px 16px;border-radius:10px;font-weight:700;text-decoration:none;color:#fff;background:var(--btn)}
+.btn.dis{background:var(--muted);pointer-events:none}
+.btn.ghost{background:transparent;color:var(--link);border:1px solid var(--border)}
+article{padding:28px 0 48px}
+article .hero{display:grid;grid-template-columns:1fr;gap:18px;margin-bottom:24px}
+@media(min-width:760px){article .hero{grid-template-columns:1.1fr 1fr;align-items:center}}
+article h1{font-size:26px;line-height:1.35;margin:8px 0}
+article .lead{color:var(--muted);margin:0 0 12px}
+.toc{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 18px;margin:0 0 24px}
+.toc b{display:block;margin-bottom:6px}.toc ul{margin:0;padding-left:18px}.toc li{margin:2px 0;font-size:14px}
+.body h2{font-size:20px;margin:36px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--accent)}
+.body h3{font-size:17px;margin:24px 0 8px}
+.body table{width:100%;border-collapse:collapse;font-size:14px;margin:12px 0}
+.body th{background:var(--accent);color:#fff;text-align:left;padding:6px 8px}
+.body td{padding:6px 8px;border-bottom:1px solid var(--border);vertical-align:top}
+.body pre{background:var(--pre);padding:12px;border-radius:8px;overflow-x:auto;font-size:13.5px;white-space:pre-wrap}
+.body code{background:var(--pre);padding:1px 5px;border-radius:4px;font-size:.92em}
+.body blockquote{margin:12px 0;padding:8px 14px;border-left:4px solid var(--accent);background:var(--card)}
+.tbl{overflow-x:auto}
+.pending{background:var(--card);border:1px dashed var(--border);border-radius:12px;padding:24px;text-align:center;color:var(--muted)}
+nav.pn{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:18px;border-top:1px solid var(--border);font-size:14px}
+nav.pn a{max-width:48%}nav.pn span{color:var(--muted)}
+footer.site{padding:24px 0 40px;font-size:12.5px;color:var(--muted);border-top:1px solid var(--border)}
+footer.site p{margin:4px 0}
+.crumb{font-size:13px;margin:16px 0 0}.crumb a{text-decoration:none}
+.sec{padding:26px 0 6px;border-top:1px solid var(--border)}
+.sec:first-of-type{border-top:0;padding-top:20px}
+.sec>h2{font-size:20px;margin:0 0 4px;padding-left:12px;border-left:5px solid var(--accent);line-height:1.4}
+.sec>p{margin:0;font-size:13.5px;color:var(--muted)}
+.sec .grid{padding:16px 0 12px}
+.linkcard{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px 22px;margin:18px 0 30px;box-shadow:var(--shadow)}
+.linkcard p{margin:0 0 12px;font-size:14px;color:var(--muted)}
+.lib{padding:8px 0 30px}
+.lib h3{font-size:16px;margin:22px 0 6px;padding-left:10px;border-left:4px solid var(--accent)}
+.lib .grid{padding:8px 0 16px}
+.lib .card h2{font-size:15px}.lib .card p{display:none}
+.lib .note{font-size:13px;color:var(--muted);margin:4px 0 0}
+
+:root{--bg:#f5f3ff;--card:#fff;--text:#374151;--muted:#6b7280;--link:#4f46e5;--border:#e5e7eb;--accent:#6366f1;--btn:linear-gradient(90deg,#6366f1,#a855f7);--hero:linear-gradient(120deg,#1e1b4b,#6366f1 60%,#a855f7);--ph:linear-gradient(135deg,#1e1b4b,#6366f1);--tagbg:#eef2ff;--tagfg:#4338ca;--shadow:0 8px 24px rgba(30,27,75,.08);--pre:#f3f4f6}
+</style></head><body>
+<header class='site'><div class='wrap'><span class='stamp'>WADO BONUS 2026 · LIBRARY</span><h1 style=font-size:20px>わど式 AIマネタイズ 特典｜面談予約特典</h1></div></header>
+<main class='wrap'><p class='crumb'><a href='../'>← 一覧へ戻る</a></p><article>
+<div class='hero'><div><div class='card'><div class='ph'>N26</div></div></div><div><div class='tags'><span class='tag k'>新規</span><span class='tag'>プロンプト講座</span><span class='tag'>NotebookLM</span><span class='tag'>面談予約特典</span></div><h1>デザインプロンプト設計フレームワーク</h1><p class='lead'>画像・スライド・LPを『指示できる』ようになる設計の順番</p><span class='tag' style='font-size:13px;padding:6px 12px'>このページが特典の本体です。下へスクロールして使ってください</span></div></div>
+<div class='toc'><b>目次</b><div class="toc">
+<ul>
+<li><a href="#_2">はじめに</a></li>
+<li><a href="#_3">この特典の進め方</a></li>
+<li><a href="#1">最初のゴール(今日やる1つ)</a></li>
+<li><a href="#1_1">1. 考え方(なぜその書き方が効くか)</a></li>
+<li><a href="#2">2. プロンプト全文(型ごと・コピーして使える形)</a><ul>
+<li><a href="#_4">基本骨格テンプレ</a></li>
+<li><a href="#_5">業界用語を足した拡張版(仕上がりを一段上げたいとき)</a></li>
+<li><a href="#_6">媒体別の優先順位</a></li>
+</ul>
+</li>
+<li><a href="#3">3. 使い分けの判断</a></li>
+<li><a href="#4">4. うまくいかないときの直し方</a></li>
+<li><a href="#_7">最初に投げるプロンプト</a></li>
+<li><a href="#7">よくある失敗 7つと直し方</a></li>
+<li><a href="#_8">安全に使うための注意</a></li>
+<li><a href="#_9">つまずいたときに聞くプロンプト</a></li>
+<li><a href="#_10">用語集</a></li>
+<li><a href="#10">出す前の品質チェック(10項目)</a></li>
+<li><a href="#5-ai20269-2026-09-06">5. 最新AI(2026年9月時点)での書き方の変化(取得日: 2026-09-06)</a></li>
+<li><a href="#6">6. 次の一手</a></li>
+<li><a href="#_11">最終チェックリスト</a></li>
+</ul>
+</div>
+</div>
+<div class='body'><h1 id="_1">デザインプロンプト設計フレームワーク</h1>
+<blockquote>
+<p>「いい感じに作って」では、いい感じの絵は出ません。この特典は、画像・スライド・LPの見た目をAIに指示するとき「何を」「どの順番で」書けば、狙った絵に近づくかを型として渡すものです。</p>
+</blockquote>
+<h2 id="_2">はじめに</h2>
+<p>わどです。AIに画像を作らせると、最初の1枚は大体「なんか違う」ものが出てきます。それはAIの性能が足りないからではありません。指示のほうが「何を作ってほしいか」しか伝えていなくて、「どう設計してほしいか」を渡していないからです。</p>
+<p>この特典は、バナー・LPのファーストビュー・チラシ・SNSのサムネイルなど、AIマネタイズの現場で毎日のように必要になる画像を、コピーして使えるプロンプトの型として持ち帰ってもらうためのものです。中身を丸暗記する必要はありません。困ったときにこのページを開いて、該当する型に自分の情報を差し込むだけで使えます。</p>
+<h2 id="_3">この特典の進め方</h2>
+<p>最初に「1 考え方」を一度だけ読んで、なぜこの書き方が効くのかを理解してください。そのあとは、必要なときに「2 プロンプト全文」から自分の媒体に合う型をコピーして使う、という使い方で十分です。全部を覚える必要はありません。</p>
+<h2 id="1">最初のゴール(今日やる1つ)</h2>
+<p>今日中に作る予定の画像を1つ選んでください。X投稿のアイキャッチ、noteの記事カバー、Instagramストーリーズの1枚、どれでも構いません。それを、このあとの「2 プロンプト全文」にある基本骨格テンプレに当てはめて、実際に1回生成してみてください。</p>
+<h2 id="1_1">1. 考え方(なぜその書き方が効くか)</h2>
+<p>AIは絵を描く技術そのものは高い水準にあります。弱いのは「誰に・何を・どの順番で見せて・どう行動させるか」という設計の部分です。ここを渡さずに「バナーを作って」とだけ頼むと、AIは無難な平均値を返してきます。</p>
+<p>だから、指示は「注文」ではなく「ブリーフ(設計指示書)」として書きます。デザイナーに仕事を依頼するときに渡す仕様書と同じだと考えてください。ブリーフには最低限、次の8つの視点を入れます。</p>
+<div class='tbl'><table>
+<thead>
+<tr>
+<th>#</th>
+<th>視点</th>
+<th>何のために入れるか</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>適度な余白</td>
+<td>詰め込みは安っぽく見える。余白が「読ませる」役割を持つ</td>
+</tr>
+<tr>
+<td>2</td>
+<td>視線導線</td>
+<td>視線がどの順番で流れるかを先に決める</td>
+</tr>
+<tr>
+<td>3</td>
+<td>訴求力</td>
+<td>言いたいことを1つに絞る</td>
+</tr>
+<tr>
+<td>4</td>
+<td>文字のジャンプ率</td>
+<td>主役の文字と脇役の文字の大きさの差をはっきりさせる</td>
+</tr>
+<tr>
+<td>5</td>
+<td>グラフィック要素</td>
+<td>文字だけだと「ただのお知らせ」に見える</td>
+</tr>
+<tr>
+<td>6</td>
+<td>遊びのあるテキスト表現</td>
+<td>装飾文字・飾りで印象に残す</td>
+</tr>
+<tr>
+<td>7</td>
+<td>次の行動を促す設計</td>
+<td>「申し込む」「詳しく見る」を必ずどこかに置く</td>
+</tr>
+<tr>
+<td>8</td>
+<td>世界観</td>
+<td>見た人の感情の温度を1語で固定する</td>
+</tr>
+</tbody>
+</table></div>
+<p>もう1つ大事なのが「NG項目を先に伝える」という発想です。AI画像生成には、2枚目を作り直すと顔つきが変わる、放っておくと装飾が過剰になる、余白がなくなる、文章が長くなる、というよくある事故があります。これは後から直すより、最初のプロンプトに禁止事項として書いてしまうほうが早いです。</p>
+<h2 id="2">2. プロンプト全文(型ごと・コピーして使える形)</h2>
+<p>ここからは、そのままコピーして画像生成AI(ChatGPT・Gemini・Claudeのどれでも、画像生成機能があるものならどれでも)に貼れる形で載せます。{}の中身だけ自分の案件に合わせて書き換えてください。</p>
+<h3 id="_4">基本骨格テンプレ</h3>
+<pre><code>{何}を作ってください。
+あなたはプロのデザイナーです。
+以下の内容を意識して、見た人の次の行動を促す内容にしてください。
+
+【媒体・サイズ】
+・{媒体}(例: X投稿用の横長画像/note記事のカバー画像/Instagramストーリーズ/LPのファーストビュー/縦長チラシ)
+
+【設計指示】
+・適度な余白
+・視線導線(上から下、または左上から右下に流れるように)
+・訴求力が高い(伝えたいことは1つだけに絞る)
+・文字のジャンプ率やメリハリ(見出しと本文の大きさの差をはっきりつける)
+・グラフィック要素を1つ入れる
+・遊びのある装飾テキストを1箇所入れる
+・次の行動を促しやすいように、見やすく分かりやすい配置にする
+・世界観をしっかり伝えてください
+
+【ターゲット・訴求トーン】
+・{誰に向けた画像か。例: 30代でAIマネタイズを始めたい会社員}
+・{伝えたい温度を1つだけ。例: 誠実で分かりやすい/勢いと期待感}
+
+NG
+・過度なあしらい
+・過度な文章
+・顔や人物の特徴を勝手に変更しない
+</code></pre>
+<h3 id="_5">業界用語を足した拡張版(仕上がりを一段上げたいとき)</h3>
+<p>抽象的な言葉(「いい感じに」「プロっぽく」)だけでは平均的な出力になりがちです。専門的な言い回しを添えると、AIが参照する完成度の高い作例に近づきます。基本骨格の【設計指示】の下に、次のブロックを追加してください。</p>
+<pre><code>【仕上げの指定】(分かる範囲でよい。空欄なら空欄のままでよい)
+・構図: {対角線構図/三分割法/左右対称のどれか}
+・タイトルの文字: {明朝体で高級感/太いゴシックで力強さ のどちらか}
+・装飾: {細い線で区切る/角丸のカードで囲む のどちらか}
+・配色: {上が明るく下が暗いグラデーション/単色+差し色1つ のどちらか}
+・CTAボタン: {角丸で目立つ色/枠線だけの控えめな色 のどちらか}
+</code></pre>
+<p>この5項目は「分からなければ空欄でよい」ものです。無理に全部埋めようとせず、自分が明確にイメージできている項目だけ書いてください。</p>
+<h3 id="_6">媒体別の優先順位</h3>
+<div class='tbl'><table>
+<thead>
+<tr>
+<th>媒体</th>
+<th>最優先で書くこと</th>
+<th>文字量の目安</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>X投稿用の横長画像</td>
+<td>視線導線・ジャンプ率・伝えたいことを1つに絞る</td>
+<td>5〜10字×3要素以内</td>
+</tr>
+<tr>
+<td>noteの記事カバー</td>
+<td>世界観・タイトルとの一致</td>
+<td>タイトルに合わせた短い一言</td>
+</tr>
+<tr>
+<td>Instagramストーリーズ</td>
+<td>上から下への視線導線・1メッセージ集中</td>
+<td>上部に見出し、下部にCTA</td>
+</tr>
+<tr>
+<td>LPのファーストビュー</td>
+<td>世界観・余白・次の行動を促す設計</td>
+<td>大見出し1つ+CTAボタン</td>
+</tr>
+<tr>
+<td>縦長チラシ</td>
+<td>視線導線(上から下)・グラフィック要素</td>
+<td>上部見出し、中段箇条書き、下部CTA</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="3">3. 使い分けの判断</h2>
+<p>どの媒体でも共通して守る原則が1つあります。<strong>訴求トーンは必ず1つに固定する。</strong>「高級感もあって親しみやすい」のように複数を混ぜると、AIはどちらつかずの平均的な絵を返してきます。迷ったら「誰に(ターゲット)」を先に決め、そのターゲットが一番安心する温度を1語で選んでください。</p>
+<p>業界用語を足すかどうかは、次の3問で判断します。</p>
+<ol>
+<li><strong>基本骨格だけで満足のいく仕上がりになったか</strong> → なったなら、それ以上足す必要はありません</li>
+<li><strong>もう一段仕上がりを良くしたいか</strong> → そうであれば「仕上げの指定」ブロックを追加します</li>
+<li><strong>追加する項目は何個か</strong> → 多すぎると混乱するので、5項目のうち埋めるのは3つ前後に絞ります</li>
+</ol>
+<p>媒体を迷ったときは、この画像を「誰が・どこで見るか」で決めます。スクロール中に一瞬で目に入るもの(X・Instagram)は視線導線とジャンプ率を最優先に、じっくり見てもらうもの(note・LP)は世界観と余白を最優先にしてください。</p>
+<h2 id="4">4. うまくいかないときの直し方</h2>
+<p>1回の指示で満足のいく画像が出ないのは普通のことです。重要な画像ほど、次の3段階に分けて作ってください。</p>
+<pre><code>手順1: 構成案を先に出させる
+「{テーマ}の画像を作るための構成案を出してください。
+ターゲット: {誰に}
+訴求トーン: {1語}
+媒体: {媒体名}」
+
+手順2: キャッチコピーだけ確定させる
+「手順1の構成に合う、訴求力のあるキャッチコピーを5案出してください。」
+
+手順3: 手順2で選んだコピーを使って画像化する
+「手順1の構成と、手順2で選んだ『{選んだコピー}』を使って画像にしてください。
+(ここに基本骨格テンプレを続けて貼る)」
+</code></pre>
+<p>1回で画像化まで頼む「ポン出し」より、この3段階のほうが仕上がりの差がはっきり出ます。特に、伝えたいメッセージが複数あるとき・重要な案件のときは、必ずこの順番で進めてください。</p>
+<p>それでも狙った絵にならないときは、直前の指示のうち「何が起きたか」を具体的に伝えて直します。</p>
+<ul>
+<li>装飾がごちゃごちゃした → 「装飾を今の半分に減らしてください。余白を増やしてください」</li>
+<li>文字が多すぎる → 「文章を3行以内に削ってください。伝えたいことを1つに絞ってください」</li>
+<li>2枚目で顔や雰囲気が変わった → 「1枚目の人物の特徴をそのまま維持してください」を指示に追加する</li>
+<li>どことなく量産品っぽい → 配色を変える。多くのAI画像に出やすい配色(暗い背景に光る粒子、というような組み合わせ)を避け、別の配色の系統に振ってみる</li>
+</ul>
+<h2 id="_7">最初に投げるプロンプト</h2>
+<p>まずはこの1つだけ投げてみてください。</p>
+<pre><code>今日、{媒体}用の画像を作りたいです。
+テーマは「{伝えたいこと}」、ターゲットは「{誰に}」です。
+プロのデザイナーとして、余白・視線導線・訴求力・文字のジャンプ率・グラフィック要素・
+次の行動を促す設計・世界観を意識した構成案を、まず言葉で出してください。
+画像化はそのあとにお願いします。
+</code></pre>
+<h2 id="7">よくある失敗 7つと直し方</h2>
+<ol>
+<li><strong>「いい感じに」だけで頼む</strong> → 8つの設計指示のうち最低5つは具体的に書く</li>
+<li><strong>訴求トーンを複数混ぜる</strong> → 高級感と親しみやすさは別物。必ず1つに固定する</li>
+<li><strong>NG項目を書かずに事故が起きてから直す</strong> → 最初から「過度なあしらい」「過度な文章」を禁止しておく</li>
+<li><strong>1回のポン出しで満足のいく結果を求める</strong> → 重要な案件ほど3段階(構成→コピー→画像化)で進める</li>
+<li><strong>文字量を指定しない</strong> → 媒体ごとの目安(表参照)を必ず書く</li>
+<li><strong>2枚目以降で人物の特徴がずれても放置する</strong> → 「特徴を維持してください」を都度書き添える</li>
+<li><strong>多くのAI画像に出やすい配色をそのまま使う</strong> → 配色を1つの系統に固定しつつ、量産品っぽさが出たら系統ごと変えてみる</li>
+</ol>
+<h2 id="_8">安全に使うための注意</h2>
+<ul>
+<li>実在する人物に似せた画像を、本人の許可なく公開しない</li>
+<li>既存のブランドロゴ・商標を模したデザインを作らない</li>
+<li>成果を保証するような表現(「必ず売れる」等)を画像内の文言に入れない</li>
+<li>使用する画像生成AIの利用規約・商用利用条件は、各公式サイトで必ず確認する</li>
+<li>生成した画像は、公開前に一度人の目で最終確認する。AIの出力をそのまま自動で公開しない</li>
+</ul>
+<h2 id="_9">つまずいたときに聞くプロンプト</h2>
+<ul>
+<li>「この画像、要素を詰め込みすぎていないか確認してください」</li>
+<li>「訴求トーンが2つ以上混ざっていないか、1語で言い直してください」</li>
+<li>「このデザイン、多くのAI画像に出やすい配色になっていませんか。別の配色案を3つ出してください」</li>
+<li>「このキャッチコピー、媒体の文字量の目安に収まっていますか」</li>
+</ul>
+<h2 id="_10">用語集</h2>
+<div class='tbl'><table>
+<thead>
+<tr>
+<th>用語</th>
+<th>意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ブリーフ</td>
+<td>「注文」ではなく「設計指示書」として渡すプロンプトの考え方</td>
+</tr>
+<tr>
+<td>視線導線</td>
+<td>見た人の視線がどの順番で流れるかの設計</td>
+</tr>
+<tr>
+<td>ジャンプ率</td>
+<td>大きい文字と小さい文字の大きさの比率。差が大きいほどメリハリが出る</td>
+</tr>
+<tr>
+<td>NG項目</td>
+<td>事故になりやすい失敗をあらかじめ禁止しておく指示</td>
+</tr>
+<tr>
+<td>3段階生成プロセス</td>
+<td>構成案→キャッチコピー→画像化の順で作る、重要案件向けの進め方</td>
+</tr>
+<tr>
+<td>訴求トーン</td>
+<td>その画像で伝えたい感情の温度。1つに固定するのが原則</td>
+</tr>
+<tr>
+<td>仕上げの指定</td>
+<td>構図・文字・装飾・配色・CTAをもう一段具体化する追加ブロック</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="10">出す前の品質チェック(10項目)</h2>
+<ol>
+<li>媒体・サイズを明記したか</li>
+<li>8つの設計指示のうち最低5つを具体的に書いたか</li>
+<li>訴求トーンは1つに固定したか</li>
+<li>NG項目(過度なあしらい・過度な文章)を書いたか</li>
+<li>文字量が媒体の目安に収まっているか</li>
+<li>重要な案件は3段階生成プロセスで進めたか</li>
+<li>伝えたいメッセージは1つに絞れているか</li>
+<li>実在の人物・既存ブランドを模していないか</li>
+<li>成果を保証する表現が画像内の文言に入っていないか</li>
+<li>公開前に人の目で最終確認したか</li>
+</ol>
+<h2 id="5-ai20269-2026-09-06">5. 最新AI(2026年9月時点)での書き方の変化(取得日: 2026-09-06)</h2>
+<p>2026年9月にOpenAIが発表した新しいモデルは、文章や画像を作るだけでなく、パソコンの画面を見ながら実際にアプリを操作できることが特徴として発表されています。申込フォームへの入力や、資料の作成、ウェブサイトの動作確認まで、人が画面を見て行う作業をそのまま代行できる、という内容です。</p>
+<p>この特典の文脈で言うと、これは次のように捉えてください。</p>
+<ul>
+<li>このページで渡している「設計指示の書き方」そのものは変わりません。何を・どの順番で・どのトーンで見せるかを決めるのは、これからも人の役割です</li>
+<li>一方で、「画像を作る→その画像をLPやSNSの投稿画面に実際に貼り付けて公開する」という、作った後の作業まで代行できる可能性が広がってきています</li>
+<li>ただしこうした画面操作の機能は発表されたばかりで、段階的に使えるようになっている最中です。「使えるはず」で進めず、自分の環境で実際に試してから任せる範囲を決めてください</li>
+</ul>
+<p>つまり、設計の考え方(このページの1〜4)は今後も土台として使い続けられますが、生成した後の「貼り付ける」「公開する」といった作業を任せられる範囲は、これから広がっていく見込みです。</p>
+<h2 id="6">6. 次の一手</h2>
+<p>この特典は、「稼ぎ方より、稼ぐ順番」でいうSTEP2(コンテンツ商品づくり)とSTEP3(SNS・ローンチ)の両方で使う、道具としての特典です。note記事のカバー、Instagramストーリーズ、X投稿のアイキャッチ、LPのファーストビューなど、どの段階でも画像が必要になったタイミングでこのページに戻ってきてください。</p>
+<p>面談では、あなた専用の1枚(特注のロードマップ)を一緒に作ります。</p>
+<h2 id="_11">最終チェックリスト</h2>
+<ul>
+<li>[ ] 今日作る予定の画像を1つ選び、基本骨格テンプレで実際に生成した</li>
+<li>[ ] 訴求トーンを1つに固定して書いた</li>
+<li>[ ] NG項目(過度なあしらい・過度な文章)を書いた</li>
+<li>[ ] 重要な画像は3段階生成プロセス(構成→コピー→画像化)で作った</li>
+<li>[ ] 「出す前の品質チェック」10項目を確認した
+</content></li>
+</ul></div>
+<nav class='pn'>
+<a href='../bonus-N25/'>← わど式 フィードバック診断チェックリスト</a>
+<a href='../bonus-N31/'>図解・マインドマップ生成 Skill 2本 →</a>
+</nav></article></main>
+<footer class='site'><div class='wrap'><p>この特典は受け取り条件を満たした方向けに配布しています。再配布・転載はご遠慮ください。</p><p>記載の売上・成果は特定の実績であり、同様の成果を保証するものではありません。</p></div></footer></body></html>

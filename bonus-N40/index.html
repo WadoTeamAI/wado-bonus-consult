@@ -1,0 +1,303 @@
+<!DOCTYPE html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><meta name='robots' content='noindex, nofollow, noarchive'><title>Claude Code コンテキスト衛生 10ルール ── わど式 AIマネタイズ 特典｜面談予約特典</title><style>
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:'Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif;font-size:16px;line-height:1.8;letter-spacing:.04em;color:var(--text);background:var(--bg)}
+a{color:var(--link)}img{max-width:100%;height:auto;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+header.site{padding:40px 0 28px;color:#fff;background:var(--hero)}
+header.site h1{margin:0 0 6px;font-size:28px;line-height:1.3}
+header.site p{margin:0;opacity:.9;font-size:15px}
+.stamp{display:inline-block;font-size:12px;letter-spacing:.2em;padding:3px 10px;border:1px solid rgba(255,255,255,.6);border-radius:999px;margin-bottom:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;padding:28px 0 40px}
+.card{background:var(--card);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;border:1px solid var(--border)}
+.card .ph{aspect-ratio:16/9;background:var(--ph);display:flex;align-items:center;justify-content:center;color:#fff;font-size:34px;font-weight:800;letter-spacing:.06em}
+.card .bd{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:11px;padding:2px 8px;border-radius:999px;background:var(--tagbg);color:var(--tagfg);white-space:nowrap}
+.tag.k{background:var(--accent);color:#fff}
+.card h2{font-size:17px;margin:0;line-height:1.45}
+.card p{margin:0;font-size:13.5px;color:var(--muted);flex:1}
+.btn{display:inline-block;text-align:center;padding:10px 16px;border-radius:10px;font-weight:700;text-decoration:none;color:#fff;background:var(--btn)}
+.btn.dis{background:var(--muted);pointer-events:none}
+.btn.ghost{background:transparent;color:var(--link);border:1px solid var(--border)}
+article{padding:28px 0 48px}
+article .hero{display:grid;grid-template-columns:1fr;gap:18px;margin-bottom:24px}
+@media(min-width:760px){article .hero{grid-template-columns:1.1fr 1fr;align-items:center}}
+article h1{font-size:26px;line-height:1.35;margin:8px 0}
+article .lead{color:var(--muted);margin:0 0 12px}
+.toc{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 18px;margin:0 0 24px}
+.toc b{display:block;margin-bottom:6px}.toc ul{margin:0;padding-left:18px}.toc li{margin:2px 0;font-size:14px}
+.body h2{font-size:20px;margin:36px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--accent)}
+.body h3{font-size:17px;margin:24px 0 8px}
+.body table{width:100%;border-collapse:collapse;font-size:14px;margin:12px 0}
+.body th{background:var(--accent);color:#fff;text-align:left;padding:6px 8px}
+.body td{padding:6px 8px;border-bottom:1px solid var(--border);vertical-align:top}
+.body pre{background:var(--pre);padding:12px;border-radius:8px;overflow-x:auto;font-size:13.5px;white-space:pre-wrap}
+.body code{background:var(--pre);padding:1px 5px;border-radius:4px;font-size:.92em}
+.body blockquote{margin:12px 0;padding:8px 14px;border-left:4px solid var(--accent);background:var(--card)}
+.tbl{overflow-x:auto}
+.pending{background:var(--card);border:1px dashed var(--border);border-radius:12px;padding:24px;text-align:center;color:var(--muted)}
+nav.pn{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:18px;border-top:1px solid var(--border);font-size:14px}
+nav.pn a{max-width:48%}nav.pn span{color:var(--muted)}
+footer.site{padding:24px 0 40px;font-size:12.5px;color:var(--muted);border-top:1px solid var(--border)}
+footer.site p{margin:4px 0}
+.crumb{font-size:13px;margin:16px 0 0}.crumb a{text-decoration:none}
+.sec{padding:26px 0 6px;border-top:1px solid var(--border)}
+.sec:first-of-type{border-top:0;padding-top:20px}
+.sec>h2{font-size:20px;margin:0 0 4px;padding-left:12px;border-left:5px solid var(--accent);line-height:1.4}
+.sec>p{margin:0;font-size:13.5px;color:var(--muted)}
+.sec .grid{padding:16px 0 12px}
+.linkcard{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px 22px;margin:18px 0 30px;box-shadow:var(--shadow)}
+.linkcard p{margin:0 0 12px;font-size:14px;color:var(--muted)}
+.lib{padding:8px 0 30px}
+.lib h3{font-size:16px;margin:22px 0 6px;padding-left:10px;border-left:4px solid var(--accent)}
+.lib .grid{padding:8px 0 16px}
+.lib .card h2{font-size:15px}.lib .card p{display:none}
+.lib .note{font-size:13px;color:var(--muted);margin:4px 0 0}
+
+:root{--bg:#f5f3ff;--card:#fff;--text:#374151;--muted:#6b7280;--link:#4f46e5;--border:#e5e7eb;--accent:#6366f1;--btn:linear-gradient(90deg,#6366f1,#a855f7);--hero:linear-gradient(120deg,#1e1b4b,#6366f1 60%,#a855f7);--ph:linear-gradient(135deg,#1e1b4b,#6366f1);--tagbg:#eef2ff;--tagfg:#4338ca;--shadow:0 8px 24px rgba(30,27,75,.08);--pre:#f3f4f6}
+</style></head><body>
+<header class='site'><div class='wrap'><span class='stamp'>WADO BONUS 2026 · LIBRARY</span><h1 style=font-size:20px>わど式 AIマネタイズ 特典｜面談予約特典</h1></div></header>
+<main class='wrap'><p class='crumb'><a href='../'>← 一覧へ戻る</a></p><article>
+<div class='hero'><div><div class='card'><div class='ph'>N40</div></div></div><div><div class='tags'><span class='tag k'>新規</span><span class='tag'>体制</span><span class='tag'>Notion</span><span class='tag'>面談予約特典</span></div><h1>Claude Code コンテキスト衛生 10ルール</h1><p class='lead'>長く使うと壊れる理由と、直し方</p><span class='tag' style='font-size:13px;padding:6px 12px'>このページが特典の本体です。下へスクロールして使ってください</span></div></div>
+<div class='toc'><b>目次</b><div class="toc">
+<ul>
+<li><a href="#_1">はじめに</a></li>
+<li><a href="#_2">この特典の進め方</a></li>
+<li><a href="#1">最初のゴール（今日やる1つ）</a></li>
+<li><a href="#1_1">1. なぜコンテキストは壊れるのか（部屋の整理という考え方）</a></li>
+<li><a href="#2-4">2. 情報の4層構造 ― 何を、どこに置くか</a></li>
+<li><a href="#3-10">3. コンテキスト衛生 10ルール（全文）</a></li>
+<li><a href="#4-10">4. 週次の見直し運用（10分の回し方）</a></li>
+<li><a href="#5-ai20269-ai">5. 最新AI（2026年9月時点）での変わり目 ― コンピュータ操作AIとコンテキスト衛生</a></li>
+<li><a href="#_3">最初に投げるプロンプト</a></li>
+<li><a href="#7">よくある失敗 7つと直し方</a></li>
+<li><a href="#_4">安全に使うための注意</a></li>
+<li><a href="#_5">つまずいたときに聞くプロンプト</a></li>
+<li><a href="#_6">用語集</a></li>
+<li><a href="#_7">次の一手</a></li>
+<li><a href="#10">出す前の品質チェック(10項目)</a></li>
+<li><a href="#_8">最終チェックリスト</a></li>
+</ul>
+</div>
+</div>
+<div class='body'><h1 id="claude-code-10">Claude Code コンテキスト衛生 10ルール</h1>
+<blockquote>
+<p>Claude Codeがだんだん的外れになる原因の9割は「情報の入れすぎ」です。この特典を読み終えると、あなたの環境を「散らからない部屋」に保つ10のルールと、週1回の点検の回し方が身につきます。</p>
+</blockquote>
+<h2 id="_1">はじめに</h2>
+<p>わどです。この特典は、Claude Codeを毎日使う人向けの「片付けの教科書」です。</p>
+<p>最初の1週間は、Claude Codeはとても賢く感じます。noteの下書きも、Instagramのキャプションも、Xの投稿文も、指示すればすっと出てきます。ところが1か月、2か月と使い続けると、同じ指示をしても返ってくるものがだんだんズレていく。そんな経験はありませんか。</p>
+<p>原因のほとんどは、Claude Code自体が弱くなったのではありません。あなたが積み上げてきた「会話履歴・設定ファイル・過去のやり取り」が増えすぎて、AIが毎回読む情報の量（これを「コンテキスト」と呼びます）が散らかってしまったからです。</p>
+<p>わどはこれを「部屋の整理」に例えて考えています。引っ越したばかりの部屋はどこに何があるか一目で分かります。でも半年も掃除をせずに物を積み上げ続けると、必要なものを探すのに時間がかかり、そのうち何がどこにあるかも分からなくなります。AIのコンテキストも同じです。整理しないと、AI自身が「今どの情報を優先すべきか」を見失います。</p>
+<p>AIマネタイズにClaude Codeを本格的に使うなら、この「散らからない部屋」を保つ技術は、プロンプトの上手さと同じくらい大事なスキルです。むしろ、長く使えば使うほど効いてくる技術だと言えます。</p>
+<h2 id="_2">この特典の進め方</h2>
+<p>この特典は次の順番で読むことをおすすめします。</p>
+<ol>
+<li>まず「最初のゴール」を今すぐやる。所要時間は3分です</li>
+<li>「1. なぜコンテキストは壊れるのか」で考え方を掴む</li>
+<li>「2. 情報の4層構造」で、自分の環境がどうなっているかを照らし合わせる</li>
+<li>「3. コンテキスト衛生 10ルール」を通しで読む（ここが本体です）</li>
+<li>「4. 週次の見直し運用」を、今週のどこかの時間に予定として入れる</li>
+<li>あとは必要になったときに「よくある失敗」「安全に使うための注意」「用語集」を辞書として使う</li>
+</ol>
+<p>一気に全部を実践しようとしなくて大丈夫です。10ルールのうち、まず3つだけ今週やってみる。それで十分に変化を感じられるはずです。</p>
+<h2 id="1">最初のゴール（今日やる1つ）</h2>
+<p>Claude Codeを開いて、<code>/context</code> というコマンドを打ってみてください。</p>
+<p>これだけです。今、AIがどれくらいの情報量を抱えているかが数字で見えます。何も会話していない、まっさらな状態でこの数字が大きいなら、それはあなたの設定ファイルがすでに散らかり始めているサインです。この数字を「今日の自分の部屋の汚れ具合」だと思って眺めてみてください。</p>
+<h2 id="1_1">1. なぜコンテキストは壊れるのか（部屋の整理という考え方）</h2>
+<p>Claude Codeは、あなたが何か指示を出すたびに、あらかじめ用意された設定ファイルや過去のやり取りをまとめて読み込んでから答えます。この「読み込む情報のかたまり」がコンテキストです。</p>
+<p>ここでよくある誤解が一つあります。「AIには情報を多く渡すほど賢く答えてくれるはずだ」という考え方です。実際は逆に近く、情報を渡しすぎると、AIはどれが今回の指示に関係あるのかを判断しづらくなり、答えの精度が落ちます。部屋の中に不要な物が積み上がっていると、必要な物を探すのに時間がかかるのと同じ構造です。</p>
+<p>正しい考え方は「情報を整理し、どこに何を置くかを決めておくこと」です。すべてを一箇所に詰め込むのではなく、性質の違う情報を、性質ごとの置き場所に分けておく。これが次の章で説明する「4層構造」の考え方につながります。</p>
+<h2 id="2-4">2. 情報の4層構造 ― 何を、どこに置くか</h2>
+<p>Claude Codeには、情報を置く場所が大きく4種類あります。それぞれ「いつ読まれるか」と「何を書くべきか」が違います。この線引きを理解しておくことが、コンテキスト衛生の土台です。</p>
+<div class='tbl'><table>
+<thead>
+<tr>
+<th>層</th>
+<th>読まれるタイミング</th>
+<th>書くべき内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. 全体設定ファイル（グローバル）</td>
+<td>あなたが何をしていても、毎回読まれる</td>
+<td>どこに何の情報があるかの地図、最低限いつも守ってほしい判断基準</td>
+</tr>
+<tr>
+<td>2. プロジェクトの設定ファイル</td>
+<td>そのプロジェクトの中で作業しているときだけ、毎回読まれる</td>
+<td>そのプロジェクト固有の口調、やってはいけないこと、前提条件</td>
+</tr>
+<tr>
+<td>3. 条件つきのルール置き場</td>
+<td>「こういうときはこのルールを見て」と指示したときだけ読まれる</td>
+<td>頻度は低いが大事な判断基準（法務・機密・特殊なフォーマット等）</td>
+</tr>
+<tr>
+<td>4. 手順書（スキル）</td>
+<td>名前と一言説明は毎回読まれ、中身は使うときだけ読まれる</td>
+<td>繰り返し使う作業の手順・チェックリスト</td>
+</tr>
+</tbody>
+</table></div>
+<p>ここで大事なのは、1と2は「毎回読まれる」ので、書きすぎるとそれだけでコンテキストを消費し続けるという点です。逆に3と4は「必要なときだけ」読まれる設計なので、細かい情報はできるだけこちらに逃がすのが正解です。</p>
+<p>「何をAIに毎回覚えていてほしいか」と「何は必要なときだけ思い出してくれればいいか」。この線引きを最初に決めておくことが、散らからない部屋を保つ一番の近道です。</p>
+<h2 id="3-10">3. コンテキスト衛生 10ルール（全文）</h2>
+<p>ここが本体です。上から順に、優先度が高いものから並んでいます。</p>
+<ol>
+<li><strong>全体設定ファイルは短く保つ。</strong> 毎回読まれる場所なので、目安として無理なく読み切れる分量に収めます。書きたいことが増えたら、次のルールで別の場所に逃がします</li>
+<li><strong>長くなった判断基準は、条件つきのルール置き場に分離する。</strong> 「いつも守る短いルール」は全体設定ファイルに、「特定の場面でだけ必要な長いルール」は別ファイルに分けます</li>
+<li><strong>手順書（スキル）の説明文は、トリガーワードと一言用途だけにする。</strong> 説明文は毎回読まれるため、長い前置きを書くとそれだけで情報量が膨らみます。中身の詳しい手順は、使うときにだけ開かれる本体側に書きます</li>
+<li><strong>使っていない外部連携はオフにする。</strong> 外部ツールとの連携機能は、オンにしているだけでその仕様書もコンテキストに乗ります。今使っていないものは切っておきます</li>
+<li><strong>プロジェクトごとの設定ファイルは、そのプロジェクト固有の話に絞る。</strong> 全体に関わる話は1のファイルへ、プロジェクト特有の話はこちらへ、と役割を分けます</li>
+<li><strong><code>/context</code> で定期的に空き具合を確認する。</strong> 何も会話していないまっさらな状態で、目安として2割を超えて埋まっていたら整理のサインだと考えます</li>
+<li><strong>会話が長くなったら、区切りをつける。</strong> ずっと同じ会話を続けるのではなく、話題が変わるタイミングで一度リセットする習慣を持ちます</li>
+<li><strong>週に1回、使い方そのものを振り返る。</strong> 直近1週間で「思ったのと違う答えが返ってきた」ことがあれば、それは設定ファイルのどこかが古くなっているサインです</li>
+<li><strong>専門的な役割は、専門の担当（エージェント）に持たせる。</strong> 何でも一つの窓口に任せるのではなく、役割ごとに担当を分けておくと、それぞれが持つ情報量を絞れます</li>
+<li><strong>見た目やキャラクター設定は、モチベーション維持の道具として割り切って使う。</strong> 口調やキャラクターを変えられる機能があれば、続ける力になる範囲で活用してかまいません。ただし機能面の整理を後回しにする言い訳にはしません</li>
+</ol>
+<p>この10個は、どれか一つだけを完璧にやるよりも、まず1・2・6・7の4つを押さえるだけで体感が変わります。慣れてきたら残りを足していってください。</p>
+<h2 id="4-10">4. 週次の見直し運用（10分の回し方）</h2>
+<p>片付けは一度やって終わりではなく、続けることに意味があります。わどが実践している週次の回し方はシンプルです。</p>
+<ol>
+<li>週の始め、または終わりに10分だけ時間を取る</li>
+<li><code>/context</code> で今の空き具合を確認する</li>
+<li>直近1週間で「なんだかズレた答えが返ってきたな」と感じた場面を思い出す</li>
+<li>その原因が、全体設定ファイルの書きすぎか、条件つきルールに逃がすべき話が混ざっていたか、使っていない連携が残っていたかを、10ルールと照らし合わせて特定する</li>
+<li>該当箇所を直す。長くなった部分があれば、条件つきのルール置き場へ移す</li>
+<li>使っていない機能をオフにする</li>
+</ol>
+<p>このサイクルを回すたびに、あなたの環境は少しずつ「散らからない部屋」に近づきます。一度に完璧を目指さないことが、続けるコツです。</p>
+<h2 id="5-ai20269-ai">5. 最新AI（2026年9月時点）での変わり目 ― コンピュータ操作AIとコンテキスト衛生</h2>
+<p>取得日2026年9月6日時点の情報です。2026年9月3日、OpenAIから新しい大規模モデルが発表されました。この世代の特徴は、文章のやり取りだけでなく「画面の情報を読み取り、許可されたアプリケーションを人間と同じ画面経由で操作できる」という点にあります。申込フォームの記入、資料の作成、ソフトの操作といった作業を、AIが画面を見ながらこなせるようになってきています。</p>
+<p>これはコンテキスト衛生の考え方にとって、他人事ではありません。提供元のブログは「画面に表示された内容は、不完全だったり、誤解を招く内容だったり、AIの動きに影響を与えることを意図していたりする可能性がある」という趣旨の注意を明記しています。つまり、AIに画面を見せる・ファイルを読ませるという行為そのものが「何を読ませ、何を読ませないか」という衛生の問題になっているということです。</p>
+<p>これまでの10ルールは「あなたが手で書いた設定ファイル」を対象にした話でした。これからは「AIが自分で読み取った画面や外部の情報」も同じ目で整理する必要が出てきます。原則は変わりません。渡す情報を選び、何が指示で何が単なる参考情報かを、AI側にもはっきり伝えることです。</p>
+<p>なお、こうしたモデルは段階的に提供が広がっていく形が一般的で、契約しているプランに含まれていても、あなたの画面にはまだ表示されていないことがあります。焦らず、自分の画面で確かめる姿勢で構いません。</p>
+<h2 id="_3">最初に投げるプロンプト</h2>
+<p>今日やる1つ(<code>/context</code>)を実行したあと、次のプロンプトをそのままClaude Codeに投げてみてください。自分の環境の散らかり具合を、AI自身に診断させます。</p>
+<pre><code>あなたは私のClaude Code環境の「片付けコンサルタント」です。
+以下の観点で、私の全体設定ファイルとプロジェクトの設定ファイルを診断してください。
+
+1. 毎回読まれる場所に、頻度の低い情報が混ざっていないか
+2. 長すぎて読み切るのに時間がかかる箇所はどこか
+3. 条件つきのルール置き場に逃がした方がよい内容はどれか
+4. 手順書(スキル)の説明文が長くなりすぎていないか
+5. 使っていなさそうな外部連携が有効になっていないか
+
+指摘は「箇所」と「理由」と「具体的な直し方」の3点セットで、
+箇条書きで出してください。
+</code></pre>
+<h2 id="7">よくある失敗 7つと直し方</h2>
+<ol>
+<li><strong>失敗: 全体設定ファイルに、特定のプロジェクトだけの話を書いてしまう。</strong> → 直し方: プロジェクト固有の話は、そのプロジェクトの設定ファイルに移す</li>
+<li><strong>失敗: 「念のため」でどんどん条件やルールを足し続ける。</strong> → 直し方: 足す前に「これは毎回必要か、それとも特定の場面だけか」を自分に問う。特定の場面だけなら条件つきの置き場へ</li>
+<li><strong>失敗: 手順書の説明文に、手順の中身まで書いてしまう。</strong> → 直し方: 説明文はトリガーワードと一言用途に絞り、詳しい手順は本体側に書く</li>
+<li><strong>失敗: 一度作った外部連携を、使わなくなっても放置する。</strong> → 直し方: 月に一度、使っていない連携をオフにする棚卸しの時間を作る</li>
+<li><strong>失敗: <code>/context</code> を一度も確認しないまま数か月使い続ける。</strong> → 直し方: 週次の見直し運用に組み込み、確認そのものを習慣にする</li>
+<li><strong>失敗: 答えがズレ始めても「AIの調子が悪いだけ」で片付けてしまう。</strong> → 直し方: ズレを感じたら、まず自分の設定ファイルの棚卸しを疑う</li>
+<li><strong>失敗: 一度に全部を完璧に整理しようとして、途中で挫折する。</strong> → 直し方: 10ルールのうち優先度の高い数個から始め、少しずつ足していく</li>
+</ol>
+<h2 id="_4">安全に使うための注意</h2>
+<ul>
+<li>個人情報や、公開したくない情報を、設定ファイルや会話の中に不用意に書き残さないでください。設定ファイルは繰り返し読まれる場所なので、一度書いた内容は長く残り続けます</li>
+<li>画面の情報を読み取るタイプのAI機能を使うときは、画面に映すものを選んでください。表示されている内容がそのまま指示として解釈されるリスクがあることを、常に頭の片隅に置いておきます</li>
+<li>記載の成果は特定の実績であり、同様の成果を保証するものではありません</li>
+<li>AI(ChatGPT・Gemini・Claudeのいずれでも)にまとめて情報を渡すときは、「これは参考情報です」「これは必ず守る指示です」と役割を分けて伝えると、誤解が起きにくくなります</li>
+<li>大事な設定ファイルを直す前には、直す前の内容をどこかにコピーしておく癖をつけてください。整理のつもりで消してはいけない情報を消してしまう事故を防げます</li>
+</ul>
+<h2 id="_5">つまずいたときに聞くプロンプト</h2>
+<p>整理していて「これはどっちの層に置くべきか分からない」となったら、次のプロンプトを使ってください。</p>
+<pre><code>私はClaude Codeの設定を、
+「毎回読まれる場所」と「条件つきで読まれる場所」に整理しようとしています。
+
+以下の内容は、どちらに置くべきか、理由つきで教えてください。
+判断基準は「これはどんな作業のときでも常に必要な情報か、
+それとも特定の場面でだけ必要な情報か」です。
+
+[ここに、置き場に迷っている内容を貼る]
+</code></pre>
+<h2 id="_6">用語集</h2>
+<div class='tbl'><table>
+<thead>
+<tr>
+<th>用語</th>
+<th>意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>コンテキスト</td>
+<td>AIが1回の応答のために読み込む情報のかたまり全体</td>
+</tr>
+<tr>
+<td>全体設定ファイル</td>
+<td>どんな作業をしていても毎回読まれる、一番上の設定ファイル</td>
+</tr>
+<tr>
+<td>プロジェクトの設定ファイル</td>
+<td>特定のプロジェクトの中でだけ毎回読まれる設定ファイル</td>
+</tr>
+<tr>
+<td>条件つきのルール置き場</td>
+<td>「このときだけ読んで」と指示したときにだけ読まれる場所</td>
+</tr>
+<tr>
+<td>手順書(スキル)</td>
+<td>繰り返し使う作業の手順をまとめたもの。名前と一言説明は毎回読まれる</td>
+</tr>
+<tr>
+<td>エージェント</td>
+<td>特定の役割に特化した担当。専門書を専門家が持ち歩くイメージ</td>
+</tr>
+<tr>
+<td><code>/context</code></td>
+<td>今のコンテキストの使用量を確認するコマンド</td>
+</tr>
+<tr>
+<td>区切り(リセット)</td>
+<td>会話の履歴を一度整理して、新しい状態から始めること</td>
+</tr>
+<tr>
+<td>コンピュータ操作AI</td>
+<td>画面の情報を読み取り、許可されたアプリを操作できるタイプのAI</td>
+</tr>
+<tr>
+<td>プロンプトインジェクション</td>
+<td>画面や外部の情報に紛れた文言が、AIへの指示として誤って解釈されてしまう現象</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="_7">次の一手</h2>
+<p>この特典は、AIマネタイズの特定の一段階だけでなく、最初の1件を取りに行く段階から、コンテンツ商品を育てる段階、SNSで発信を広げる段階まで、すべてを下支えする「土台」に当たります。Claude Codeを長く使い続けるつもりがあるなら、早いうちに整えておくほど効いてきます。</p>
+<p>Claude Codeの導入そのものがまだの人は、まず「Claude Code 最初の30分」を先に済ませてください。すでに使い始めていて、次はAIに役割を持たせて任せる段階に進みたい人は、「AI社員1人目」に進むのがおすすめです。</p>
+<p>面談では、あなた専用の1枚(特注のロードマップ)を一緒に作ります。</p>
+<h2 id="10">出す前の品質チェック(10項目)</h2>
+<p>自分の環境を整理し終えたら、次の10項目で確認してください。</p>
+<ol>
+<li>全体設定ファイルに、特定のプロジェクトだけの話が混ざっていないか</li>
+<li>プロジェクトの設定ファイルに、全プロジェクト共通の話が混ざっていないか</li>
+<li>頻度の低いルールが、条件つきの置き場ではなく毎回読まれる場所に残っていないか</li>
+<li>手順書の説明文が、トリガーワードと一言用途に収まっているか</li>
+<li>使っていない外部連携がオフになっているか</li>
+<li><code>/context</code> の数字を、まっさらな状態で確認したか</li>
+<li>直近で「答えがズレた」と感じた場面の原因を、10ルールと照らし合わせて特定したか</li>
+<li>個人情報や公開したくない情報が、設定ファイルに残っていないか</li>
+<li>直す前の内容を、どこかにコピーしてから作業したか</li>
+<li>週次の見直しを、実際にカレンダーやタスクに予定として入れたか</li>
+</ol>
+<h2 id="_8">最終チェックリスト</h2>
+<ul>
+<li>[ ] <code>/context</code> を実行し、今の空き具合を確認した</li>
+<li>[ ] 4層構造(全体設定・プロジェクト設定・条件つきルール・手順書)の役割の違いを説明できる</li>
+<li>[ ] 10ルールを読み、自分の環境に当てはまるものを3つ以上見つけた</li>
+<li>[ ] 「最初に投げるプロンプト」で、自分の環境をAIに診断させた</li>
+<li>[ ] 週次の見直し運用を、今週の予定にひとつ入れた</li>
+<li>[ ] 「安全に使うための注意」を読み、公開したくない情報が設定ファイルに残っていないか確認した</li>
+<li>[ ] 次に進む特典(「Claude Code 最初の30分」または「AI社員1人目」)を決めた</li>
+</ul></div>
+<nav class='pn'>
+<a href='../bonus-N38/'>← 勉強会・セミナーの地図の作り方</a>
+<span>（最後の特典）</span>
+</nav></article></main>
+<footer class='site'><div class='wrap'><p>この特典は受け取り条件を満たした方向けに配布しています。再配布・転載はご遠慮ください。</p><p>記載の売上・成果は特定の実績であり、同様の成果を保証するものではありません。</p></div></footer></body></html>

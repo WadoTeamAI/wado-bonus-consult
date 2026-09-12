@@ -1,0 +1,418 @@
+<!DOCTYPE html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><meta name='robots' content='noindex, nofollow, noarchive'><title>AI情報セキュリティ 3原則＋チェックリスト ── わど式 AIマネタイズ 特典｜面談予約特典</title><style>
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:'Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif;font-size:16px;line-height:1.8;letter-spacing:.04em;color:var(--text);background:var(--bg)}
+a{color:var(--link)}img{max-width:100%;height:auto;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+header.site{padding:40px 0 28px;color:#fff;background:var(--hero)}
+header.site h1{margin:0 0 6px;font-size:28px;line-height:1.3}
+header.site p{margin:0;opacity:.9;font-size:15px}
+.stamp{display:inline-block;font-size:12px;letter-spacing:.2em;padding:3px 10px;border:1px solid rgba(255,255,255,.6);border-radius:999px;margin-bottom:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;padding:28px 0 40px}
+.card{background:var(--card);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;border:1px solid var(--border)}
+.card .ph{aspect-ratio:16/9;background:var(--ph);display:flex;align-items:center;justify-content:center;color:#fff;font-size:34px;font-weight:800;letter-spacing:.06em}
+.card .bd{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:11px;padding:2px 8px;border-radius:999px;background:var(--tagbg);color:var(--tagfg);white-space:nowrap}
+.tag.k{background:var(--accent);color:#fff}
+.card h2{font-size:17px;margin:0;line-height:1.45}
+.card p{margin:0;font-size:13.5px;color:var(--muted);flex:1}
+.btn{display:inline-block;text-align:center;padding:10px 16px;border-radius:10px;font-weight:700;text-decoration:none;color:#fff;background:var(--btn)}
+.btn.dis{background:var(--muted);pointer-events:none}
+.btn.ghost{background:transparent;color:var(--link);border:1px solid var(--border)}
+article{padding:28px 0 48px}
+article .hero{display:grid;grid-template-columns:1fr;gap:18px;margin-bottom:24px}
+@media(min-width:760px){article .hero{grid-template-columns:1.1fr 1fr;align-items:center}}
+article h1{font-size:26px;line-height:1.35;margin:8px 0}
+article .lead{color:var(--muted);margin:0 0 12px}
+.toc{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 18px;margin:0 0 24px}
+.toc b{display:block;margin-bottom:6px}.toc ul{margin:0;padding-left:18px}.toc li{margin:2px 0;font-size:14px}
+.body h2{font-size:20px;margin:36px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--accent)}
+.body h3{font-size:17px;margin:24px 0 8px}
+.body table{width:100%;border-collapse:collapse;font-size:14px;margin:12px 0}
+.body th{background:var(--accent);color:#fff;text-align:left;padding:6px 8px}
+.body td{padding:6px 8px;border-bottom:1px solid var(--border);vertical-align:top}
+.body pre{background:var(--pre);padding:12px;border-radius:8px;overflow-x:auto;font-size:13.5px;white-space:pre-wrap}
+.body code{background:var(--pre);padding:1px 5px;border-radius:4px;font-size:.92em}
+.body blockquote{margin:12px 0;padding:8px 14px;border-left:4px solid var(--accent);background:var(--card)}
+.tbl{overflow-x:auto}
+.pending{background:var(--card);border:1px dashed var(--border);border-radius:12px;padding:24px;text-align:center;color:var(--muted)}
+nav.pn{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:18px;border-top:1px solid var(--border);font-size:14px}
+nav.pn a{max-width:48%}nav.pn span{color:var(--muted)}
+footer.site{padding:24px 0 40px;font-size:12.5px;color:var(--muted);border-top:1px solid var(--border)}
+footer.site p{margin:4px 0}
+.crumb{font-size:13px;margin:16px 0 0}.crumb a{text-decoration:none}
+.sec{padding:26px 0 6px;border-top:1px solid var(--border)}
+.sec:first-of-type{border-top:0;padding-top:20px}
+.sec>h2{font-size:20px;margin:0 0 4px;padding-left:12px;border-left:5px solid var(--accent);line-height:1.4}
+.sec>p{margin:0;font-size:13.5px;color:var(--muted)}
+.sec .grid{padding:16px 0 12px}
+.linkcard{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px 22px;margin:18px 0 30px;box-shadow:var(--shadow)}
+.linkcard p{margin:0 0 12px;font-size:14px;color:var(--muted)}
+.lib{padding:8px 0 30px}
+.lib h3{font-size:16px;margin:22px 0 6px;padding-left:10px;border-left:4px solid var(--accent)}
+.lib .grid{padding:8px 0 16px}
+.lib .card h2{font-size:15px}.lib .card p{display:none}
+.lib .note{font-size:13px;color:var(--muted);margin:4px 0 0}
+
+:root{--bg:#f5f3ff;--card:#fff;--text:#374151;--muted:#6b7280;--link:#4f46e5;--border:#e5e7eb;--accent:#6366f1;--btn:linear-gradient(90deg,#6366f1,#a855f7);--hero:linear-gradient(120deg,#1e1b4b,#6366f1 60%,#a855f7);--ph:linear-gradient(135deg,#1e1b4b,#6366f1);--tagbg:#eef2ff;--tagfg:#4338ca;--shadow:0 8px 24px rgba(30,27,75,.08);--pre:#f3f4f6}
+</style></head><body>
+<header class='site'><div class='wrap'><span class='stamp'>WADO BONUS 2026 · LIBRARY</span><h1 style=font-size:20px>わど式 AIマネタイズ 特典｜面談予約特典</h1></div></header>
+<main class='wrap'><p class='crumb'><a href='../'>← 一覧へ戻る</a></p><article>
+<div class='hero'><div><img src='../img/N07.png' alt='AI情報セキュリティ 3原則＋チェックリスト' style='border-radius:12px'></div><div><div class='tags'><span class='tag k'>新規</span><span class='tag'>Security</span><span class='tag'>NotebookLM</span><span class='tag'>シート</span><span class='tag'>面談予約特典</span></div><h1>AI情報セキュリティ 3原則＋チェックリスト</h1><p class='lead'>入れてよい情報・ダメな情報の線引きを、10問で自己診断</p><span class='tag' style='font-size:13px;padding:6px 12px'>このページが特典の本体です。下へスクロールして使ってください</span></div></div>
+<div class='toc'><b>目次</b><div class="toc">
+<ul>
+<li><a href="#_1">はじめに</a></li>
+<li><a href="#_2">この特典の進め方</a></li>
+<li><a href="#1">最初のゴール（今日やる1つ）</a></li>
+<li><a href="#1-ai3">1. AI利用の情報セキュリティ3原則</a><ul>
+<li><a href="#1_1">原則1: 匿名化</a></li>
+<li><a href="#2">原則2: データ分離</a></li>
+<li><a href="#3">原則3: 情報のぼかし</a></li>
+</ul>
+</li>
+<li><a href="#2_1">2. 入れてよい情報・ダメな情報の線引き表</a></li>
+<li><a href="#3-10">3. 10問の自己診断</a></li>
+<li><a href="#4-ai">4. 個人向けAI利用ルール雛形</a></li>
+<li><a href="#5">5. 事故が起きたときの手順</a></li>
+<li><a href="#_3">最初に投げるプロンプト</a></li>
+<li><a href="#7">よくある失敗 7つと直し方</a></li>
+<li><a href="#_4">安全に使うための注意</a></li>
+<li><a href="#_5">つまずいたときに聞くプロンプト</a></li>
+<li><a href="#_6">用語集</a></li>
+<li><a href="#10">出す前の品質チェック（10項目）</a></li>
+<li><a href="#ai20269">最新AI（2026年9月時点）でこの特典はどう変わるか</a></li>
+<li><a href="#_7">最終チェックリスト</a></li>
+</ul>
+</div>
+</div>
+<div class='body'><h1 id="ai-3">AI情報セキュリティ 3原則＋チェックリスト</h1>
+<blockquote>
+<p>AIに何を入れてよくて、何を入れてはいけないか。その線引きを自分の言葉で説明できるようになります。10問の自己診断で、今の自分の使い方がどこにリスクを抱えているかも分かります。</p>
+</blockquote>
+<h2 id="_1">はじめに</h2>
+<p>わどです。AIを副業や仕事で使い始めると、必ずぶつかる壁があります。「これ、AIに貼っていいのかな」という迷いです。</p>
+<p>クライアントからもらった資料。自分の売上や取引の数字。誰かの名前が入ったメッセージ。便利だからとつい全部貼ってしまいたくなりますが、それをやると情報漏洩のリスクを自分から作ってしまいます。</p>
+<p>かといって、怖がって何も貼らなければAIの力を半分も使えません。必要なのは「禁止」ではなく「線引き」です。この特典は、その線引きを3つの原則とチェックリストに落とし込んだものです。</p>
+<p>読み終える頃には、資料をAIに渡す前に「これは大丈夫」「これは書き換えてから」を自分で判断できるようになります。特別な知識はいりません。今日から使える型だけをまとめました。</p>
+<h2 id="_2">この特典の進め方</h2>
+<p>このページ自体が特典の本体です。ブックマークして、資料をAIに渡す前に見返す使い方をおすすめします。</p>
+<ol>
+<li>まず「3原則」を読んで、判断の軸を頭に入れる</li>
+<li>「線引き表」を見て、自分がよく扱う情報がどのレベルか確認する</li>
+<li>「10問の自己診断」をやって、今の自分の弱点を知る</li>
+<li>「個人向けAI利用ルール雛形」を自分用に1枚仕上げる</li>
+<li>迷ったときは「つまずいたときに聞くプロンプト」をAIに投げる</li>
+</ol>
+<p>NotebookLMを使う場合は、このページ全体をテキストとしてソースに追加してください。そのうえで「この文章の3原則を私の仕事に当てはめると、何に気をつければいいか教えて」と聞くと、自分の状況に合わせた回答が返ってきます。</p>
+<p>「シート」として使う場合は、「線引き表」「10問の自己診断」「品質チェック」の3つの表を、そのままスプレッドシートにコピーしてください。行の追加・自分用の記入欄追加は自由です。</p>
+<h2 id="1">最初のゴール（今日やる1つ）</h2>
+<p>今日は1つだけやってください。「10問の自己診断」に答えることです。5分もかかりません。</p>
+<p>答え終えたら、点数の低かった項目を1つだけ選び、「個人向けAI利用ルール雛形」の該当欄を埋めてください。それだけで、今日から使うAIの安全度が変わります。</p>
+<h2 id="1-ai3">1. AI利用の情報セキュリティ3原則</h2>
+<p>AIに情報を入力するときに守る原則は、実は3つしかありません。ツールがChatGPTでもGeminiでもClaudeでも同じです。覚える数を減らすほど、実際に使えるようになります。</p>
+<h3 id="1_1">原則1: 匿名化</h3>
+<p><strong>一言で言うと</strong>: 名前や社名は、役割や立場の言葉に置き換えてから入力する。</p>
+<p><strong>なぜ大事か</strong>: AIとのやり取りは、思っている以上に「誰の話か」が分かる情報を含みます。名前や社名を消しても、文脈から特定できてしまうことがあります。だから最初から「誰の話か分からない書き方」にしておくのが一番安全です。</p>
+<p><strong>具体例</strong>:
+- 「田中さんから来た見積もり依頼」→「クライアントから来た見積もり依頼」
+- 「A社のInstagram運用を任された」→「小売業のクライアントのSNS運用を任された」
+- 「山田工務店の請求書を作りたい」→「建設業のお客様向けの請求書を作りたい」</p>
+<h3 id="2">原則2: データ分離</h3>
+<p><strong>一言で言うと</strong>: 機密の部分とそうでない部分を分けて、機密部分はAIに見せない構成にする。</p>
+<p><strong>なぜ大事か</strong>: 1つの文章の中に、公開して問題ない情報と、絶対に外に出せない情報が混ざっていることがよくあります。全部まとめて貼ると、機密部分まで一緒に渡してしまいます。分けてから渡せば、AIには「公開しても困らない部分」だけを見せられます。</p>
+<p><strong>具体例</strong>:
+- 契約書の「条文の書き方」だけをAIに相談し、「相手の会社名・金額」は自分の手元で別管理する
+- 顧客リストの「連絡パターンの改善案」をAIに聞くときは、氏名列・連絡先列を削除した表だけを渡す
+- 請求書のテンプレートをAIに作らせるときは、実際の金額でなく「10万円」のような仮の数字で作らせ、あとで自分で差し替える</p>
+<h3 id="3">原則3: 情報のぼかし</h3>
+<p><strong>一言で言うと</strong>: 具体的な数字は、概数や仮の数字に置き換えてから入力する。</p>
+<p><strong>なぜ大事か</strong>: 売上・単価・人数といった具体的な数字は、それ単体でも「誰の何の話か」を絞り込む手がかりになります。厳密な数字が必要な作業でなければ、ぼかした数字でも十分にAIは使えます。</p>
+<p><strong>具体例</strong>:
+- 「先月の売上87万3,200円」→「先月の売上は約90万円」
+- 「クライアントは従業員数12名」→「クライアントは小規模企業（10名前後）」
+- 「単価3万5,000円で5件成約」→「単価は3万円台、成約は数件」</p>
+<p>3つとも「情報を削る」のではなく「情報の粒度を変える」だけです。これができると、AIに相談できる範囲がぐっと広がります。</p>
+<h2 id="2_1">2. 入れてよい情報・ダメな情報の線引き表</h2>
+<p>個人でAIから収益を上げる人が実際によく扱う情報を、5段階に分けました。迷ったら、上の段（危険な方）として扱ってください。</p>
+<div class='tbl'><table>
+<thead>
+<tr>
+<th style="text-align: center;">レベル</th>
+<th>名称</th>
+<th>AIに入れてよいか</th>
+<th>個人・副業でよくある例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Lv.5</td>
+<td>絶対に入力しない</td>
+<td>不可（どんな工夫をしても）</td>
+<td>パスワード、口座番号、マイナンバー、クレジットカード番号、各種APIキー</td>
+</tr>
+<tr>
+<td style="text-align: center;">Lv.4</td>
+<td>原則入力しない</td>
+<td>完全に書き換えた場合のみ、慎重に</td>
+<td>契約前の金額交渉の詳細、未公開の提携・独立の計画、クライアントの未公開の経営情報</td>
+</tr>
+<tr>
+<td style="text-align: center;">Lv.3</td>
+<td>書き換えてから入力する</td>
+<td>名前・数字を置き換えれば可</td>
+<td>個人情報（氏名・住所・連絡先）、契約書の実物、請求書の実物、クライアントの売上データ</td>
+</tr>
+<tr>
+<td style="text-align: center;">Lv.2</td>
+<td>ぼかせば入力してよい</td>
+<td>社名やプロジェクト名を仮名にすれば可</td>
+<td>企画書の草案、打ち合わせの議事録、業務の進め方に関するメモ</td>
+</tr>
+<tr>
+<td style="text-align: center;">Lv.1</td>
+<td>そのまま入力してよい</td>
+<td>制限なし</td>
+<td>一般的な文章の添削、公開済みの情報、テンプレートの雛形、自分だけの構想メモ</td>
+</tr>
+</tbody>
+</table></div>
+<p>判断の目安はシンプルです。「この文章がそのままどこかに漏れたとして、誰かに実害が出るか」を自問してください。実害が出るならLv.3以上、出ないならLv.1〜2です。</p>
+<p>迷ったときの合言葉は「迷ったら1段階上」です。安全側に倒しておけば、判断ミスの被害は最小限で済みます。</p>
+<h2 id="3-10">3. 10問の自己診断</h2>
+<p>「はい」か「いいえ」で答えてください。スプレッドシートに転記して、月1回のセルフチェックに使うのもおすすめです。</p>
+<div class='tbl'><table>
+<thead>
+<tr>
+<th>#</th>
+<th>質問</th>
+<th style="text-align: center;">はい/いいえ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>クライアントの実名や社名を、そのままAIに入力したことがある</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>2</td>
+<td>パスワードやログイン情報をAIに貼ったことがある</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>3</td>
+<td>AIに貼る前に、名前や数字を書き換える習慣がついている</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>4</td>
+<td>無料版のAIツールで、クライアントの契約内容や金額を扱ったことがある</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>5</td>
+<td>AIの回答を、内容を確認しないままクライアントに渡したことがある</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>6</td>
+<td>使っているAIツールの「学習に使わない設定」をオンにしている</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>7</td>
+<td>1つの会話の中で、機密情報を少しずつ小分けにして入力したことがある</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>8</td>
+<td>自分が使っているAIツールを、他人にIDやパスワードを共有して使わせている</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>9</td>
+<td>AIとのやり取りの履歴を、定期的に見直したり削除したりしている</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>10</td>
+<td>「これはAIに入れていいのか」と迷ったとき、判断する基準を持っている</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>点数の読み方</strong>:</p>
+<ul>
+<li>質問3・6・9・10は「はい」が1点、それ以外は「いいえ」が1点として合計してください（満点10点）</li>
+<li><strong>8〜10点</strong>: 良い状態です。この特典を「シート」としてそのまま月次チェックに使ってください</li>
+<li><strong>5〜7点</strong>: 危険な習慣が混ざっています。「いいえ」にできなかった質問から1つずつ直しましょう</li>
+<li><strong>4点以下</strong>: 今すぐ「個人向けAI利用ルール雛形」を作ることをおすすめします。習慣を変える前に、まずルールを紙に書き出すのが近道です</li>
+</ul>
+<h2 id="4-ai">4. 個人向けAI利用ルール雛形</h2>
+<p>自分用のルールを1枚にまとめておくと、毎回考えずに判断できます。クライアントに「どう情報を扱っているか」を聞かれたときに、そのまま見せられる体裁にもなっています。</p>
+<pre><code>【私のAI利用ルール】
+
+■ 使うAIツール
+- メインで使うツール: (　　　　　　　　　)
+- 学習オフ設定: [ ] 設定済み  [ ] 未設定
+- 二段階認証: [ ] 設定済み  [ ] 未設定
+
+■ 入力してよい情報の範囲
+- Lv.1〜2（そのまま／ぼかせば可）の情報のみ、通常業務で入力する
+- Lv.3（氏名・契約・売上データ）は、必ず匿名化・概数化してから入力する
+- Lv.4〜5（未公開の重要情報・認証情報）は、AIに一切入力しない
+
+■ クライアント情報を扱うときの手順
+1. 資料を受け取ったら、AIに渡す前に「名前」「社名」「金額」を仮の言葉・仮の数字に置き換える
+2. 置き換えた文章だけを読み返し、誰の話か分からないことを確認してからAIに入力する
+3. AIの回答は、そのままクライアントに渡さず、必ず自分の目で事実確認してから使う
+
+■ 出力の確認
+- AIが作った文章・数字は、送る前に自分で1回読み直す
+- 固有名詞・日付・金額は特に念入りに確認する
+
+■ 事故が起きたときの連絡先
+- 自分の中での一次対応担当: (　　　　　　　　　)
+- クライアントへの報告が必要な場合の連絡先: (　　　　　　　　　)
+
+作成日: (　　　　　　　　　)　　最終確認日: (　　　　　　　　　)
+</code></pre>
+<p>空欄を埋めたら完成です。印刷してデスクに貼るか、AIツールを開くときに毎回見る場所（メモアプリのピン留め等）に置いておくと、実際に機能します。</p>
+<h2 id="5">5. 事故が起きたときの手順</h2>
+<p>うっかり機密情報をAIに入力してしまうことは、誰にでも起こり得ます。大事なのは「隠す」のではなく「すぐ動く」ことです。</p>
+<ol>
+<li><strong>気づいた直後（30分以内）</strong>: そのチャット・会話を削除する。スクリーンショットは撮らない（画像として二次的に情報が残ってしまうため）</li>
+<li><strong>1時間以内</strong>: 何を入力してしまったか、自分の言葉でメモに残す（原文をコピーして残す必要はありません。「何のレベルの情報だったか」が分かれば十分です）</li>
+<li><strong>その日のうち</strong>: 該当するクライアントがいる場合は、正直に状況を伝える。隠して後から発覚する方が信頼を失います</li>
+<li><strong>翌日までに</strong>: なぜ起きたか（急いでいた、原則を忘れていた等）を1行でいいので書き残す。同じ失敗を繰り返さないための記録です</li>
+<li><strong>深刻な場合</strong>（パスワードや口座情報を入れてしまった等）: 該当するパスワードをすぐに変更し、必要であれば口座やカードの発行元にも連絡する</li>
+</ol>
+<p>事故が起きたときに一番怖いのは「入力してしまったこと」よりも「気づいたのに何もしないこと」です。この手順を一度読んでおくだけで、いざというときの動きが速くなります。</p>
+<h2 id="_3">最初に投げるプロンプト</h2>
+<p>資料をAIに渡す前に、次のプロンプトを使うと、自分で気づけなかった固有情報の見落としをAIがチェックしてくれます。</p>
+<pre><code>あなたは情報セキュリティのチェック役です。
+これから私が渡す文章に、次のいずれかが含まれていないか確認してください。
+
+- 個人名・会社名・プロジェクト名などの固有名詞
+- 具体的な金額・売上・単価などの数値
+- パスワード・口座番号・API キーなどの認証情報
+
+含まれている場合は、それぞれを「どこにあるか」「何に置き換えれば安全か」の
+形式で一覧にして教えてください。含まれていなければ「問題なし」とだけ答えてください。
+
+出力形式:
+- 見つかった箇所 / 種類（固有名詞・数値・認証情報） / 置き換え案
+
+チェック対象の文章:
+（ここに貼り付ける）
+</code></pre>
+<p>このプロンプトの回答を見てから、実際に相談したい内容を入力する2段階の使い方をおすすめします。</p>
+<h2 id="7">よくある失敗 7つと直し方</h2>
+<ol>
+<li>
+<p><strong>急いでいるときに、資料をそのまま貼ってしまう</strong>
+   → 直し方: 「貼る前に1呼吸」をルール化する。上の「最初に投げるプロンプト」でチェックを挟む</p>
+</li>
+<li>
+<p><strong>無料版のAIツールで、クライアントの契約内容を扱ってしまう</strong>
+   → 直し方: 無料版はLv.1〜2の情報だけと決める。Lv.3以上は有料版・学習オフ設定を確認してから使う</p>
+</li>
+<li>
+<p><strong>AIの回答を、事実確認せずそのままクライアントに送ってしまう</strong>
+   → 直し方: 送る前に必ず1回読み直す工程を、作業の流れに組み込む</p>
+</li>
+<li>
+<p><strong>機密情報を、少しずつ小分けにして入力してしまう</strong>
+   → 直し方: 「小分けにすれば大丈夫」という考え方自体をやめる。分割していても、AI側から見れば同じ会話の中でつながっている</p>
+</li>
+<li>
+<p><strong>パスワードや個人情報を、うっかり例文の中に含めて貼ってしまう</strong>
+   → 直し方: 貼る前に文章全体を目視で1回スキャンする。数字の羅列（口座番号・電話番号らしきもの）だけでも目で追う癖をつける</p>
+</li>
+<li>
+<p><strong>AIツールのアカウントを、他人と共有して使ってしまう</strong>
+   → 直し方: 1人1アカウントにする。共有すると「誰が何を入力したか」が分からなくなり、事故が起きても原因を追えない</p>
+</li>
+<li>
+<p><strong>一度作ったルールを、その後まったく見返さない</strong>
+   → 直し方: 「10問の自己診断」を月1回のリマインダーに設定する。使い方は少しずつ変わるので、ルールも定期的に見直す</p>
+</li>
+</ol>
+<h2 id="_4">安全に使うための注意</h2>
+<ul>
+<li>AIとの会話は「消せば終わり」ではありません。サービスによってはデータの保持期間が異なるため、心配な入力をしてしまったら、まずそのサービスの設定画面で「学習に使わない」「履歴を残さない」の設定を確認してください</li>
+<li>AIが作った文章・コード・数字を、検証せずにそのまま最終成果物として使わないでください。AIは自信満々に間違えることがあります</li>
+<li>「AIがそう言っていた」を、専門家の助言のように第三者へ伝えないでください。法律・税務・医療に関わる判断は、必ず専門家に確認してください</li>
+<li>クライアントワークをしている場合は、この特典の内容をベースに「私はこう情報を扱っています」と一言伝えておくと、信頼関係の土台になります</li>
+<li>目の前の作業を早く終わらせたい気持ちが、一番の落とし穴です。焦っているときほど「貼る前に1呼吸」を思い出してください</li>
+</ul>
+<h2 id="_5">つまずいたときに聞くプロンプト</h2>
+<p>判断に迷ったら、次のプロンプトをAIに投げてください。AI自身に、自分が今どのレベルの情報を扱っているか判定してもらう使い方です。</p>
+<pre><code>私はAIで収益を上げている個人です。
+これから話す内容が、AIに入力しても安全かどうか判定してください。
+
+判定の基準は次の5段階です。
+- Lv.1: 制限なく入力してよい
+- Lv.2: 社名・プロジェクト名をぼかせば入力してよい
+- Lv.3: 氏名・金額を書き換えれば入力してよい
+- Lv.4: 原則入力しない（未公開の重要情報）
+- Lv.5: 絶対に入力しない（パスワード・口座番号など）
+
+迷ったら、安全な方（レベルの数字が大きい方）に倒して判定してください。
+
+判定してほしい内容:
+（ここに、これから相談したい内容を要約して書く）
+
+出力してほしいもの:
+1. 判定レベル
+2. その理由
+3. もしLv.3以上なら、どこをどう書き換えれば安全に相談できるか
+</code></pre>
+<h2 id="_6">用語集</h2>
+<ul>
+<li><strong>匿名化</strong>: 個人名・社名などの固有情報を、それだけでは誰か分からない言葉に置き換えること</li>
+<li><strong>マスキング</strong>: 文章の中の一部分（名前・数字など）を、伏せ字や仮の値に置き換える処理のこと</li>
+<li><strong>データ分離</strong>: 機密の部分とそうでない部分を分けて、機密部分はAIに渡さない構成にすること</li>
+<li><strong>学習オフ設定</strong>: 入力した内容がAIモデルの学習に使われないようにする設定のこと。多くのAIツールで有効化できる</li>
+<li><strong>ジグソーパズル効果</strong>: 機密情報を少しずつ分けて入力すれば安全だと考えてしまう誤解のこと。分割していても文脈がつながれば意味を持ってしまう</li>
+<li><strong>概数化</strong>: 具体的な数字を「約〇〇円」「〇名前後」のようにぼかして表現すること</li>
+<li><strong>リスクレベル</strong>: 情報がどれだけ扱いに注意が必要かを段階分けした指標。本特典ではLv.1〜Lv.5の5段階を使用</li>
+</ul>
+<h2 id="10">出す前の品質チェック（10項目）</h2>
+<p>クライアントに何かを送る直前、または自分の作業を一区切りするタイミングで確認してください。</p>
+<ol>
+<li>送ろうとしている文章に、実名・社名がそのまま残っていないか</li>
+<li>具体的な金額・数字は、開示してよい範囲に収まっているか</li>
+<li>AIの回答を、自分の目で1回読み直したか</li>
+<li>事実確認が必要な部分（日付・数字・固有名詞）を、元の資料と突き合わせたか</li>
+<li>使ったAIツールは、学習オフ設定が有効になっているか</li>
+<li>クライアントの契約・金額に関わる情報を、無料版のAIで扱っていないか</li>
+<li>認証情報（パスワード・口座番号等）が、会話のどこにも含まれていないか</li>
+<li>この内容が万一漏れた場合、実害が出る相手がいないか</li>
+<li>「迷ったら1段階上」の原則で、安全側に倒して判断したか</li>
+<li>今回の作業で気づいたことを、次に活かせる形で1行メモしたか</li>
+</ol>
+<p>10項目中8項目以上「できている」と言えれば、送って大丈夫です。7項目以下なら、該当しない項目に戻って見直してください。</p>
+<h2 id="ai20269">最新AI（2026年9月時点）でこの特典はどう変わるか</h2>
+<p><strong>この特典では</strong>: コンピュータ操作型の AI は、画面に映った文章をそのまま指示として読むことがあります。AI に画面を触らせるときは「映すものを選ぶ」を4つ目の原則として足してください。</p>
+<p>2026年9月の第1週に、主要な AI が続けて更新されました。この特典の手順は変わりませんが、次の3点を知っておくと手数が減ります（2026年9月6日時点の公開情報です。提供状況は変わるので、使う前に各社の公式サイトで確かめてください）。</p>
+<ul>
+<li><strong>GPT-6 Astra（OpenAI・2026年9月3日発表）</strong>: 画面の情報を読み取り、アプリを人間と同じ画面経由で動かす「コンピュータ操作」が主機能になりました。フォーム入力・表計算・資料づくりのような「手順が決まっている作業」を任せやすくなります。ただし段階的な提供の途中で、自分のアカウントにまだ出ていないことがあります。画面に映った文章をそのまま指示として読むことがあるので、AI に画面を触らせるときは「映すものを選ぶ」を守ってください。</li>
+<li><strong>Claude Fable 5.1（Anthropic・2026年9月1日発表）</strong>: 数時間から数日にわたる、複数アプリをまたぐ作業を最小限の監督で回すための最上位モデルです。この特典の作業は Sonnet／Opus で足ります。「何日もかかる仕事を丸ごと任せる」段階になってから検討してください。Claude Code の導入は特典「Claude Code 最初の30分」で扱っています。</li>
+<li><strong>AI社員</strong>: 上の2つが向いている先は同じです。「毎回同じ指示を書かなくていい担当」を1人ずつ増やす形が、個人でも現実になりました。この特典のプロンプトやシステム指示は、そのまま AI社員の「指示書」の1枚になります。つくり方は特典「AI社員1人目のつくり方」で扱っています。</li>
+</ul>
+<p>モデルの差で成果は決まりません。何に使うかで決まります。この特典の手順を1周してから、新しいモデルを試してください。</p>
+<h2 id="_7">最終チェックリスト</h2>
+<p>この特典を使い終えたら、次の4つができているか確認してください。</p>
+<ul>
+<li>[ ] 3原則（匿名化・データ分離・情報のぼかし）を、自分の言葉で説明できる</li>
+<li>[ ] 「10問の自己診断」に答え、自分の弱点を1つ以上見つけた</li>
+<li>[ ] 「個人向けAI利用ルール雛形」の空欄を、自分の言葉で埋めた</li>
+<li>[ ] 「出す前の品質チェック」を、次にAIを使う作業から実際に使ってみる</li>
+</ul>
+<p>4つとも終われば、今日からのAI利用が一段階安全になっています。この特典はいつでも見返せる場所に置いておいてください。</p></div>
+<nav class='pn'>
+<a href='../bonus-N06/'>← AIマネタイズ 導入必須ツール 導入順チェックリスト</a>
+<a href='../bonus-N09/'>媒体別ルール 14本 →</a>
+</nav></article></main>
+<footer class='site'><div class='wrap'><p>この特典は受け取り条件を満たした方向けに配布しています。再配布・転載はご遠慮ください。</p><p>記載の売上・成果は特定の実績であり、同様の成果を保証するものではありません。</p></div></footer></body></html>

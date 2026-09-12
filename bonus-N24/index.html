@@ -1,0 +1,275 @@
+<!DOCTYPE html><html lang='ja'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><meta name='robots' content='noindex, nofollow, noarchive'><title>AIに任せて失敗する前の判断パターン集 ── わど式 AIマネタイズ 特典｜面談予約特典</title><style>
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:'Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif;font-size:16px;line-height:1.8;letter-spacing:.04em;color:var(--text);background:var(--bg)}
+a{color:var(--link)}img{max-width:100%;height:auto;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+header.site{padding:40px 0 28px;color:#fff;background:var(--hero)}
+header.site h1{margin:0 0 6px;font-size:28px;line-height:1.3}
+header.site p{margin:0;opacity:.9;font-size:15px}
+.stamp{display:inline-block;font-size:12px;letter-spacing:.2em;padding:3px 10px;border:1px solid rgba(255,255,255,.6);border-radius:999px;margin-bottom:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;padding:28px 0 40px}
+.card{background:var(--card);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;border:1px solid var(--border)}
+.card .ph{aspect-ratio:16/9;background:var(--ph);display:flex;align-items:center;justify-content:center;color:#fff;font-size:34px;font-weight:800;letter-spacing:.06em}
+.card .bd{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:11px;padding:2px 8px;border-radius:999px;background:var(--tagbg);color:var(--tagfg);white-space:nowrap}
+.tag.k{background:var(--accent);color:#fff}
+.card h2{font-size:17px;margin:0;line-height:1.45}
+.card p{margin:0;font-size:13.5px;color:var(--muted);flex:1}
+.btn{display:inline-block;text-align:center;padding:10px 16px;border-radius:10px;font-weight:700;text-decoration:none;color:#fff;background:var(--btn)}
+.btn.dis{background:var(--muted);pointer-events:none}
+.btn.ghost{background:transparent;color:var(--link);border:1px solid var(--border)}
+article{padding:28px 0 48px}
+article .hero{display:grid;grid-template-columns:1fr;gap:18px;margin-bottom:24px}
+@media(min-width:760px){article .hero{grid-template-columns:1.1fr 1fr;align-items:center}}
+article h1{font-size:26px;line-height:1.35;margin:8px 0}
+article .lead{color:var(--muted);margin:0 0 12px}
+.toc{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 18px;margin:0 0 24px}
+.toc b{display:block;margin-bottom:6px}.toc ul{margin:0;padding-left:18px}.toc li{margin:2px 0;font-size:14px}
+.body h2{font-size:20px;margin:36px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--accent)}
+.body h3{font-size:17px;margin:24px 0 8px}
+.body table{width:100%;border-collapse:collapse;font-size:14px;margin:12px 0}
+.body th{background:var(--accent);color:#fff;text-align:left;padding:6px 8px}
+.body td{padding:6px 8px;border-bottom:1px solid var(--border);vertical-align:top}
+.body pre{background:var(--pre);padding:12px;border-radius:8px;overflow-x:auto;font-size:13.5px;white-space:pre-wrap}
+.body code{background:var(--pre);padding:1px 5px;border-radius:4px;font-size:.92em}
+.body blockquote{margin:12px 0;padding:8px 14px;border-left:4px solid var(--accent);background:var(--card)}
+.tbl{overflow-x:auto}
+.pending{background:var(--card);border:1px dashed var(--border);border-radius:12px;padding:24px;text-align:center;color:var(--muted)}
+nav.pn{display:flex;justify-content:space-between;gap:12px;margin:36px 0 0;padding-top:18px;border-top:1px solid var(--border);font-size:14px}
+nav.pn a{max-width:48%}nav.pn span{color:var(--muted)}
+footer.site{padding:24px 0 40px;font-size:12.5px;color:var(--muted);border-top:1px solid var(--border)}
+footer.site p{margin:4px 0}
+.crumb{font-size:13px;margin:16px 0 0}.crumb a{text-decoration:none}
+.sec{padding:26px 0 6px;border-top:1px solid var(--border)}
+.sec:first-of-type{border-top:0;padding-top:20px}
+.sec>h2{font-size:20px;margin:0 0 4px;padding-left:12px;border-left:5px solid var(--accent);line-height:1.4}
+.sec>p{margin:0;font-size:13.5px;color:var(--muted)}
+.sec .grid{padding:16px 0 12px}
+.linkcard{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px 22px;margin:18px 0 30px;box-shadow:var(--shadow)}
+.linkcard p{margin:0 0 12px;font-size:14px;color:var(--muted)}
+.lib{padding:8px 0 30px}
+.lib h3{font-size:16px;margin:22px 0 6px;padding-left:10px;border-left:4px solid var(--accent)}
+.lib .grid{padding:8px 0 16px}
+.lib .card h2{font-size:15px}.lib .card p{display:none}
+.lib .note{font-size:13px;color:var(--muted);margin:4px 0 0}
+
+:root{--bg:#f5f3ff;--card:#fff;--text:#374151;--muted:#6b7280;--link:#4f46e5;--border:#e5e7eb;--accent:#6366f1;--btn:linear-gradient(90deg,#6366f1,#a855f7);--hero:linear-gradient(120deg,#1e1b4b,#6366f1 60%,#a855f7);--ph:linear-gradient(135deg,#1e1b4b,#6366f1);--tagbg:#eef2ff;--tagfg:#4338ca;--shadow:0 8px 24px rgba(30,27,75,.08);--pre:#f3f4f6}
+</style></head><body>
+<header class='site'><div class='wrap'><span class='stamp'>WADO BONUS 2026 · LIBRARY</span><h1 style=font-size:20px>わど式 AIマネタイズ 特典｜面談予約特典</h1></div></header>
+<main class='wrap'><p class='crumb'><a href='../'>← 一覧へ戻る</a></p><article>
+<div class='hero'><div><div class='card'><div class='ph'>N24</div></div></div><div><div class='tags'><span class='tag k'>新規</span><span class='tag'>NG集</span><span class='tag'>NotebookLM</span><span class='tag'>面談予約特典</span></div><h1>AIに任せて失敗する前の判断パターン集</h1><p class='lead'>任せる／任せない／半分任せる。2026年4月版の判断の型</p><span class='tag' style='font-size:13px;padding:6px 12px'>このページが特典の本体です。下へスクロールして使ってください</span></div></div>
+<div class='toc'><b>目次</b><div class="toc">
+<ul>
+<li><a href="#_1">はじめに</a></li>
+<li><a href="#_2">この特典の進め方</a></li>
+<li><a href="#1">最初のゴール(今日やる1つ)</a></li>
+<li><a href="#1_1">1. なぜ失敗するのか(構造)</a></li>
+<li><a href="#2">2. 型ごとの失敗と直し方(全型・省略しない)</a><ul>
+<li><a href="#1-ai">型1 「当たるかどうか」をAIに断定させる</a></li>
+<li><a href="#2-ai">型2 実績・体験のないままAIに語らせる</a></li>
+<li><a href="#3">型3 一発出しをそのまま出す(ラリーなしの投稿)</a></li>
+<li><a href="#4">型4 人の感情を読む場面を丸ごと渡す</a></li>
+<li><a href="#5">型5 撤退・継続の判断を丸ごと渡す</a></li>
+<li><a href="#6">型6 規模・タイミングの読みを丸ごと渡す</a></li>
+<li><a href="#7">型7 型化できるのに毎回人がやる(任せなさすぎの失敗)</a></li>
+<li><a href="#8-ai">型8 賞味期限のある情報をAIに固定化させる</a></li>
+</ul>
+</li>
+<li><a href="#3_1">3. 自己診断チェックリスト</a></li>
+<li><a href="#4_1">4. 直した後の確かめ方</a></li>
+<li><a href="#5-ai20269-2026-09-06">5. 最新AI(2026年9月時点)で増えた失敗(取得日 2026-09-06)</a></li>
+<li><a href="#6_1">6. 次の一手</a></li>
+<li><a href="#_3">最初に投げるプロンプト</a></li>
+<li><a href="#7_1">よくある失敗 7つと直し方</a></li>
+<li><a href="#_4">安全に使うための注意</a></li>
+<li><a href="#_5">つまずいたときに聞くプロンプト</a></li>
+<li><a href="#_6">用語集</a></li>
+<li><a href="#10">出す前の品質チェック(10項目)</a></li>
+<li><a href="#_7">最終チェックリスト</a></li>
+</ul>
+</div>
+</div>
+<div class='body'><h1 id="ai">AIに任せて失敗する前の判断パターン集</h1>
+<blockquote>
+<p>AIに「どこまで任せていいか」を、能力の高さではなく「間違えたときに取り返しがつくか」で判定する型です。任せる・任せない・半分任せるの3択を、8つの失敗パターンに沿って自己診断できます。</p>
+</blockquote>
+<h2 id="_1">はじめに</h2>
+<p>わどです。この特典は、AIマネタイズの実務で「AIにどこまで任せていいのか」が分からなくなったときに開くものです。</p>
+<p>AIの活用で起きる失敗は、大きく2つに分かれます。1つは任せすぎて起きる失敗。もう1つは、逆に任せなさすぎて時間を溶かす失敗です。どちらも「AIがどれだけ上手にできるか」だけを見て判断していることが原因です。実際に見るべきものは、もう1つあります。「間違えたときに、どれくらいのダメージが出るか。取り返しがつくかどうか」です。</p>
+<p>この2つの軸(できるか・取り返しがつくか)を組み合わせると、「全任せ」「半分任せ」「任せない」の3択が、感覚ではなく型として決められるようになります。このページでは、その型を8つの失敗パターンとして具体化します。</p>
+<h2 id="_2">この特典の進め方</h2>
+<ol>
+<li>まずこのページ全体に目を通します(20分ほどです)</li>
+<li>「3. 自己診断チェックリスト」に、今あなたがAIに任せている作業を思い浮かべながらチェックを入れます</li>
+<li>当てはまった数が多かった型から、「2. 型ごとの失敗と直し方」の該当箇所を読み直します</li>
+<li>「6. 次の一手」で、今日から変える1つを決めます</li>
+</ol>
+<p>NotebookLMを使う場合は、このページをそのままソースとして追加してください。あなたが実際にAIに任せている業務のリストを貼って、「この8つの型に当てはまっているか判定して」と聞くと、具体的な指摘が返ってきます。</p>
+<h2 id="1">最初のゴール(今日やる1つ)</h2>
+<p>今日やることは1つだけです。いまAIに任せている作業を1つ選び、「全任せ」「半分任せ(AIが下書き、あなたが確認)」「任せない(あなたが主導、AIは資料整理のみ)」のどれに当てはまっているか、その理由と一緒に紙かメモに書き出してください。理由まで書くのが今日のゴールです。</p>
+<h2 id="1_1">1. なぜ失敗するのか(構造)</h2>
+<p>AIに任せる判断を間違える人には、共通の構造があります。判断の軸が1つしかないことです。</p>
+<p>多くの人は「AIがこの作業をどれくらい上手にできるか」だけを見て、任せる範囲を決めています。文章が上手に書ける、コードが動く、画像がきれいに出る。それを見て「じゃあ全部任せよう」となります。逆に、少しでも不安を感じると「AIはまだ信用できない」と全部自分でやる方向に振れます。どちらも、判断の軸が「能力」の1本だけです。</p>
+<p>実際に見るべき軸は、もう1つあります。「その作業で間違えたとき、どれくらいのダメージが出るか。そして、そのダメージは取り返しがつくものか」という軸です。この2軸を組み合わせると、次のように整理できます。</p>
+<div class='tbl'><table>
+<thead>
+<tr>
+<th>能力が高い</th>
+<th>能力が不安</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>損失が小さく取り返せる</td>
+<td>全任せでよい</td>
+</tr>
+<tr>
+<td>損失が大きい・取り返せない</td>
+<td>半分任せ(人が最終確認)</td>
+</tr>
+</tbody>
+</table></div>
+<p>たとえば下書きの文章は、間違えても公開前に直せます。損失が小さいので、能力が高ければ全任せでかまいません。一方で、金額を決める判断や、相手の感情を受け止める場面、公開してしまえば取り消せない発言は、AIがどれだけ上手にできても「半分任せ」か「任せない」に置くべきです。次の章では、この判断を間違えたときに起きる失敗を、8つの型に分けて見ていきます。</p>
+<h2 id="2">2. 型ごとの失敗と直し方(全型・省略しない)</h2>
+<h3 id="1-ai">型1 「当たるかどうか」をAIに断定させる</h3>
+<p>新しい商品やジャンルが売れるかどうかは、誰にも正確には分かりません。それなのに「AIに聞けば分かる」と思い込み、AIの自信満々な回答をそのまま計画の根拠にしてしまう失敗です。AIは聞かれれば必ず何か答えを返しますが、その答えに「わからない」という選択肢は含まれていません。</p>
+<p>直し方は、AIに「当たるか」を聞くのをやめて、「試すための最小の一歩は何か」を聞くことです。分からないことは分からないまま、小さく試して確かめる。予測はAIに任せず、実験の設計だけを任せます。</p>
+<h3 id="2-ai">型2 実績・体験のないままAIに語らせる</h3>
+<p>自分がまだやったことのない分野について、AIに文章を書かせてそのまま発信してしまう失敗です。AIは滑らかな文章を書けますが、体験の裏付けまでは作れません。読み手には、不思議と伝わってしまいます。</p>
+<p>直し方は、「発信する前に、最低1回は自分で試す」を先に置くことです。AIには、体験した内容を整理して読みやすくする役割だけを任せます。体験そのものの創作は任せません。</p>
+<h3 id="3">型3 一発出しをそのまま出す(ラリーなしの投稿)</h3>
+<p>AIに1回プロンプトを投げて、出てきた文章をそのままコピーして公開する失敗です。見た目は整っていても、どこかで「AIがそのまま書いた感じ」が透けて見えます。</p>
+<p>直し方は、最低でも2〜3回のやり取り(ラリー)を挟むことです。1回目の出力に対して「ここは自分の言葉で言うとこう」「この例えは違う」と修正を入れ、もう一度出させる。仕上げの一手間は人が入れます。全任せではなく半分任せに寄せる、というだけで結果が変わります。</p>
+<h3 id="4">型4 人の感情を読む場面を丸ごと渡す</h3>
+<p>相談を受けているとき、クレーム対応をしているとき、相手が言葉にしていない不満を汲み取る場面は、AIに丸ごと任せると事故が起きやすい領域です。AIは言葉の意味は読み取れますが、その場の空気や、言いにくそうにしている間、声のトーンまでは拾えません。</p>
+<p>直し方は、相手と直接やり取りする本番は人が担当し、AIには「返信の下書き」「聞くべき質問のリスト」「見落としがちな論点の洗い出し」までを任せることです。最後のひと言を出す前に、人の目で読み直します。</p>
+<h3 id="5">型5 撤退・継続の判断を丸ごと渡す</h3>
+<p>いま続けている取り組みをやめるかどうか、新しいことに切り替えるかどうかという判断を、AIの分析結果だけで決めてしまう失敗です。数字の分析はAIが得意でも、「自分がこの先どれだけ続けられるか」「何を諦めたくないか」まではAIには分かりません。</p>
+<p>直し方は、AIには「続けた場合・やめた場合、それぞれで起きうることの整理」までを任せ、最終的にどちらを選ぶかは必ず人が決めることです。分析と決定を分けて考えます。</p>
+<h3 id="6">型6 規模・タイミングの読みを丸ごと渡す</h3>
+<p>「今が始めどきか」「どれくらいの規模でやるべきか」という判断を、AIの回答をそのまま採用して決めてしまう失敗です。市場のタイミングは、外から見える情報だけでは正確に測れません。</p>
+<p>直し方は、AIには「今の市場で何が起きているかの整理」までを任せ、規模とタイミングの最終判断は、少人数から試しながら人が調整することです。最初から大きく張らないことが、この型の直し方そのものでもあります。</p>
+<h3 id="7">型7 型化できるのに毎回人がやる(任せなさすぎの失敗)</h3>
+<p>逆方向の失敗もあります。すでにパターンが決まっている定型作業(投稿の文字数調整、決まった形式の週次報告、いつも同じ構成のテンプレート作成など)を、毎回ゼロから自分でやってしまう失敗です。損失が小さく取り返しがつく作業まで人が抱えると、本当に人が見るべき場面に使う時間がなくなります。</p>
+<p>直し方は、「同じことを3回以上繰り返した作業」をリストアップし、型として一度AIに渡してしまうことです。任せすぎる失敗ばかりを気にして、任せなさすぎる失敗を見落とさないようにします。</p>
+<h3 id="8-ai">型8 賞味期限のある情報をAIに固定化させる</h3>
+<p>AIに一度作らせた手順書やテンプレートを、そのまま更新せずに使い続けてしまう失敗です。AIの機能や、AIまわりの流行り・制約は数ヶ月単位で変わります。1年前に作った「AIの使い方マニュアル」を今も同じ内容で運用していると、すでに古くなった手順を教え続けることになります。</p>
+<p>直し方は、AIに関する手順書には必ず「作成日・最終確認日」を書き込み、数ヶ月に一度、実際にAIを動かして手順どおりに動くか確かめることです。作って終わりにしないことが、この型の直し方です。</p>
+<h2 id="3_1">3. 自己診断チェックリスト</h2>
+<p>当てはまるものにチェックを入れてください。数が多いほど、見直しの優先度が高い型です。</p>
+<ul>
+<li>[ ] 新しいことが「当たるかどうか」をAIに聞いて、そのまま計画の根拠にしている(型1)</li>
+<li>[ ] まだ自分で試したことのない分野の体験談・手順を、AIに作らせて発信している(型2)</li>
+<li>[ ] AIの1回目の出力を、修正なしでそのまま公開・提出している(型3)</li>
+<li>[ ] 相手への返信の最終文面まで、AIが出したものをそのまま送っている(型4)</li>
+<li>[ ] 続ける・やめるの最終判断を、AIの分析結果だけで決めたことがある(型5)</li>
+<li>[ ] 始めどき・規模の判断を、AIの回答をそのまま採用したことがある(型6)</li>
+<li>[ ] 同じ作業を3回以上繰り返しているのに、毎回ゼロからやっている(型7)</li>
+<li>[ ] AIまわりの手順書・テンプレートを1年近く見直していない(型8)</li>
+<li>[ ] 「AIに任せる/任せない」の基準を、これまで言葉にしたことがない</li>
+<li>[ ] 金額が絡む判断を、確認なしでAIの提案どおりに進めたことがある</li>
+</ul>
+<p>7個以上チェックがついた場合は、「6. 次の一手」から着手することをおすすめします。3〜6個の場合は、チェックがついた型から順に「2. 型ごとの失敗と直し方」を読み直してください。2個以下の場合は、すでに判断の軸を持てている状態です。このページを月1回の見直しに使ってください。</p>
+<h2 id="4_1">4. 直した後の確かめ方</h2>
+<p>見直しをしたあとは、次の3つで「直っているか」を確かめます。</p>
+<ol>
+<li><strong>その作業を、他の人に説明できるか</strong>。「これはAIに全任せしている。理由は損失が小さいから」と、任せる範囲と理由を口に出して説明できれば、感覚ではなく型で判断できている証拠です。</li>
+<li><strong>一度、あえてAIを使わずにやってみる</strong>。任せている作業を1回だけ自分の手だけで通してみると、AIに任せていた部分のうち、本当は自分が理解しておくべきだった箇所が見えてきます。</li>
+<li><strong>AI自身に聞いてみる</strong>。「これまでのやり取りの中で、私が確認せずに採用した判断はどこですか」とAIに聞くと、見落としていた箇所を洗い出す助けになります。ただし、その回答自体も鵜呑みにせず、最終確認は自分で行います。</li>
+</ol>
+<p>この3つを、大きな判断をした後や、月に1回のペースで行うと、任せる基準が緩みすぎるのを防げます。</p>
+<h2 id="5-ai20269-2026-09-06">5. 最新AI(2026年9月時点)で増えた失敗(取得日 2026-09-06)</h2>
+<p>2026年9月に発表された新しいAIモデルは、画面の情報を読み取り、承認されたインターフェースを人間の代わりに操作できる機能(コンピューター操作)を主要な機能として打ち出しています。パソコン操作の性能を測るベンチマーク(OSWorld 2.0)では72.6%、システム操作系の別ベンチマーク(ExploitBench)では100という結果が公表されています(2026-09-06取得)。</p>
+<p>これは、任せる判断の重さが今までより増していることを意味します。これまでの「文章や画像を作らせる」段階から、「実際に画面を操作させて申込や設定変更まで行わせる」段階に、任せられる範囲そのものが広がっているためです。</p>
+<p>同時に、提供元は次の点も明示しています。「画面に表示された内容は、不完全であったり、誤解を招くものであったり、AIの動作に影響を与えることを意図したものである可能性がある」(2026-09-06取得)。つまり、AIに画面を触らせるときは、AIに何を見せるか(どの画面・どのタブを開いた状態で操作を任せるか)まで、人が選ぶ必要が出てきています。</p>
+<p>「型8 賞味期限のある情報をAIに固定化させる」失敗は、この変化によってさらに起きやすくなっています。数ヶ月前に決めた「ここまでは全任せでよい」という線引きを、AIの機能が広がった後もそのまま使い続けると、本来は人が確認すべき操作まで気づかないうちに全任せになっていることがあります。任せる範囲の線引きは、AIのモデルが新しくなるたびに、一度見直す習慣を持ってください。</p>
+<h2 id="6_1">6. 次の一手</h2>
+<p>この特典は、「稼ぎ方より、稼ぐ順番」で言うと、STEP1(最初の1件)からSTEP3(SNS・ローンチ)まで、すべての段階で使う土台の型です。特定のSTEPに限らず、AIを使うすべての場面に効きます。</p>
+<p>面談では、あなた専用の1枚(特注のロードマップ)を一緒に作ります。</p>
+<h2 id="_3">最初に投げるプロンプト</h2>
+<p>以下をコピーして、ChatGPT・Gemini・Claudeのいずれかに貼り付けてください。</p>
+<pre><code>あなたはAI活用の判断を整理するアシスタントです。
+私がAIに任せている作業のリストを渡します。
+それぞれについて、次の観点で判定してください。
+
+1. その作業でAIが間違えた場合、損失は「小さい・取り返せる」か
+   「大きい・取り返せない」か
+2. 今のAIの能力で、その作業は「高いレベルでできる」か
+   「まだ不安がある」か
+3. 上記2軸から、「全任せ」「半分任せ」「任せない」のどれが
+   適切かを判定し、理由を1文で説明してください
+4. 「半分任せ」と判定したものは、AIが担当する部分と
+   人が担当する部分を分けて示してください
+
+私が任せている作業:
+[ここに作業を箇条書きで貼る]
+</code></pre>
+<h2 id="7_1">よくある失敗 7つと直し方</h2>
+<ol>
+<li><strong>プロンプトを書いて終わりにする</strong>。出力を確認せず提出・公開してしまう。直し方は、公開前に必ず1回、自分の目で通読する時間を確保することです。</li>
+<li><strong>一発で完璧な出力を求める</strong>。1回のプロンプトで理想の結果が出ないと「AIは使えない」と判断してしまう。直し方は、最低2〜3回のやり取りを前提にすることです。</li>
+<li><strong>AIの出力を検証なしで公開する</strong>。特に数字や固有名詞は、AIが作った時点では正確さの保証がありません。直し方は、数字・日付・固有名詞だけは必ず出典を確認することです。</li>
+<li><strong>機密情報や個人情報をそのままAIに貼る</strong>。相手の名前・連絡先・契約条件などをそのまま入力してしまう。直し方は、貼る前に固有名詞を伏せ字や記号に置き換えることです。</li>
+<li><strong>数字をAIに作らせて、そのまま使う</strong>。「大体こんな数字だろう」とAIが出した数字を、根拠として扱ってしまう。直し方は、数字は必ず自分の手元の記録と照合することです。</li>
+<li><strong>誰が最終責任者かを決めていない</strong>。AIが出した提案を、チームの誰も最終確認しないまま実行に移してしまう。直し方は、任せる作業ごとに「最終確認する人」を1人決めておくことです。</li>
+<li><strong>一度決めた基準を見直さない</strong>。「これは任せてよい」と決めた基準を、状況が変わっても更新しない。直し方は、月に1回、このページの「3. 自己診断チェックリスト」に戻ることです。</li>
+</ol>
+<h2 id="_4">安全に使うための注意</h2>
+<ul>
+<li><strong>金額・契約・人事に関わる最終判断は、AIに任せない</strong>。AIには材料の整理・選択肢の洗い出しまでを任せ、決定は必ず人が行います。</li>
+<li><strong>個人情報・機密情報は、必要最小限しかAIに渡さない</strong>。名前・連絡先・契約内容など、特定につながる情報は伏せ字や仮名に置き換えてから貼り付けます。</li>
+<li><strong>AIの出力には誤り(事実と異なる内容の生成)が含まれることがあります</strong>。特に数字・日付・固有名詞・法律や制度に関わる内容は、必ず一次情報で確認してから使ってください。</li>
+<li><strong>画面操作をAIに任せる機能を使う場合は、AIに見せる画面を選びます</strong>。開いたままのタブに機密情報が映っていないか、操作を始める前に確認してください。</li>
+</ul>
+<h2 id="_5">つまずいたときに聞くプロンプト</h2>
+<pre><code>私は今、次の作業についてAIに任せるかどうか迷っています。
+
+作業内容: [ここに具体的な作業を書く]
+迷っている理由: [ここに理由を書く]
+
+以下を教えてください。
+1. この作業で最悪のケースが起きた場合、
+   何が起き、取り返しはつくか
+2. 全任せ・半分任せ・任せないのうち、
+   どれが妥当か。理由も添えて
+3. 「半分任せ」が妥当な場合、AIが担当すべき範囲と
+   人が担当すべき範囲を分けて示してください
+</code></pre>
+<h2 id="_6">用語集</h2>
+<ul>
+<li><strong>全任せ</strong>: AIの出力をそのまま採用し、人の確認を挟まずに使う任せ方</li>
+<li><strong>半分任せ</strong>: AIが下書き・整理までを行い、最終確認や仕上げを人が行う任せ方</li>
+<li><strong>任せない</strong>: 人が主導し、AIには資料整理や選択肢の洗い出しまでしか任せない範囲</li>
+<li><strong>ラリー</strong>: 1回の出力で終わらせず、複数回のやり取りで内容を磨き上げること</li>
+<li><strong>コンピューター操作</strong>: AIが画面の情報を読み取り、人に代わって承認されたアプリを操作する機能</li>
+<li><strong>プロンプトインジェクション</strong>: 画面や外部データに埋め込まれた文言が、AIへの指示として誤って読み込まれてしまう現象</li>
+</ul>
+<h2 id="10">出す前の品質チェック(10項目)</h2>
+<ol>
+<li>その作業で間違えたときの損失は、小さいか大きいか確認したか</li>
+<li>損失が大きい・取り返しがつかない場合、人の最終確認を挟んでいるか</li>
+<li>AIの出力を、公開・提出の前に1回は自分の目で通読したか</li>
+<li>数字・日付・固有名詞に、出典の裏付けがあるか</li>
+<li>個人情報・機密情報を、伏せ字にせずAIに貼っていないか</li>
+<li>金額・契約・人事の最終判断を、AIだけで済ませていないか</li>
+<li>その作業の「最終確認する人」が決まっているか</li>
+<li>任せる基準を、直近3ヶ月以内に見直したか</li>
+<li>AIに画面操作を任せる場合、見せる画面を事前に確認したか</li>
+<li>この10項目を、次に大きな判断をするときも使えるようメモしたか</li>
+</ol>
+<h2 id="_7">最終チェックリスト</h2>
+<ul>
+<li>[ ] 「1. なぜ失敗するのか」の2軸(能力・損失)を理解した</li>
+<li>[ ] 「2. 型ごとの失敗と直し方」の8つの型を、全部読んだ</li>
+<li>[ ] 「3. 自己診断チェックリスト」にチェックを入れ、当てはまった数を数えた</li>
+<li>[ ] 「6. 次の一手」で、今日から変える1つを決めた</li>
+<li>[ ] 「最初に投げるプロンプト」を、実際にAIへ貼り付けて試した</li>
+<li>[ ] 「安全に使うための注意」の4項目を確認した</li>
+<li>[ ] 面談で、自分専用のロードマップについて相談したい項目をメモした</li>
+</ul></div>
+<nav class='pn'>
+<a href='../bonus-N18/'>← ローンチ当日 役割表＆週間タイムライン</a>
+<a href='../bonus-N25/'>わど式 フィードバック診断チェックリスト →</a>
+</nav></article></main>
+<footer class='site'><div class='wrap'><p>この特典は受け取り条件を満たした方向けに配布しています。再配布・転載はご遠慮ください。</p><p>記載の売上・成果は特定の実績であり、同様の成果を保証するものではありません。</p></div></footer></body></html>
